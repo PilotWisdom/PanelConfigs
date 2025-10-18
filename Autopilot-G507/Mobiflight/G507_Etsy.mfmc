@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Nano</ModuleType>
+  <ModuleName>G507_Etsy</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="Button_unused01" Pin="13" />
+  <Button Name="Button_unused02" Pin="17" />
+  <Button Name="Button_unused03" Pin="18" />
+  <Button Name="ButtonUnused04" Pin="19" />
+  <Encoder Name="HDG-enc" PinLeft="10" PinRight="9" EncoderType="1" />
+  <Encoder Name="Wheel-enc" PinLeft="12" PinRight="11" EncoderType="1" />
+  <Encoder Name="ALT-enc" PinLeft="15" PinRight="14" EncoderType="1" />
+  <InputMultiplexer Name="MuxButtons" DataPin="16" NumBytes="2">
+    <Selector Name="MultiplexerDriver" PinSx="2 3 4 5" />
+  </InputMultiplexer>
+  <ShiftRegister Name="ShiftReg-LEDs" LatchPin="6" ClockPin="7" DataPin="8" NumModules="2" />
+</Config>

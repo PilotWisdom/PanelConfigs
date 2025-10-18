@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="0495dd21-4526-4ef3-a054-6bfe0f9f85d5">
+      <active>true</active>
+      <description>HDG-LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="G507_Etsy/ SN-G5E-5F0" trigger="normal" shiftRegister="ShiftReg-LEDs" registerOutputPin="Output 0" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5f64e4fc-4699-48ac-b093-83fe1d71e55c">
+      <active>true</active>
+      <description>APR-LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="G507_Etsy/ SN-G5E-5F0" trigger="normal" shiftRegister="ShiftReg-LEDs" registerOutputPin="Output 1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5e4a2b1f-1fa0-42dc-87fa-184eb6f6cac5">
+      <active>true</active>
+      <description>NAV-LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="G507_Etsy/ SN-G5E-5F0" trigger="normal" shiftRegister="ShiftReg-LEDs" registerOutputPin="Output 2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c5cf2f89-6557-4a0c-89dd-e96d5ff4aeb5">
+      <active>true</active>
+      <description>TRK-LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="G507_Etsy/ SN-G5E-5F0" trigger="normal" shiftRegister="ShiftReg-LEDs" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2e4fa2d3-0009-40e1-a8f9-c7ad291c3b99">
+      <active>true</active>
+      <description>AP-LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="G507_Etsy/ SN-G5E-5F0" trigger="normal" shiftRegister="ShiftReg-LEDs" registerOutputPin="Output 4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="caffe8ee-5863-4fed-934c-a3236e20606e">
+      <active>true</active>
+      <description>FD-LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="G507_Etsy/ SN-G5E-5F0" trigger="normal" shiftRegister="ShiftReg-LEDs" registerOutputPin="Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="23e6174a-6524-4c45-9988-64b41f3791e1">
+      <active>true</active>
+      <description>LVL-LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="G507_Etsy/ SN-G5E-5F0" trigger="normal" shiftRegister="ShiftReg-LEDs" registerOutputPin="Output 6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bdf2a95c-f97c-4f2d-8a90-919081578a67">
+      <active>true</active>
+      <description>YD-LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="G507_Etsy/ SN-G5E-5F0" trigger="normal" shiftRegister="ShiftReg-LEDs" registerOutputPin="Output 7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8250d846-8230-4c64-9023-9a53c291be17">
+      <active>true</active>
+      <description>IAS-LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="G507_Etsy/ SN-G5E-5F0" trigger="normal" shiftRegister="ShiftReg-LEDs" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4a75ea4f-e471-42b9-b667-20e9831b070d">
+      <active>true</active>
+      <description>VNAV-LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="G507_Etsy/ SN-G5E-5F0" trigger="normal" shiftRegister="ShiftReg-LEDs" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a2f00ba4-cecc-4488-90ed-78aded9b253f">
+      <active>true</active>
+      <description>VS-LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="G507_Etsy/ SN-G5E-5F0" trigger="normal" shiftRegister="ShiftReg-LEDs" registerOutputPin="Output 10" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b24c566c-86cb-41e2-9855-69b3212f0477">
+      <active>true</active>
+      <description>ALT-LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="G507_Etsy/ SN-G5E-5F0" trigger="normal" shiftRegister="ShiftReg-LEDs" registerOutputPin="Output 11" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="18f2103f-f962-480b-8dc4-3c10904c33b4">
+      <active>true</active>
+      <description>HDG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="0" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="74cfd168-b450-4654-a229-531a28bd3f08">
+      <active>true</active>
+      <description>APR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3b1edc91-3fb1-4f0f-8e33-fd3bf9eabfb5">
+      <active>true</active>
+      <description>NAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="556323dc-7fd6-4d6d-8efd-bb8892cc8aea">
+      <active>true</active>
+      <description>TRK</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1f9a86a9-bfff-4c40-b9e5-d055e744944f">
+      <active>true</active>
+      <description>AP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="30e9d03e-6db6-4130-990e-0474628bfc8f">
+      <active>true</active>
+      <description>FD</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c1a77af7-c4b1-489c-8c3d-de890a2f47e8">
+      <active>true</active>
+      <description>LVL</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6603e9ae-12a3-4583-a8bf-08d147805093">
+      <active>true</active>
+      <description>YD</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="82bb4d66-08d3-4817-9f2d-d3f5f2a85905">
+      <active>true</active>
+      <description>IAS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="8" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="85e02dbb-9c87-42b6-bb36-f1ec68ef37b9">
+      <active>true</active>
+      <description>VNAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="9" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a3b94d8b-e47b-4bff-8bb5-7c409f617543">
+      <active>true</active>
+      <description>VS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="10" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="97b3e51b-87bb-4adb-b9b8-ef98579bfa08">
+      <active>true</active>
+      <description>ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="11" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="253695a3-df58-4835-8360-aa69d15602cf">
+      <active>true</active>
+      <description>HDG-BTN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="12" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b709e1d3-11b3-446b-a694-fa26bffe2b14">
+      <active>true</active>
+      <description>ALT-BTN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputMultiplexer DataPin="13" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0cab957b-aa4c-48f7-87bb-668ca87bdb3a">
+      <active>true</active>
+      <description>HDG-Knob</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="HDG-enc" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft />
+          <onLeftFast />
+          <onRight />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="93ca519c-77a4-482b-91de-fcba72229619">
+      <active>true</active>
+      <description>ALT-Knob</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="ALT-enc" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft />
+          <onLeftFast />
+          <onRight />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="44c62f2b-8d78-4776-9b8a-1c7a427ced81">
+      <active>true</active>
+      <description>Wheel-VS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="Wheel-enc" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft />
+          <onLeftFast />
+          <onRight />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="a2f00ba4-cecc-4488-90ed-78aded9b253f" operand="&gt;=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3227121b-aefd-4edf-9cf2-d0a9c1dd8d4c">
+      <active>true</active>
+      <description>Wheel-IAS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507_Etsy/ SN-G5E-5F0" name="Wheel-enc" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft />
+          <onLeftFast />
+          <onRight />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="8250d846-8230-4c64-9023-9a53c291be17" operand="&gt;=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

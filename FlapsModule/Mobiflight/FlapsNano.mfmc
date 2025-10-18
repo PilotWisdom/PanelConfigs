@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Nano</ModuleType>
+  <ModuleName>FlapsNano</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="F1" Pin="2" />
+  <Output Name="F2" Pin="3" />
+  <Output Name="F3" Pin="4" />
+  <Output Name="F4" Pin="5" />
+  <Output Name="F5" Pin="6" />
+  <Output Name="F6" Pin="7" />
+  <Output Name="F7" Pin="8" />
+  <Button Name="FlapsUp" Pin="10" />
+  <Button Name="FlapsDown" Pin="11" />
+</Config>

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="0e1a7779-3239-4c47-8496-8d88f3271b1c">
+      <active>true</active>
+      <description>MasterBattery</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/electrical/bus_volts[1]" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="17" operand="&gt;=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ef492c75-3a05-4728-8461-53b754151aa5">
+      <active>true</active>
+      <description>F1LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/controls/flap1_deploy_ratio" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="0" operand="&gt;=" ifValue="1" elseValue="0" />
+          <transformation active="True" expression="$*#" />
+        </modifiers>
+        <display type="Output" serial="FlapsNano/ SN-162-6A9" trigger="normal" pin="F1" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="0e1a7779-3239-4c47-8496-8d88f3271b1c" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b1f5b6f7-d806-4747-9aff-76acde60952d">
+      <active>true</active>
+      <description>F2LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/controls/flap1_deploy_ratio" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="0.17" operand="&gt;=" ifValue="1" elseValue="0" />
+          <transformation active="True" expression="$*#" />
+        </modifiers>
+        <display type="Output" serial="FlapsNano/ SN-6EE-882" trigger="normal" pin="F2" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="0e1a7779-3239-4c47-8496-8d88f3271b1c" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e5a39786-bef0-48e9-84ab-da1bcf5c1e12">
+      <active>true</active>
+      <description>F3LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/controls/flap1_deploy_ratio" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="0.33" operand="&gt;=" ifValue="1" elseValue="0" />
+          <transformation active="True" expression="$*#" />
+        </modifiers>
+        <display type="Output" serial="FlapsNano/ SN-6EE-882" trigger="normal" pin="F3" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="0e1a7779-3239-4c47-8496-8d88f3271b1c" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e3b3d092-c4f8-4b84-9767-2c4642918f3d">
+      <active>true</active>
+      <description>F4LEd</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/controls/flap1_deploy_ratio" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="0.5" operand="&gt;=" ifValue="1" elseValue="0" />
+          <transformation active="True" expression="$*#" />
+        </modifiers>
+        <display type="Output" serial="FlapsNano/ SN-6EE-882" trigger="normal" pin="F4" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="0e1a7779-3239-4c47-8496-8d88f3271b1c" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="bc9a8307-c8ee-4b79-9d1e-c53c489905e6">
+      <active>true</active>
+      <description>F5LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/controls/flap1_deploy_ratio" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="0.66" operand="&gt;=" ifValue="1" elseValue="0" />
+          <transformation active="True" expression="$*#" />
+        </modifiers>
+        <display type="Output" serial="FlapsNano/ SN-6EE-882" trigger="normal" pin="F5" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="0e1a7779-3239-4c47-8496-8d88f3271b1c" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="4aef7396-f54b-45d0-91f7-b04002fc200a">
+      <active>true</active>
+      <description>F6LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/controls/flap1_deploy_ratio" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="0.83" operand="&gt;=" ifValue="1" elseValue="0" />
+          <transformation active="True" expression="$*#" />
+        </modifiers>
+        <display type="Output" serial="FlapsNano/ SN-6EE-882" trigger="normal" pin="F6" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="0e1a7779-3239-4c47-8496-8d88f3271b1c" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="8cee510c-62f8-4029-9115-61834b0b7b5e">
+      <active>true</active>
+      <description>F7LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/controls/flap1_deploy_ratio" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="1.0" operand="&gt;=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="FlapsNano/ SN-6EE-882" trigger="normal" pin="F7" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="362afc54-5f35-4fe7-b3ae-0064d05e8deb">
+      <active>true</active>
+      <description>FlapsUp</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="FlapsNano/ SN-162-6A9" name="FlapsUp" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/flight_controls/flaps_up" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1dd42811-1c19-4fcf-9efe-7ea7bd2fe8f6">
+      <active>true</active>
+      <description>FlapsDown</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="FlapsNano/ SN-162-6A9" name="FlapsDown" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/flight_controls/flaps_down" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
