@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="4ff6766a-a31d-4cd6-8732-a3634e309c72">
+      <active>true</active>
+      <description>Transponder-Code</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/transponder_code" />
+        <test type="Float" value="1200" />
+        <modifiers />
+        <display type="Display Module" serial="PW-Transponder/ SN-06C-2D8" trigger="normal" ledAddress="LED-SQ" ledConnector="1" ledModuleSize="4" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2,3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e50a72b9-13cc-4a69-9dbe-9e8cf79af4c5">
+      <active>true</active>
+      <description>Transponder-Mode</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/transponder_mode" />
+        <test type="Float" value="1234" />
+        <modifiers>
+          <comparison active="True" value="0" operand="=" ifValue="OFF " elseValue="$" />
+          <comparison active="True" value="1" operand="=" ifValue="Sb  " elseValue="$" />
+          <comparison active="True" value="2" operand="=" ifValue="On  " elseValue="$" />
+          <comparison active="True" value="3" operand="=" ifValue="Al  " elseValue="$" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1aa85ab6-68ca-48cf-92ad-056851863a6c">
+      <active>true</active>
+      <description>IDENT_ON</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit/radios/transponder_id" />
+        <test type="String" value="Id" />
+        <modifiers>
+          <comparison active="True" value="1" operand="=" ifValue="-Id-" elseValue="#" />
+        </modifiers>
+        <display type="Display Module" serial="PW-Transponder/ SN-06C-2D8" trigger="normal" ledAddress="LED-Mode" ledConnector="1" ledModuleSize="4" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="e50a72b9-13cc-4a69-9dbe-9e8cf79af4c5" placeholder="#" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="64d5e82f-6292-4a7f-8eb3-3aebdddb0158">
+      <active>true</active>
+      <description>0</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_digit_0" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ede44c46-cfd6-4f38-8660-0bf3a4b430bb">
+      <active>true</active>
+      <description>1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_digit_1" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b54e8ac2-bb20-4463-b3cb-56b5e93dcebf">
+      <active>true</active>
+      <description>2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_digit_2" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f451e81e-8a3a-42c4-8efb-0bf02e638069">
+      <active>true</active>
+      <description>3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_digit_3" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1f5bfac8-149e-499a-b338-997e4a423ee7">
+      <active>true</active>
+      <description>4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_digit_4" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4034350f-a4e7-4556-8f5d-39c16a45f8c6">
+      <active>true</active>
+      <description>5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_digit_5" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="61a8050d-898a-49e5-902c-41bd0e171d58">
+      <active>true</active>
+      <description>6</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_digit_6" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1d5e0948-c31b-43c6-a1cc-e372a11501f8">
+      <active>true</active>
+      <description>7</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_digit_7" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="423d0a23-e95d-41e6-94f6-c8cde2a092c4">
+      <active>true</active>
+      <description>Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="btn-OFF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_off" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c213de13-50c5-4f14-807e-ed22cc9d802d">
+      <active>true</active>
+      <description>Standby</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="btn-SBY" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_standby" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cf104142-3b21-4953-a09c-d3f400d91da8">
+      <active>true</active>
+      <description>On</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="btn-ON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_on" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cea2757f-d5c9-4ef7-9b96-4e6c516f6ed7">
+      <active>true</active>
+      <description>Alt</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="btn-ALT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_alt" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c5a3e17f-07e1-4cec-b675-302cf7a7017d">
+      <active>true</active>
+      <description>VFR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="btn-VFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="sim/cockpit2/radios/actuators/transponder_code" expression="1200" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4164f749-4153-44e6-b77d-88b691ea7a40">
+      <active>true</active>
+      <description>Ident</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="btn-IDENT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/transponder/transponder_ident" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

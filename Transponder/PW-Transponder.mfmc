@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Nano</ModuleType>
+  <ModuleName>PW-Transponder</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="Button0" Pin="2" />
+  <Button Name="Button1" Pin="3" />
+  <Button Name="Button2" Pin="4" />
+  <Button Name="Button3" Pin="5" />
+  <Button Name="Button4" Pin="6" />
+  <Button Name="Button5" Pin="7" />
+  <Button Name="Button6" Pin="8" />
+  <Button Name="Button7" Pin="9" />
+  <Button Name="btn-OFF" Pin="10" />
+  <Button Name="btn-SBY" Pin="11" />
+  <Button Name="btn-ON" Pin="12" />
+  <Button Name="btn-ALT" Pin="13" />
+  <Button Name="btn-VFR" Pin="14" />
+  <Button Name="btn-IDENT" Pin="15" />
+  <LedModule Name="LED-SQ" ModelType="253" DinPin="17" ClsPin="0" ClkPin="16" Brightness="2" NumModules="1" />
+  <LedModule Name="LED-Mode" ModelType="253" DinPin="19" ClsPin="0" ClkPin="18" Brightness="2" NumModules="1" />
+</Config>
