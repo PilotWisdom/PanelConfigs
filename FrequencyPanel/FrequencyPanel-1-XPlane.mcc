@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="91eafc81-5417-463d-b731-d8c61737946f">
+      <active>true</active>
+      <description>Com1Active</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/com1_frequency_hz_833" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Display Module" serial="PW-RadioStack/ SN-D8F-39D" trigger="normal" ledAddress="ComAct" ledConnector="1" ledModuleSize="6" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2,3,4,5" ledDecimalPoints="3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="996e17df-3616-478f-8ea0-f0bdb43b744e">
+      <active>true</active>
+      <description>Com1Standby</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/com1_standby_frequency_hz_833" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Display Module" serial="PW-RadioStack/ SN-D8F-39D" trigger="normal" ledAddress="ComSby" ledConnector="1" ledModuleSize="6" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2,3,4,5" ledDecimalPoints="3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="194a07c4-5711-484e-8481-542507c8aca5">
+      <active>true</active>
+      <description>Nav1Active</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/nav1_frequency_hz" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Display Module" serial="PW-RadioStack/ SN-D8F-39D" trigger="normal" ledAddress="NavAct" ledConnector="1" ledModuleSize="6" ledPadding="True" ledPaddingChar="0" ledDigits="1,2,3,4,5" ledDecimalPoints="3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="611f11b0-41fa-495d-ac79-afa246b981e1">
+      <active>true</active>
+      <description>Nav1Standby</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/cockpit2/radios/actuators/nav1_standby_frequency_hz" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Display Module" serial="PW-RadioStack/ SN-D8F-39D" trigger="normal" ledAddress="NavSby" ledConnector="1" ledModuleSize="6" ledPadding="True" ledPaddingChar="0" ledDigits="1,2,3,4,5" ledDecimalPoints="3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="a9b4a0a4-a830-46ed-b8d8-b14c1883022a">
+      <active>true</active>
+      <description>COM1-flip</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-RadioStack/ SN-D8F-39D" name="ComFlip" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/com1_standy_flip" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d9e3017c-da14-4cf4-bebb-c7e1404fa1be">
+      <active>true</active>
+      <description>NAV1-flip</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-RadioStack/ SN-D8F-39D" name="NavFlip" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="sim/radios/nav1_standy_flip" expression="" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="42d13e62-7ee6-4efd-b301-fc3525019abe">
+      <active>true</active>
+      <description>COM1-MHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-RadioStack/ SN-D8F-39D" name="ComOuter" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_coarse_down_833" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_coarse_up_833" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="021eb82e-8e31-4dbd-8835-157afb994398">
+      <active>true</active>
+      <description>COM1-KHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-RadioStack/ SN-D8F-39D" name="ComInner" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_fine_down_833" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_com1_fine_up_833" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ae9998d3-112f-481e-aae7-84163a0cf216">
+      <active>true</active>
+      <description>NAV1-MHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-RadioStack/ SN-D8F-39D" name="NavOuter" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_coarse_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_coarse_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4ea2b53f-c23d-40ef-9a6e-506aa957ac67">
+      <active>true</active>
+      <description>NAV1-KHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-RadioStack/ SN-D8F-39D" name="NavInner" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_fine_down" expression="" />
+          <onLeftFast />
+          <onRight type="XplaneInputAction" inputType="Command" path="sim/radios/stby_nav1_fine_up" expression="" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="91eafc81-5417-463d-b731-d8c61737946f">
+      <active>true</active>
+      <description>Com1Active</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM ACTIVE FREQUENCY:1,KHz)" UUID="b5a95362-411e-422d-9e6e-598b8b0bdcdf" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Display Module" serial="PW-RadioStack/ SN-D8F-39D" trigger="normal" ledAddress="ComAct" ledConnector="1" ledModuleSize="6" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2,3,4,5" ledDecimalPoints="3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="996e17df-3616-478f-8ea0-f0bdb43b744e">
+      <active>true</active>
+      <description>Com1Standby</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM STANDBY FREQUENCY:1,KHz)" UUID="0c6afa60-4a6e-405d-91a5-1d7ba95bfe11" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Display Module" serial="PW-RadioStack/ SN-D8F-39D" trigger="normal" ledAddress="ComSby" ledConnector="1" ledModuleSize="6" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2,3,4,5" ledDecimalPoints="3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="194a07c4-5711-484e-8481-542507c8aca5">
+      <active>true</active>
+      <description>Nav1Active</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:NAV ACTIVE FREQUENCY:1,KHz)" UUID="37a19dbf-bfc5-4193-ac3e-591772069e42" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Display Module" serial="PW-RadioStack/ SN-D8F-39D" trigger="normal" ledAddress="NavAct" ledConnector="1" ledModuleSize="6" ledPadding="False" ledPaddingChar="0" ledDigits="1,2,3,4,5" ledDecimalPoints="3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="611f11b0-41fa-495d-ac79-afa246b981e1">
+      <active>true</active>
+      <description>Nav1Standby</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:NAV STANDBY FREQUENCY:1,KHz)" UUID="73a2f48d-d613-4b7b-b30d-8065bc150f98" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Display Module" serial="PW-RadioStack/ SN-D8F-39D" trigger="normal" ledAddress="NavSby" ledConnector="1" ledModuleSize="6" ledPadding="False" ledPaddingChar="0" ledDigits="1,2,3,4,5" ledDecimalPoints="3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="a9b4a0a4-a830-46ed-b8d8-b14c1883022a">
+      <active>true</active>
+      <description>COM1-flip</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-RadioStack/ SN-D8F-39D" name="ComFlip" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:COM_STBY_RADIO_SWAP)" presetId="838c9003-b049-4182-a9af-44acc6c6619a" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d9e3017c-da14-4cf4-bebb-c7e1404fa1be">
+      <active>true</active>
+      <description>NAV1-flip</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-RadioStack/ SN-D8F-39D" name="NavFlip" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_SWAP)" presetId="0a59b65c-cc38-43df-b005-7a599a4d409a" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="42d13e62-7ee6-4efd-b301-fc3525019abe">
+      <active>true</active>
+      <description>COM1-MHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-RadioStack/ SN-D8F-39D" name="ComOuter" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_WHOLE_DEC)" presetId="ec154767-41ce-4a2f-865b-3e6fe7c90c89" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_WHOLE_INC)" presetId="e1a79c8b-2e4a-49b2-9284-d1cf0adc5707" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="021eb82e-8e31-4dbd-8835-157afb994398">
+      <active>true</active>
+      <description>COM1-KHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-RadioStack/ SN-D8F-39D" name="ComInner" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_FRACT_DEC)" presetId="04725cc3-7346-4f5d-ad89-c1ffaaa6e978" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_FRACT_INC)" presetId="6b78a3e2-e3dc-411b-bb2d-224b011a2644" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ae9998d3-112f-481e-aae7-84163a0cf216">
+      <active>true</active>
+      <description>NAV1-MHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-RadioStack/ SN-D8F-39D" name="NavOuter" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_WHOLE_DEC)" presetId="bcb45f55-c67a-44b9-a951-096e450ccec7" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_WHOLE_INC)" presetId="1ae481bc-bea6-4f58-a683-01c9d0c38e32" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4ea2b53f-c23d-40ef-9a6e-506aa957ac67">
+      <active>true</active>
+      <description>NAV1-KHz</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-RadioStack/ SN-D8F-39D" name="NavInner" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_FRACT_DEC)" presetId="f92f319c-75e2-471e-845a-764540c65040" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:NAV1_RADIO_FRACT_INC)" presetId="91d424e5-4d6a-48a0-a435-153331c604b3" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

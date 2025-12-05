@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>PW-RadioStack</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="ComAct" ModelType="254" DinPin="35" ClsPin="0" ClkPin="34" Brightness="3" NumModules="1" />
+  <LedModule Name="ComSby" ModelType="254" DinPin="37" ClsPin="0" ClkPin="36" Brightness="3" NumModules="1" />
+  <LedModule Name="NavAct" ModelType="254" DinPin="39" ClsPin="0" ClkPin="38" Brightness="3" NumModules="1" />
+  <LedModule Name="NavSby" ModelType="254" DinPin="41" ClsPin="0" ClkPin="40" Brightness="3" NumModules="1" />
+  <Button Name="ComFlip" Pin="30" />
+  <Button Name="NavFlip" Pin="31" />
+  <Encoder Name="ComOuter" PinLeft="24" PinRight="25" EncoderType="2" />
+  <Encoder Name="ComInner" PinLeft="22" PinRight="23" EncoderType="2" />
+  <Encoder Name="NavOuter" PinLeft="28" PinRight="29" EncoderType="2" />
+  <Encoder Name="NavInner" PinLeft="26" PinRight="27" EncoderType="2" />
+  <LedModule Name="Trans-Code" ModelType="253" DinPin="45" ClsPin="0" ClkPin="44" Brightness="3" NumModules="1" />
+  <LedModule Name="Trans-Mode" ModelType="253" DinPin="43" ClsPin="0" ClkPin="42" Brightness="3" NumModules="1" />
+  <Button Name="Trans-OFF" Pin="54" />
+  <Button Name="trans-SBY" Pin="55" />
+  <Button Name="Trans-ON" Pin="56" />
+  <Button Name="Trans-ALT" Pin="57" />
+  <Button Name="Trans-VFR" Pin="58" />
+  <Button Name="Trans-IDENT" Pin="59" />
+  <Button Name="Trans-0" Pin="46" />
+  <Button Name="Trans-1" Pin="47" />
+  <Button Name="Trans-2" Pin="48" />
+  <Button Name="Trans-3" Pin="49" />
+  <Button Name="Trans-4" Pin="50" />
+  <Button Name="Trans-5" Pin="51" />
+  <Button Name="Trans-6" Pin="52" />
+  <Button Name="Trans-7" Pin="53" />
+  <Output Name="Radio-Com1" Pin="17" />
+  <Output Name="Radio-Com2" Pin="15" />
+  <Output Name="Radio-Mic1" Pin="13" />
+  <Output Name="Radio-Mic2" Pin="11" />
+  <Output Name="Radio-Nav1" Pin="9" />
+  <Output Name="Radio-Nav2" Pin="7" />
+  <Output Name="Radio-DME" Pin="5" />
+  <Output Name="Radio-ADF" Pin="3" />
+  <Output Name="Radio-OM" Pin="18" />
+  <Output Name="Radio-MM" Pin="19" />
+  <Output Name="Radio-IM" Pin="20" />
+  <Button Name="Radio-btnCom1" Pin="16" />
+  <Button Name="Radio-btnCom2" Pin="14" />
+  <Button Name="Radio-btnMic1" Pin="12" />
+  <Button Name="Radio-btnMic2" Pin="10" />
+  <Button Name="Radio-btnNav1" Pin="8" />
+  <Button Name="Radio-btnNav2" Pin="6" />
+  <Button Name="Radio-btnDME" Pin="4" />
+  <Button Name="Radio-btnADF" Pin="2" />
+  <Button Name="Radio-btnMKRMute" Pin="21" />
+</Config>
