@@ -31,7 +31,7 @@ Name: PilotWisdom G507 Autopilot
 # Zero or more USB identifiers (vendor ID + product ID) that this .joy file describes.
 # (Note that you need at least one ID or Name, described above.)
 # If more than USB identifier is given, we'll use this .joy file to configure *any* of those devices.
-ID: VID:0x303aPID:0x831c
+ID: VID:0x303aPID:0x831b
 
 Assignments:
 --------------------------------------------------------------
