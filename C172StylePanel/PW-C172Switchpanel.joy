@@ -26,12 +26,12 @@ OS: Windows
 # (Note that you need at least one name or one ID, described below.)
 # If more than one device is named, we're saying that *any* of those devices should be configured
 # using the *same* defaults and the same image maps.
-Name: PilotWisdom G507 Autopilot
+Name: PW Switchpanel
 
 # Zero or more USB identifiers (vendor ID + product ID) that this .joy file describes.
 # (Note that you need at least one ID or Name, described above.)
 # If more than USB identifier is given, we'll use this .joy file to configure *any* of those devices.
-ID: VID:0x303aPID:0x831c
+ID: VID:0x303aPID:0x831e
 
 Assignments:
 --------------------------------------------------------------
@@ -72,26 +72,28 @@ Assignments:
 # Button <button number>: hidden
 # Button <button number>: <command path, like "sim/operation/quit">
 #	See X-Plane/Resources/plugins/Commands.txt for a complete list of commands
-Button 0: sim/autopilot/heading
-Button 1: sim/autopilot/approach
-Button 2: sim/autopilot/NAV
-Button 3: sim/autopilot/track
-Button 4: sim/autopilot/servos_toggle
-Button 5: sim/autopilot/fdir_toggle
-Button 6: sim/autopilot/return_to_level
-Button 7: sim/systems/yaw_damper_toggle
-Button 8: sim/autopilot/level_change
-Button 9: sim/autopilot/vnav
-Button 10: sim/autopilot/vertical_speed
-Button 11: sim/autopilot/altitude_hold
-Button 12: sim/autopilot/heading_sync
-Button 13: sim/autopilot/altitude_sync
-Button 14: sim/autopilot/heading_down
-Button 15: sim/autopilot/heading_up
-Button 16: sim/autopilot/nose_down_pitch_mode
-Button 17: sim/autopilot/nose_up_pitch_mode
-Button 18: sim/autopilot/altitude_down
-Button 19: sim/autopilot/altitude_up
+Button 0: sim/electrical/generator_1_on
+Button 1: sim/electrical/battery_1_on
+Button 2: sim/fuel/fuel_pumps_on
+Button 3: sim/lights/beacon_lights_on
+Button 4: sim/lights/landing_lights_on
+Button 5: sim/lights/taxi_lights_on
+Button 6: sim/lights/nav_lights_on
+Button 7: sim/lights/strobe_lights_on
+Button 8: sim/ice/pitot_heat0_on
+Button 9: sim/systems/avionics_on
+Button 10: sim/electrical/cross_tie_on
+Button 11: sim/electrical/generator_1_off
+Button 12: sim/electrical/battery_1_off
+Button 13: sim/fuel/fuel_pumps_off
+Button 14: sim/lights/beacon_lights_off
+Button 15: sim/lights/landing_lights_off
+Button 16: sim/lights/taxi_lights_off
+Button 17: sim/lights/nav_lights_off
+Button 18: sim/lights/strobe_lights_off
+Button 19: sim/ice/pitot_heat0_off
+Button 20: sim/systems/avionics_off
+Button 21: sim/electrical/cross_tie_off
 
 
 # FORMAT FOR HAT SWITCHES:
