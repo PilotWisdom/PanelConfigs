@@ -3,7 +3,7 @@ The module has two hardware versions:
 
 a) **Nano version**: full functionality  
    has to be paired with Mobiflight or similar software.  
-   ## OLDER VERSION, NOT SHIPPED ANY MORE
+   ** OLDER VERSION, NOT SHIPPED ANY MORE **
    
 b) **Pro Micro version**: 
    can be flashed 
