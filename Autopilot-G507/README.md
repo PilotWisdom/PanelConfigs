@@ -3,11 +3,13 @@ The module has two hardware versions:
 
 a) **Nano version**: full functionality  
    has to be paired with Mobiflight or similar software.  
+   ## OLDER VERSION, NOT SHIPPED ANY MORE
    
-b) **Pro Micro version**: no LEDs, less flexibility  
-   this version can be used as a stand-alone joystick version, no extra software needed.  
-   It can be flashed to work with MobyFlight, but the joystick functionality will be lost.  
-   *Later purchases of full version can be equipped with Pro Micro in Mobiflight mode*
+b) **Pro Micro version**: 
+   can be flashed 
+   - as a stand-alone joystick: no LEDs, less flexibility, no extra software needed  
+   - as a fully-functioning MobiFlight version 
+   
 
 PCB schematic and STL files are not distributed at the moment.  
 
