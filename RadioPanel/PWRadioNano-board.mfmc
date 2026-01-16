@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Nano</ModuleType>
+  <ModuleName>PWRadioNano</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="btnCOM1" Pin="2" />
+  <Button Name="btnCOM2" Pin="3" />
+  <Button Name="btnMIC1" Pin="4" />
+  <Button Name="btnMIC2" Pin="5" />
+  <Button Name="btnNAV1" Pin="6" />
+  <Button Name="btnNAV2" Pin="7" />
+  <Button Name="btnDME" Pin="8" />
+  <Button Name="btnADF" Pin="9" />
+  <Button Name="btnMKR" Pin="10" />
+  <ShiftRegister Name="SR-LEDs" LatchPin="17" ClockPin="14" DataPin="16" NumModules="2" />
+</Config>

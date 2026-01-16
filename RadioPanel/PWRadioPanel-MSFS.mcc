@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="b965c83a-0892-44fa-97fe-680297406ea6">
+      <active>true</active>
+      <description>LED-COM1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM RECEIVE:1, Bool)" UUID="50a1ca52-4777-46ef-8f66-018177f57c2f" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="PWRadioNano/ SN-GB0-873" trigger="normal" shiftRegister="SR-LEDs" registerOutputPin="Output 7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c6e6172c-029a-437e-bd5f-1a8bfc7e4b70">
+      <active>true</active>
+      <description>LED-COM2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM RECEIVE:2, Bool)" UUID="50a1ca52-4777-46ef-8f66-018177f57c2f" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="PWRadioNano/ SN-GB0-873" trigger="normal" shiftRegister="SR-LEDs" registerOutputPin="Output 6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1403fe9c-cacf-47a6-a9e0-b36c5110a944">
+      <active>true</active>
+      <description>LED-MIC1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:MARKER BEACON TEST MUTE,Bool)" UUID="fe4800bb-241a-474f-81ea-8503157bc67e" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="PWRadioNano/ SN-GB0-873" trigger="normal" shiftRegister="SR-LEDs" registerOutputPin="Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="44afee62-f123-4ae2-841a-ab9dbb544d99">
+      <active>true</active>
+      <description>LED-MIC2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="PWRadioNano/ SN-GB0-873" trigger="normal" shiftRegister="SR-LEDs" registerOutputPin="Output 4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0be137f3-dc24-4304-93ad-16aef9169847">
+      <active>true</active>
+      <description>LED-NAV1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:NAV SOUND:1, Bool)" UUID="d1e941b1-7201-4d75-b347-eb8dc6185959" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="PWRadioNano/ SN-GB0-873" trigger="normal" shiftRegister="SR-LEDs" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="447d7a6d-205e-4d19-8e4c-c75248c46a2f">
+      <active>true</active>
+      <description>LED-NAV2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:NAV SOUND:2, Bool)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="PWRadioNano/ SN-GB0-873" trigger="normal" shiftRegister="SR-LEDs" registerOutputPin="Output 2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fceb3c61-f4e1-499e-8468-4061265287d6">
+      <active>true</active>
+      <description>LED-DME</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:DME SOUND, Bool)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="PWRadioNano/ SN-GB0-873" trigger="normal" shiftRegister="SR-LEDs" registerOutputPin="Output 1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0b7c272d-f6c1-4eb5-a52c-31e3c75661d3">
+      <active>true</active>
+      <description>LED-ADF</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ADF SOUND, Bool)" UUID="0" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="PWRadioNano/ SN-GB0-873" trigger="normal" shiftRegister="SR-LEDs" registerOutputPin="Output 0" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="16ba44f9-e8df-4b3e-9311-3b2a5589ffc3">
+      <active>true</active>
+      <description>LED-OM</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:OUTER MARKER,Bool)" UUID="798c4ddc-7eb2-474d-b242-dea45d8cecf8" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="PWRadioNano/ SN-GB0-873" trigger="normal" shiftRegister="SR-LEDs" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="44e185b7-0b07-4dac-a277-683ce1451902">
+      <active>true</active>
+      <description>LED-MM</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:MIDDLE MARKER,Bool)" UUID="e851495e-d47f-4923-b076-d49d5244587e" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="PWRadioNano/ SN-GB0-873" trigger="normal" shiftRegister="SR-LEDs" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a4cd4a9a-6535-4f60-ae67-c9c5b99708ec">
+      <active>true</active>
+      <description>LED-IM</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:INNER MARKER,Bool)" UUID="94fe3445-0444-4212-afe4-786a5241e924" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="PWRadioNano/ SN-GB0-873" trigger="normal" shiftRegister="SR-LEDs" registerOutputPin="Output 10" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="913f6874-4b12-4adb-aea5-335df265b0a3">
+      <active>true</active>
+      <description>COM1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PWRadioNano/ SN-GB0-873" name="btnCOM1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:COM RECEIVE:1, Bool) ! (&gt;K:COM1_RECEIVE_SELECT)" presetId="b8e059bd-822c-468c-b578-41c5168cb111" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6ee7c7e4-b175-4f1b-9ec4-405094804539">
+      <active>true</active>
+      <description>COM2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PWRadioNano/ SN-GB0-873" name="btnCOM2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:COM RECEIVE:2, Bool) ! (&gt;K:COM2_RECEIVE_SELECT)" presetId="d3e7dee5-45eb-40e0-b0ba-839df2a6ee26" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="60ced6cc-95d5-4eb4-8a5b-24ded5c70aee">
+      <active>true</active>
+      <description>MIC1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PWRadioNano/ SN-GB0-873" name="btnMIC1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7b23ab89-c284-4e28-8455-378b0cb358f4">
+      <active>true</active>
+      <description>MIC2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PWRadioNano/ SN-GB0-873" name="btnMIC2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ab376f4d-fb45-4efd-ba0d-038fb916f12d">
+      <active>true</active>
+      <description>NAV1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PWRadioNano/ SN-GB0-873" name="btnNAV1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:NAV SOUND:1, Bool) ! (&gt;K:RADIO_VOR1_IDENT_TOGGLE)" presetId="e63740c5-aaa4-43da-a9c2-b9ca5f4b940b" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="43c386e3-51b2-4115-bb42-64bd6bb70f74">
+      <active>true</active>
+      <description>NAV2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PWRadioNano/ SN-GB0-873" name="btnNAV2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:NAV SOUND:2, Bool) ! (&gt;K:RADIO_VOR2_IDENT_TOGGLE)" presetId="54d19ede-e668-4f0a-aed8-2ed6aace18f3" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="106aa468-c085-4fad-a5ae-50d4edd91927">
+      <active>true</active>
+      <description>DME</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PWRadioNano/ SN-GB0-873" name="btnDME" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:DME SOUND, Bool) ! (&gt;K:RADIO_DME1_IDENT_TOGGLE)" presetId="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="53b93ca2-b3ec-4277-a284-2062eee65a9e">
+      <active>true</active>
+      <description>ADF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PWRadioNano/ SN-GB0-873" name="btnADF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:ADF SOUND, Bool) ! (&gt;K:RADIO_ADF_IDENT_TOGGLE)&#xA;" presetId="11df6e76-92d7-4ef6-b5cb-fd5ef519293b" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8a00c4ec-d7e0-4954-9565-03d07fb18e34">
+      <active>true</active>
+      <description>MKR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PWRadioNano/ SN-GB0-873" name="btnMKR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:MARKER BEACON TEST MUTE, Bool) ! (&gt;K:MARKER_BEACON_TEST_MUTE)" presetId="5306a144-4fa1-4341-ade6-c45ed652ff4b" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
