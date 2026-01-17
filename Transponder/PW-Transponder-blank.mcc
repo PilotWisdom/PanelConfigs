@@ -5,7 +5,7 @@
       <active>true</active>
       <description>Transponder-Code</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="LVAR" Value="" />
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
         <test type="Float" value="1200" />
         <modifiers />
         <display type="Display Module" serial="PW-Transponder/ SN-105-039" trigger="normal" ledAddress="LED-SQ" ledConnector="1" ledModuleSize="4" ledPadding="True" ledBrightnessRef="e50a72b9-13cc-4a69-9dbe-9e8cf79af4c5" ledPaddingChar=" " ledDigits="0,1,2,3" />
