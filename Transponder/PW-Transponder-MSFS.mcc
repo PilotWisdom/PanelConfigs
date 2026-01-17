@@ -8,7 +8,7 @@
         <source type="SimConnect" VarType="CODE" Value="(A:TRANSPONDER CODE:1,number)" UUID="db3bd1a4-4c3c-4e3e-a9aa-3480bf0f4a70" />
         <test type="Float" value="1200" />
         <modifiers />
-        <display type="Display Module" serial="PW-Transponder/ SN-06C-2D8" trigger="normal" ledAddress="LED-SQ" ledConnector="1" ledModuleSize="4" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2,3" />
+        <display type="Display Module" serial="PW-Transponder/ SN-105-039" trigger="normal" ledAddress="LED-SQ" ledConnector="1" ledModuleSize="4" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2,3" />
         <preconditions />
         <configrefs />
       </settings>
@@ -40,7 +40,7 @@
         <modifiers>
           <comparison active="True" value="1" operand="=" ifValue="-Id-" elseValue="#" />
         </modifiers>
-        <display type="Display Module" serial="PW-Transponder/ SN-06C-2D8" trigger="normal" ledAddress="LED-Mode" ledConnector="1" ledModuleSize="4" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3" />
+        <display type="Display Module" serial="PW-Transponder/ SN-105-039" trigger="normal" ledAddress="LED-Mode" ledConnector="1" ledModuleSize="4" ledPadding="True" ledPaddingChar=" " ledDigits="0,1,2,3" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="e50a72b9-13cc-4a69-9dbe-9e8cf79af4c5" placeholder="#" testvalue="1" />
@@ -52,7 +52,7 @@
     <config guid="64d5e82f-6292-4a7f-8eb3-3aebdddb0158">
       <active>true</active>
       <description>0</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-105-039" name="Button0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder0)" presetId="2b07b723-64b0-44c1-9bdf-f6193c10bf05" />
         </button>
@@ -63,7 +63,7 @@
     <config guid="ede44c46-cfd6-4f38-8660-0bf3a4b430bb">
       <active>true</active>
       <description>1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-105-039" name="Button1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder1)" presetId="09ddd15e-a50f-4f62-9532-3fd306f996cb" />
         </button>
@@ -74,7 +74,7 @@
     <config guid="b54e8ac2-bb20-4463-b3cb-56b5e93dcebf">
       <active>true</active>
       <description>2</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-105-039" name="Button2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder2)" presetId="1eb9ae7f-c95d-443c-ba87-dd3810fe6216" />
         </button>
@@ -85,7 +85,7 @@
     <config guid="f451e81e-8a3a-42c4-8efb-0bf02e638069">
       <active>true</active>
       <description>3</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-105-039" name="Button3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder3)" presetId="8f2a5b95-d06d-4156-af6c-f294e2d1438a" />
         </button>
@@ -96,7 +96,7 @@
     <config guid="1f5bfac8-149e-499a-b338-997e4a423ee7">
       <active>true</active>
       <description>4</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-105-039" name="Button4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder4)" presetId="a0777872-878e-4d48-ac84-34e87c041930" />
         </button>
@@ -107,7 +107,7 @@
     <config guid="4034350f-a4e7-4556-8f5d-39c16a45f8c6">
       <active>true</active>
       <description>5</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-105-039" name="Button5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder5)" presetId="99255895-102e-41b9-8763-2fc144768ed0" />
         </button>
@@ -118,7 +118,7 @@
     <config guid="61a8050d-898a-49e5-902c-41bd0e171d58">
       <active>true</active>
       <description>6</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-105-039" name="Button6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder6)" presetId="38faa3cf-4058-454e-b486-f1726aeef8e6" />
         </button>
@@ -129,7 +129,7 @@
     <config guid="1d5e0948-c31b-43c6-a1cc-e372a11501f8">
       <active>true</active>
       <description>7</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="Button7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-105-039" name="Button7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:Transponder7)" presetId="611e1dee-1148-4196-8a43-0d691368b979" />
         </button>
@@ -140,7 +140,7 @@
     <config guid="423d0a23-e95d-41e6-94f6-c8cde2a092c4">
       <active>true</active>
       <description>Off</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="btn-OFF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-105-039" name="btn-OFF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="0 (&gt;A:TRANSPONDER STATE:1, Enum)" presetId="6902c298-52d6-41b2-9ed5-14c6f7aafe66" />
         </button>
@@ -151,7 +151,7 @@
     <config guid="c213de13-50c5-4f14-807e-ed22cc9d802d">
       <active>true</active>
       <description>Standby</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="btn-SBY" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-105-039" name="btn-SBY" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="1 (&gt;A:TRANSPONDER STATE:1, Enum)" presetId="6bb83f0e-6466-4cc1-9f3d-26c205a340a5" />
         </button>
@@ -162,7 +162,7 @@
     <config guid="cf104142-3b21-4953-a09c-d3f400d91da8">
       <active>true</active>
       <description>On</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="btn-ON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-105-039" name="btn-ON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="3 (&gt;A:TRANSPONDER STATE:1, Enum)" presetId="f93b81d9-73f3-4734-a9b6-08f9684f179b" />
         </button>
@@ -173,7 +173,7 @@
     <config guid="cea2757f-d5c9-4ef7-9b96-4e6c516f6ed7">
       <active>true</active>
       <description>Alt</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="btn-ALT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-105-039" name="btn-ALT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="4 (&gt;A:TRANSPONDER STATE:1, Enum)" presetId="22f6b23a-79cd-4761-b066-b2bc1a309df6" />
         </button>
@@ -184,7 +184,7 @@
     <config guid="c5a3e17f-07e1-4cec-b675-302cf7a7017d">
       <active>true</active>
       <description>VFR</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="btn-VFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-105-039" name="btn-VFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;H:TransponderVFR)" presetId="cb4278d8-5c94-47b1-bb60-958da077feb6" />
         </button>
@@ -195,7 +195,7 @@
     <config guid="4164f749-4153-44e6-b77d-88b691ea7a40">
       <active>true</active>
       <description>Ident</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-06C-2D8" name="btn-IDENT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="PW-Transponder/ SN-105-039" name="btn-IDENT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020CustomInputAction" command="(&gt;K:XPNDR_IDENT_ON)" presetId="10e3d3b7-dacf-4e45-bc93-8da283cfe9af" />
         </button>
