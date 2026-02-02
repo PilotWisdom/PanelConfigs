@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Nano</ModuleType>
+  <ModuleName>NanoHeliSAS</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="btnSAS" Pin="2" />
+  <Output Name="bgPWM" Pin="3" />
+  <Button Name="btnHDG" Pin="4" />
+  <Output Name="grPWMRev" Pin="5" />
+  <Output Name="whPWMRev" Pin="6" />
+  <ShiftRegister Name="ShiftRegLEDs" LatchPin="7" ClockPin="8" DataPin="9" NumModules="2" />
+  <Button Name="btnNAV" Pin="10" />
+  <Button Name="btnBC" Pin="11" />
+  <Button Name="btnALT" Pin="12" />
+  <Output Name="ledD13" Pin="13" />
+  <Button Name="btnVRT" Pin="14" />
+</Config>

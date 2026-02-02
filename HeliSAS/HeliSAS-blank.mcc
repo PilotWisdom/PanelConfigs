@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="ec0f3a9d-8be4-4086-a2bf-4d0bd18324c2">
+      <active>true</active>
+      <description>backlightPWM</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="32" />
+        <modifiers>
+          <transformation active="True" expression="32" />
+        </modifiers>
+        <display type="Output" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" pin="bgPWM" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="58045954-541e-4ded-aed1-f89715c55a28">
+      <active>true</active>
+      <description>greenPWN</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="0" />
+        <modifiers>
+          <transformation active="True" expression="255-$" />
+        </modifiers>
+        <display type="Output" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" pin="grPWMRev" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2ba1c61d-f1be-4ce9-883d-0bb89cd2e88e">
+      <active>true</active>
+      <description>whitePWM</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="0" />
+        <modifiers>
+          <transformation active="True" expression="255-$" />
+        </modifiers>
+        <display type="Output" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" pin="whPWMRev" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1aed46ef-67fc-4fc6-b4de-d13c4e90498f">
+      <active>true</active>
+      <description>greenLEDs</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 0|Output 1|Output 2|Output 3|Output 4|Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d0fe47f7-ae5f-4bfe-8657-d501f1145207">
+      <active>true</active>
+      <description>whiteLEDs</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 8|Output 9|Output 10|Output 11|Output 12|Output 13" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="499310c0-1c8c-472f-b184-e7d219300404">
+      <active>true</active>
+      <description>grSAS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="0" />
+        <modifiers>
+          <transformation active="True" expression="1-$" />
+        </modifiers>
+        <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 0" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="26159166-832b-4876-a32a-edbad54c68f0">
+      <active>true</active>
+      <description>grHDG</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="0" />
+        <modifiers>
+          <transformation active="True" expression="1-$" />
+        </modifiers>
+        <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="670b4f45-bafd-49ed-8e0c-df807f7a46a3">
+      <active>true</active>
+      <description>grNAV</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="0" />
+        <modifiers>
+          <transformation active="True" expression="1-$" />
+        </modifiers>
+        <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f94d3dde-af82-4a65-b471-f57f7d357ba1">
+      <active>true</active>
+      <description>grBC</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="0" />
+        <modifiers>
+          <transformation active="True" expression="1-$" />
+        </modifiers>
+        <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="76a31167-53d5-4fe6-838d-23b6b0bde420">
+      <active>true</active>
+      <description>grALT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="0" />
+        <modifiers>
+          <transformation active="True" expression="1-$" />
+        </modifiers>
+        <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="053c1090-2ba3-4320-b335-32707d45d4c4">
+      <active>true</active>
+      <description>grVRT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="0" />
+        <modifiers>
+          <transformation active="True" expression="1-$" />
+        </modifiers>
+        <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="07d3ef93-4d3c-4c43-9bc7-d2e47f0f2686">
+      <active>true</active>
+      <description>whSAS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="0" />
+        <modifiers>
+          <transformation active="True" expression="1-$" />
+        </modifiers>
+        <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="257b17b2-e629-480b-86a2-d5e82dc710af">
+      <active>true</active>
+      <description>whHDG</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="0" />
+        <modifiers>
+          <transformation active="True" expression="1-$" />
+        </modifiers>
+        <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f82bb4e1-97d6-452a-a04d-b55ca3ba4de1">
+      <active>true</active>
+      <description>whNAV</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="0" />
+        <modifiers>
+          <transformation active="True" expression="1-$" />
+        </modifiers>
+        <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 10" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="419dc2f0-8f55-4b9c-8d57-592944ad5c41">
+      <active>true</active>
+      <description>whBC</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="0" />
+        <modifiers>
+          <transformation active="True" expression="1-$" />
+        </modifiers>
+        <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 11" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b8057aa3-2582-4952-a4e8-438f790461f0">
+      <active>true</active>
+      <description>whALT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="0" />
+        <modifiers>
+          <transformation active="True" expression="1-$" />
+        </modifiers>
+        <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 12" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c7ef91ec-1529-4892-9d45-96e541c545e7">
+      <active>true</active>
+      <description>whVRT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <test type="Float" value="0" />
+        <modifiers>
+          <transformation active="True" expression="1-$" />
+        </modifiers>
+        <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 13" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="5b5977e4-99c3-4016-bdd7-176810cfbc60">
+      <active>true</active>
+      <description>SAS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="NanoHeliSAS/ SN-BED-B1D" name="btnSAS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ac4724a6-1a5a-426c-b49b-3ea91ea49b0e">
+      <active>true</active>
+      <description>HDG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="NanoHeliSAS/ SN-BED-B1D" name="btnHDG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="47e57c55-71f4-418f-ad26-2b3bb23486b9">
+      <active>true</active>
+      <description>NAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="NanoHeliSAS/ SN-BED-B1D" name="btnNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="461b51b0-76d0-495c-8e22-f6f553397abe">
+      <active>true</active>
+      <description>BC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="NanoHeliSAS/ SN-BED-B1D" name="btnBC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="67c835cb-64d7-4e36-a38c-39d6d4a182f9">
+      <active>true</active>
+      <description>ALT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="NanoHeliSAS/ SN-BED-B1D" name="btnALT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fa561275-3021-41a7-a566-bac80ac07fe2">
+      <active>true</active>
+      <description>VRT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="NanoHeliSAS/ SN-BED-B1D" name="btnVRT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
