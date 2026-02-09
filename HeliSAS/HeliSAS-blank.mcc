@@ -6,9 +6,9 @@
       <description>backlightPWM</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
-        <test type="Float" value="32" />
+        <test type="Float" value="128" />
         <modifiers>
-          <transformation active="True" expression="32" />
+          <transformation active="True" expression="128" />
         </modifiers>
         <display type="Output" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" pin="bgPWM" pinBrightness="255" pinPwm="True" />
         <preconditions />
@@ -47,7 +47,7 @@
       <active>true</active>
       <description>greenLEDs</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 0|Output 1|Output 2|Output 3|Output 4|Output 5" />
@@ -59,7 +59,7 @@
       <active>true</active>
       <description>whiteLEDs</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="1" />
         <modifiers />
         <display type="ShiftRegister" serial="NanoHeliSAS/ SN-BED-B1D" trigger="normal" shiftRegister="ShiftRegLEDs" registerOutputPin="Output 8|Output 9|Output 10|Output 11|Output 12|Output 13" />
@@ -71,7 +71,7 @@
       <active>true</active>
       <description>grSAS</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="1-$" />
@@ -85,7 +85,7 @@
       <active>true</active>
       <description>grHDG</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="1-$" />
@@ -99,7 +99,7 @@
       <active>true</active>
       <description>grNAV</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="1-$" />
@@ -113,7 +113,7 @@
       <active>true</active>
       <description>grBC</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="1-$" />
@@ -127,7 +127,7 @@
       <active>true</active>
       <description>grALT</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="1-$" />
@@ -141,7 +141,7 @@
       <active>true</active>
       <description>grVRT</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="1-$" />
@@ -155,7 +155,7 @@
       <active>true</active>
       <description>whSAS</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="1-$" />
@@ -169,7 +169,7 @@
       <active>true</active>
       <description>whHDG</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="1-$" />
@@ -183,7 +183,7 @@
       <active>true</active>
       <description>whNAV</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="1-$" />
@@ -197,7 +197,7 @@
       <active>true</active>
       <description>whBC</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="1-$" />
@@ -211,7 +211,7 @@
       <active>true</active>
       <description>whALT</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="1-$" />
@@ -225,7 +225,7 @@
       <active>true</active>
       <description>whVRT</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="1-$" />
