@@ -5,7 +5,7 @@
       <active>true</active>
       <description>backlightPWM</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="128" />
         <modifiers>
           <transformation active="True" expression="128" />
@@ -19,7 +19,7 @@
       <active>true</active>
       <description>greenPWN</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="255-$" />
@@ -33,7 +33,7 @@
       <active>true</active>
       <description>whitePWM</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <source type="SimConnect" VarType="LVAR" Value="" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="255-$" />
@@ -44,7 +44,7 @@
       </settings>
     </config>
     <config guid="1aed46ef-67fc-4fc6-b4de-d13c4e90498f">
-      <active>true</active>
+      <active>false</active>
       <description>greenLEDs</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="LVAR" Value="" />
@@ -56,7 +56,7 @@
       </settings>
     </config>
     <config guid="d0fe47f7-ae5f-4bfe-8657-d501f1145207">
-      <active>true</active>
+      <active>false</active>
       <description>whiteLEDs</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="LVAR" Value="" />
@@ -71,7 +71,7 @@
       <active>true</active>
       <description>grSAS</description>
       <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <source type="SimConnect" VarType="LVAR" Value="" />
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
         <test type="Float" value="0" />
         <modifiers>
           <transformation active="True" expression="1-$" />
