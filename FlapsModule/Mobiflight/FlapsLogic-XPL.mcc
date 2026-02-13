@@ -25,7 +25,7 @@
           <comparison active="True" value="0" operand="&gt;=" ifValue="1" elseValue="0" />
           <transformation active="True" expression="$*#" />
         </modifiers>
-        <display type="Output" serial="FlapsNano/ SN-162-6A9" trigger="normal" pin="F1" pinBrightness="255" />
+        <display type="Output" serial="FlapsNano/ SN-811-AA6" trigger="normal" pin="F1" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="0e1a7779-3239-4c47-8496-8d88f3271b1c" placeholder="#" testvalue="1" />
@@ -42,7 +42,7 @@
           <comparison active="True" value="0.17" operand="&gt;=" ifValue="1" elseValue="0" />
           <transformation active="True" expression="$*#" />
         </modifiers>
-        <display type="Output" serial="FlapsNano/ SN-6EE-882" trigger="normal" pin="F2" pinBrightness="255" />
+        <display type="Output" serial="FlapsNano/ SN-811-AA6" trigger="normal" pin="F2" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="0e1a7779-3239-4c47-8496-8d88f3271b1c" placeholder="#" testvalue="1" />
@@ -59,7 +59,7 @@
           <comparison active="True" value="0.33" operand="&gt;=" ifValue="1" elseValue="0" />
           <transformation active="True" expression="$*#" />
         </modifiers>
-        <display type="Output" serial="FlapsNano/ SN-6EE-882" trigger="normal" pin="F3" pinBrightness="255" />
+        <display type="Output" serial="FlapsNano/ SN-811-AA6" trigger="normal" pin="F3" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="0e1a7779-3239-4c47-8496-8d88f3271b1c" placeholder="#" testvalue="1" />
@@ -76,7 +76,7 @@
           <comparison active="True" value="0.5" operand="&gt;=" ifValue="1" elseValue="0" />
           <transformation active="True" expression="$*#" />
         </modifiers>
-        <display type="Output" serial="FlapsNano/ SN-6EE-882" trigger="normal" pin="F4" pinBrightness="255" />
+        <display type="Output" serial="FlapsNano/ SN-811-AA6" trigger="normal" pin="F4" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="0e1a7779-3239-4c47-8496-8d88f3271b1c" placeholder="#" testvalue="1" />
@@ -93,7 +93,7 @@
           <comparison active="True" value="0.66" operand="&gt;=" ifValue="1" elseValue="0" />
           <transformation active="True" expression="$*#" />
         </modifiers>
-        <display type="Output" serial="FlapsNano/ SN-6EE-882" trigger="normal" pin="F5" pinBrightness="255" />
+        <display type="Output" serial="FlapsNano/ SN-811-AA6" trigger="normal" pin="F5" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="0e1a7779-3239-4c47-8496-8d88f3271b1c" placeholder="#" testvalue="1" />
@@ -110,7 +110,7 @@
           <comparison active="True" value="0.83" operand="&gt;=" ifValue="1" elseValue="0" />
           <transformation active="True" expression="$*#" />
         </modifiers>
-        <display type="Output" serial="FlapsNano/ SN-6EE-882" trigger="normal" pin="F6" pinBrightness="255" />
+        <display type="Output" serial="FlapsNano/ SN-811-AA6" trigger="normal" pin="F6" pinBrightness="255" />
         <preconditions />
         <configrefs>
           <configref active="True" ref="0e1a7779-3239-4c47-8496-8d88f3271b1c" placeholder="#" testvalue="1" />
@@ -126,7 +126,7 @@
         <modifiers>
           <comparison active="True" value="1.0" operand="&gt;=" ifValue="1" elseValue="0" />
         </modifiers>
-        <display type="Output" serial="FlapsNano/ SN-6EE-882" trigger="normal" pin="F7" pinBrightness="255" />
+        <display type="Output" serial="FlapsNano/ SN-811-AA6" trigger="normal" pin="F7" pinBrightness="255" />
         <preconditions />
         <configrefs />
       </settings>
@@ -136,7 +136,7 @@
     <config guid="362afc54-5f35-4fe7-b3ae-0064d05e8deb">
       <active>true</active>
       <description>FlapsUp</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="FlapsNano/ SN-162-6A9" name="FlapsUp" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="FlapsNano/ SN-811-AA6" name="FlapsUp" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="sim/flight_controls/flaps_up" expression="" />
         </button>
@@ -147,7 +147,7 @@
     <config guid="1dd42811-1c19-4fcf-9efe-7ea7bd2fe8f6">
       <active>true</active>
       <description>FlapsDown</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="FlapsNano/ SN-162-6A9" name="FlapsDown" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="FlapsNano/ SN-811-AA6" name="FlapsDown" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="XplaneInputAction" inputType="Command" path="sim/flight_controls/flaps_down" expression="" />
         </button>
