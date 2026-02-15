@@ -26,12 +26,12 @@ OS: Windows
 # (Note that you need at least one name or one ID, described below.)
 # If more than one device is named, we're saying that *any* of those devices should be configured
 # using the *same* defaults and the same image maps.
-Name: PW Switchpanel
+Name: PW ComboPanel
 
 # Zero or more USB identifiers (vendor ID + product ID) that this .joy file describes.
 # (Note that you need at least one ID or Name, described above.)
 # If more than USB identifier is given, we'll use this .joy file to configure *any* of those devices.
-ID: VID:0x303aPID:0x831e
+ID: VID:0x303aPID:0x831c
 
 Assignments:
 --------------------------------------------------------------
@@ -72,33 +72,68 @@ Assignments:
 # Button <button number>: hidden
 # Button <button number>: <command path, like "sim/operation/quit">
 #	See X-Plane/Resources/plugins/Commands.txt for a complete list of commands
-Button 0: sim/electrical/generator_1_on
-Button 1: sim/electrical/battery_1_on
-Button 2: sim/fuel/fuel_pumps_on
-Button 3: sim/lights/beacon_lights_on
-Button 4: sim/lights/landing_lights_on
-Button 5: sim/lights/taxi_lights_on
-Button 6: sim/lights/nav_lights_on
-Button 7: sim/lights/strobe_lights_on
-Button 8: sim/ice/pitot_heat0_on
-Button 9: sim/systems/avionics_on
-Button 10: sim/electrical/cross_tie_on
-Button 11: sim/electrical/generator_1_off
-Button 12: sim/electrical/battery_1_off
-Button 13: sim/fuel/fuel_pumps_off
-Button 14: sim/lights/beacon_lights_off
-Button 15: sim/lights/landing_lights_off
-Button 16: sim/lights/taxi_lights_off
-Button 17: sim/lights/nav_lights_off
-Button 18: sim/lights/strobe_lights_off
-Button 19: sim/ice/pitot_heat0_off
-Button 20: sim/systems/avionics_off
-Button 21: sim/electrical/cross_tie_off
-Button 22: hidden
-Button 23: hidden
 
+Button 0: sim/engines/engage_starters
+Button 1: sim/magnetos/magnetos_left_on_1
+Button 2: sim/magnetos/magnetos_right_on_1
+Button 3: sim/electrical/generator_1_on
+Button 4: sim/electrical/battery_1_on
+Button 5: sim/fuel/fuel_pumps_on
+Button 6: sim/lights/nav_lights_on
+Button 7: sim/lights/beacon_lights_on
+Button 8: sim/lights/landing_lights_on
+Button 9: sim/ice/pitot_heat0_on
+Button 10: sim/systems/avionics_on
+Button 11: sim/electrical/cross_tie_on
+Button 12: hidden
+Button 13: sim/magnetos/magnetos_left_off_1
+Button 14: sim/magnetos/magnetos_right_off_1
+Button 15: sim/electrical/generator_1_off
+Button 16: sim/electrical/battery_1_off
+Button 17: sim/fuel/fuel_pumps_off
+Button 18: sim/lights/nav_lights_off
+Button 19: sim/lights/beacon_lights_off
+Button 20: sim/lights/landing_lights_off
+Button 21: sim/ice/pitot_heat0_off
+Button 22: sim/systems/avionics_off
+Button 23: sim/electrical/cross_tie_off
+Button 24: sim/magnetos/magnetos_off_1
+Button 25: sim/magnetos/magnetos_right_1
+Button 26: sim/magnetos/magnetos_left_1
+Button 27: sim/magnetos/magnetos_both_1
+Button 28: hidden
+Button 29: hidden
+Button 30: hidden
+Button 31: hidden
 
 # FORMAT FOR HAT SWITCHES:
 # Hat Switch <hat switch number>: hidden
 # Hat Switch <hat switch number> Direction <hat switch direction>: <command path, like "sim/operation/quit">
 #	See X-Plane/Resources/plugins/Commands.txt for a complete list of commands
+
+View: Front
+-----------------------------------------------------------------------
+Image: PW-ComboPanel.png
+
+Button Group (Start + Magnetos): 0 1 2
+Button 0 (START): 133 247
+Button 1 (LEFT): 228 211
+Button 2 (RIGHT): 276 204
+
+Button Group (ALT and BAT): 3 4
+Button 3 (ALT): 349 198
+Button 4 (BAT): 38 185
+
+Button Group (Pump + Lights + Pitot): 5 6 7 8 9
+Button 5 (Fuel Pump): 458 206
+Button 6 (NAV): 519 193
+Button 7 (BCN): 586 181
+Button 8 (LND): 650 175
+Button 9 (PITOT): 708 166
+
+Button Group (AVIONICS): 10 11
+Button 10 (AVIONICS 1): 773 129
+Button 11 (AVIONICS 2): 809 122
+
+Button Group (Reverse + Virtual buttons): 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27
+Button 13 (LEFT OFF): 274 253
