@@ -283,7 +283,7 @@
       <description>ALT</description>
       <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.5.3.0, Culture=neutral, PublicKeyToken=null" serial="G507ProMicro/ SN-56G-F17" name="MuxButtons" type="InputMultiplexer" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <inputMultiplexer DataPin="11">
-          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_ALT_HOLD)" presetId="a946ee03-bd6d-4ed4-b1c2-72d26df93848" />
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:AP_ALT_HOLD) &#xA;(&gt;L:AUX_V_AUTOPILOT_ALTITUDE_LOCK)&#xA;" presetId="a946ee03-bd6d-4ed4-b1c2-72d26df93848" />
         </inputMultiplexer>
         <preconditions />
         <configrefs />
