@@ -3,7 +3,7 @@
   "ConfigFiles": [
     {
       "Label": "FrequencyPanel-1-MSFS",
-      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\FrequencyPanel\\FrequencyPanel-1-MSFS.mcc",
+      "FileName": "FrequencyPanel-1-MSFS.mcc",
       "ReferenceOnly": false,
       "EmbedContent": true,
       "ConfigItems": [
