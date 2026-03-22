@@ -1,0 +1,386 @@
+{
+  "Name": "FrequencyPanel-1-XPlane",
+  "ConfigFiles": [
+    {
+      "Label": "FrequencyPanel-1-XPlane",
+      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\FrequencyPanel\\FrequencyPanel-1-XPlane.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/com1_frequency_hz_833"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COMACT",
+            "DisplayLedAddress": "COMACT",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "COMACT",
+          "GUID": "91eafc81-5417-463d-b731-d8c61737946f",
+          "Active": true,
+          "Name": "Com1Active",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWFreqNano",
+            "Serial": "SN-D80-2A1"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/com1_standby_frequency_hz_833"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COMSBY",
+            "DisplayLedAddress": "COMSBY",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "COMSBY",
+          "GUID": "996e17df-3616-478f-8ea0-f0bdb43b744e",
+          "Active": true,
+          "Name": "Com1Standby",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWFreqNano",
+            "Serial": "SN-D80-2A1"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/nav1_frequency_hz"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "NAVACT",
+            "DisplayLedAddress": "NAVACT",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "NAVACT",
+          "GUID": "194a07c4-5711-484e-8481-542507c8aca5",
+          "Active": true,
+          "Name": "Nav1Active",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWFreqNano",
+            "Serial": "SN-D80-2A1"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/nav1_standby_frequency_hz"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "NAVSBY",
+            "DisplayLedAddress": "NAVSBY",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "NAVSBY",
+          "GUID": "611f11b0-41fa-495d-ac79-afa246b981e1",
+          "Active": true,
+          "Name": "Nav1Standby",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWFreqNano",
+            "Serial": "SN-D80-2A1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/com1_standy_flip",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "COMFLIP"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "COMFLIP",
+          "GUID": "a9b4a0a4-a830-46ed-b8d8-b14c1883022a",
+          "Active": true,
+          "Name": "COM1-flip",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWFreqNano",
+            "Serial": "SN-D80-2A1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/nav1_standy_flip",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "NAVFLIP"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "NAVFLIP",
+          "GUID": "d9e3017c-da14-4cf4-bebb-c7e1404fa1be",
+          "Active": true,
+          "Name": "NAV1-flip",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWFreqNano",
+            "Serial": "SN-D80-2A1"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_com1_coarse_down_833",
+              "Expression": ""
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_com1_coarse_up_833",
+              "Expression": ""
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "COM-OUTER"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "COM-OUTER",
+          "GUID": "42d13e62-7ee6-4efd-b301-fc3525019abe",
+          "Active": true,
+          "Name": "COM1-MHz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWFreqNano",
+            "Serial": "SN-D80-2A1"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_com1_fine_down_833",
+              "Expression": ""
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_com1_fine_up_833",
+              "Expression": ""
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "COM-INNER"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "COM-INNER",
+          "GUID": "021eb82e-8e31-4dbd-8835-157afb994398",
+          "Active": true,
+          "Name": "COM1-KHz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWFreqNano",
+            "Serial": "SN-D80-2A1"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_nav1_coarse_down",
+              "Expression": ""
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_nav1_coarse_up",
+              "Expression": ""
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "NAV-OUTER"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "NAV-OUTER",
+          "GUID": "ae9998d3-112f-481e-aae7-84163a0cf216",
+          "Active": true,
+          "Name": "NAV1-MHz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWFreqNano",
+            "Serial": "SN-D80-2A1"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_nav1_fine_down",
+              "Expression": ""
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_nav1_fine_up",
+              "Expression": ""
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "NAV-INNER"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "NAV-INNER",
+          "GUID": "4ea2b53f-c23d-40ef-9a6e-506aa957ac67",
+          "Active": true,
+          "Name": "NAV1-KHz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWFreqNano",
+            "Serial": "SN-D80-2A1"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "xplane",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

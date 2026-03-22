@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Nano</ModuleType>
+  <ModuleName>PWFreqNano</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="COMACT" ModelType="254" DinPin="3" ClsPin="0" ClkPin="2" Brightness="2" NumModules="1" />
+  <LedModule Name="COMSBY" ModelType="254" DinPin="5" ClsPin="0" ClkPin="4" Brightness="2" NumModules="1" />
+  <LedModule Name="NAVACT" ModelType="254" DinPin="7" ClsPin="0" ClkPin="6" Brightness="2" NumModules="1" />
+  <LedModule Name="NAVSBY" ModelType="254" DinPin="9" ClsPin="0" ClkPin="8" Brightness="2" NumModules="1" />
+  <Encoder Name="COM-INNER" PinLeft="10" PinRight="11" EncoderType="2" />
+  <Encoder Name="COM-OUTER" PinLeft="12" PinRight="13" EncoderType="2" />
+  <Encoder Name="NAV-INNER" PinLeft="14" PinRight="15" EncoderType="2" />
+  <Encoder Name="NAV-OUTER" PinLeft="16" PinRight="17" EncoderType="2" />
+  <Button Name="COMFLIP" Pin="18" />
+  <Button Name="NAVFLIP" Pin="19" />
+</Config>
