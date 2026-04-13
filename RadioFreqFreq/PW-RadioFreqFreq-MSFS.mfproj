@@ -1,0 +1,1001 @@
+{
+  "Name": "PW-RadioFreqFreq",
+  "ConfigFiles": [
+    {
+      "Label": "New file",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledCOM1|ledCOM2|ledMIC1|ledMIC2|ledNAV1|ledNAV2|ledDME|ledADF|ledOM|ledMM|ledIM",
+            "Pin": "ledCOM1|ledCOM2|ledMIC1|ledMIC2|ledNAV1|ledNAV2|ledDME|ledADF|ledOM|ledMM|ledIM",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledCOM1|ledCOM2|ledMIC1|ledMIC2|ledNAV1|ledNAV2|ledDME|ledADF|ledOM|ledMM|ledIM",
+          "GUID": "1fbe49a8-63e4-4591-a935-239c27c0ae98",
+          "Active": false,
+          "Name": "allRadioLEDs",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledCOM1",
+            "Pin": "ledCOM1",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledCOM1",
+          "GUID": "f9aa32d3-f4a6-4985-b8ff-b17e154e02e9",
+          "Active": true,
+          "Name": "ledCOM1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledCOM2",
+            "Pin": "ledCOM2",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledCOM2",
+          "GUID": "d4ed9144-2732-494f-9d0b-035c36e5fafa",
+          "Active": true,
+          "Name": "ledCOM2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledMIC1",
+            "Pin": "ledMIC1",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledMIC1",
+          "GUID": "b065eead-1d44-46d8-bb7c-22ac7bfe8fcc",
+          "Active": true,
+          "Name": "ledMIC1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledMIC2",
+            "Pin": "ledMIC2",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledMIC2",
+          "GUID": "67e2d9f9-5267-4b94-b7fa-d78f1e37d4ce",
+          "Active": true,
+          "Name": "ledMIC2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledNAV1",
+            "Pin": "ledNAV1",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledNAV1",
+          "GUID": "baa2f60f-ce18-4347-a494-3d1b2a89fdc1",
+          "Active": true,
+          "Name": "ledNAV1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledNAV2",
+            "Pin": "ledNAV2",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledNAV2",
+          "GUID": "2e24dd4c-61a5-48cb-9dca-08baad721a6d",
+          "Active": true,
+          "Name": "ledNAV2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledDME",
+            "Pin": "ledDME",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledDME",
+          "GUID": "019bd0a2-0203-4c5c-82d8-0418620aa717",
+          "Active": true,
+          "Name": "ledDME",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledADF",
+            "Pin": "ledADF",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledADF",
+          "GUID": "4bb2a7f5-07b6-4367-aa80-22bedab6c637",
+          "Active": true,
+          "Name": "ledADF",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledOM",
+            "Pin": "ledOM",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledOM",
+          "GUID": "8c84c5fb-b9f0-4c19-8531-b234d9d26326",
+          "Active": true,
+          "Name": "ledOM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledMM",
+            "Pin": "ledMM",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledMM",
+          "GUID": "23c11a50-a418-42a7-9d44-b3df402df6a1",
+          "Active": true,
+          "Name": "ledMM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledIM",
+            "Pin": "ledIM",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledIM",
+          "GUID": "3d61e755-3449-4adc-9bd2-41a9e6446f3e",
+          "Active": true,
+          "Name": "ledIM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnCOM1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnCOM1",
+          "GUID": "2b3b4ae9-6756-41e5-a963-8b759658fbee",
+          "Active": true,
+          "Name": "btnCOM1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnCOM2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnCOM2",
+          "GUID": "b4bb0f34-54c7-4b42-a194-2a63ab744ee4",
+          "Active": true,
+          "Name": "btnCOM2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnMIC1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnMIC1",
+          "GUID": "696a2b34-cd0b-43ba-b707-6374fa52f082",
+          "Active": true,
+          "Name": "btnMIC1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnMIC2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnMIC2",
+          "GUID": "beb86c5f-2c7a-46cd-a56b-a9073fd6054f",
+          "Active": true,
+          "Name": "btnMIC2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnNAV1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnNAV1",
+          "GUID": "637ea081-5ade-4443-a276-c47c95e63df4",
+          "Active": true,
+          "Name": "btnNAV1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnNAV2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnNAV2",
+          "GUID": "66cc39d7-2823-4b33-9edc-0388eb0794fa",
+          "Active": true,
+          "Name": "btnNAV2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnDME"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnDME",
+          "GUID": "2d76e42a-7d17-44d3-9b41-04328bbc4fd2",
+          "Active": true,
+          "Name": "btnDME",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnADF"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnADF",
+          "GUID": "8328a25b-fe19-4185-9efb-dc4d699c8892",
+          "Active": true,
+          "Name": "btnADF",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "button": {
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnMKR"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnMKR",
+          "GUID": "a23945cb-4f75-45db-8000-14ac24fe6c78",
+          "Active": true,
+          "Name": "btnMKR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 888888.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COM1active",
+            "DisplayLedAddress": "COM1active",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "COM1active",
+          "GUID": "111b128a-fe59-48cc-a552-d1bfd66cf632",
+          "Active": true,
+          "Name": "Com1Act",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 88888.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "NAV1active",
+            "DisplayLedAddress": "NAV1active",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "NAV1active",
+          "GUID": "c69f25f8-fbdb-4a47-8bed-dfc6eb1472d9",
+          "Active": true,
+          "Name": "Nav1Act",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 888888.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COM1sby",
+            "DisplayLedAddress": "COM1sby",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "COM1sby",
+          "GUID": "ca30a46a-26b2-473f-b7fa-92a49afcec02",
+          "Active": true,
+          "Name": "Com1Sby",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 88888.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "NAV1sby",
+            "DisplayLedAddress": "NAV1sby",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "NAV1sby",
+          "GUID": "4c6f57ec-05af-4452-9fa0-e3d1921ff94a",
+          "Active": true,
+          "Name": "Nav1Sby",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 888888.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COM2",
+            "DisplayLedAddress": "COM2",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "COM2",
+          "GUID": "41274db8-9204-4086-b82f-ce8e46902eb9",
+          "Active": true,
+          "Name": "Com2Act",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 88888.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "NAV2",
+            "DisplayLedAddress": "NAV2",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "NAV2",
+          "GUID": "9f361ccc-850a-407a-b055-b0aec78ee6ac",
+          "Active": true,
+          "Name": "Nav2Act",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 888888.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COM2",
+            "DisplayLedAddress": "COM2",
+            "DisplayLedConnector": 2,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "COM2",
+          "GUID": "acbdeb33-3103-48ec-9508-bb5d1952fc3d",
+          "Active": true,
+          "Name": "Com2Sby",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 88888.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "NAV2",
+            "DisplayLedAddress": "NAV2",
+            "DisplayLedConnector": 2,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "NAV2",
+          "GUID": "ed604536-8213-465f-bba6-f69da603a463",
+          "Active": true,
+          "Name": "Nav2Sby",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWProMini-RFF",
+            "Serial": "SN-63C-8CC"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

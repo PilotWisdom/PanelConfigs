@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Nano</ModuleType>
+  <ModuleName>PWNano-RFF</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="Com2sby" ModelType="254" DinPin="3" ClsPin="0" ClkPin="2" Brightness="2" NumModules="1" />
+  <LedModule Name="Nav2sby" ModelType="254" DinPin="5" ClsPin="0" ClkPin="4" Brightness="2" NumModules="1" />
+</Config>
