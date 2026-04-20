@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Micro</ModuleType>
+  <ModuleName>G507ProMicrov2</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <InputMultiplexer Name="MuxButtons" DataPin="4" NumBytes="2">
+    <Selector Name="MultiplexerDriver" PinSx="1 0 2 3" />
+  </InputMultiplexer>
+  <ShiftRegister Name="ShiftReg-LEDs" LatchPin="19" ClockPin="20" DataPin="21" NumModules="2" />
+  <Encoder Name="HDG-enc" PinLeft="7" PinRight="8" EncoderType="1" />
+  <Encoder Name="Wheel-enc" PinLeft="14" PinRight="15" EncoderType="1" />
+  <Encoder Name="ALT-enc" PinLeft="16" PinRight="18" EncoderType="1" />
+</Config>
