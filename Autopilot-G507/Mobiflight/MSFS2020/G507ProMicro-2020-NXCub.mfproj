@@ -1,9 +1,9 @@
 {
-  "Name": "G507ProMicro-MSFS",
+  "Name": "G507ProMicro-2020-NXCub",
   "ConfigFiles": [
     {
-      "Label": "G507ProMicro-MSFS",
-      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Autopilot-G507\\Mobiflight\\G507ProMicro-MSFS.mcc",
+      "Label": "G507ProMicro-2020-NXCub",
+      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Autopilot-G507\\Mobiflight\\MSFS2020\\G507ProMicro-2020-NXCub.mcc",
       "ReferenceOnly": false,
       "EmbedContent": true,
       "ConfigItems": [

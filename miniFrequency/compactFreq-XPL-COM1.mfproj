@@ -1,0 +1,678 @@
+{
+  "Name": "compactFreq-XPL-COM1",
+  "ConfigFiles": [
+    {
+      "Label": "COM1",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/com1_standy_flip",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnFlip"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnFlip",
+          "GUID": "4c7d7461-2106-4f63-aee6-26767dda0b26",
+          "Active": true,
+          "Name": "buttonFlipCom1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "isNav",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/nav1_standy_flip",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnFlip"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnFlip",
+          "GUID": "b91c29d1-c3a7-41cf-9821-7018db903082",
+          "Active": true,
+          "Name": "buttonFlipNav1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "isNav",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/com1_frequency_hz_833"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "7segs",
+            "DisplayLedAddress": "7segs",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "7segs",
+          "GUID": "c28c5824-c604-4743-899a-679b1e4044e5",
+          "Active": true,
+          "Name": "freqCom1A",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "isNav",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/com1_standby_frequency_hz_833"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "7segs",
+            "DisplayLedAddress": "7segs",
+            "DisplayLedConnector": 2,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "7segs",
+          "GUID": "30390a89-80a3-40e0-b740-ccbe3ffcd3a6",
+          "Active": true,
+          "Name": "freqCom1S",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "isNav",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/nav1_frequency_hz"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "7segs",
+            "DisplayLedAddress": "7segs",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "7segs",
+          "GUID": "d8db3bc2-9ec2-4c4b-b79d-5f9042fd87af",
+          "Active": true,
+          "Name": "freqNav1A",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "isNav",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/nav1_standby_frequency_hz"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "7segs",
+            "DisplayLedAddress": "7segs",
+            "DisplayLedConnector": 2,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "7segs",
+          "GUID": "a1547628-3e47-48ba-a887-984d4712d35b",
+          "Active": true,
+          "Name": "freqNav1S",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "isNav",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "VariableInputAction",
+              "Variable": {
+                "TYPE": "number",
+                "Name": "isNav",
+                "Number": 1.0,
+                "Text": "1",
+                "Expression": "1-$"
+              }
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnSel"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnSel",
+          "GUID": "a27b0c6b-82e7-4f78-a07f-9d71b0432a41",
+          "Active": true,
+          "Name": "buttonChangeMode",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": ""
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 255.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledBG",
+            "Pin": "ledBG",
+            "Brightness": 255,
+            "PwmMode": true,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledBG",
+          "GUID": "195c85dd-90a8-4df2-aac3-a9bd4061a2dc",
+          "Active": true,
+          "Name": "backlightPWM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "32",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "isNav",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 0.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledCOM",
+            "Pin": "ledCOM",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledCOM",
+          "GUID": "02fbefab-c213-45e0-aea7-ff7371a99edb",
+          "Active": true,
+          "Name": "ledCOM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "1-$",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "isNav",
+              "Number": 0.0,
+              "Text": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledNAV",
+            "Pin": "ledNAV",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledNAV",
+          "GUID": "cb6dfcff-d4bc-49ee-8ea1-eae8f3b9f425",
+          "Active": true,
+          "Name": "ledNAV",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_com1_coarse_down_833",
+              "Expression": ""
+            },
+            "onLeftFast": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_com1_coarse_down",
+              "Expression": ""
+            },
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_com1_coarse_up_833",
+              "Expression": ""
+            },
+            "onRightFast": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_com1_coarse_up",
+              "Expression": ""
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encOuter"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "encOuter",
+          "GUID": "4847d515-b7c5-40d9-af94-6f2a88d2ea7c",
+          "Active": true,
+          "Name": "Com1Mhz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "isNav",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_com1_fine_down_833",
+              "Expression": ""
+            },
+            "onLeftFast": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_com1_fine_down",
+              "Expression": ""
+            },
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_com1_fine_up_833",
+              "Expression": ""
+            },
+            "onRightFast": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_com1_fine_up",
+              "Expression": ""
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encInner"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "encInner",
+          "GUID": "c66ca016-8a28-4d4f-8680-970cd3a0909e",
+          "Active": true,
+          "Name": "Com1Khz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "isNav",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "0",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_nav1_coarse_down",
+              "Expression": ""
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_nav1_coarse_up",
+              "Expression": ""
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encOuter"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "encOuter",
+          "GUID": "562188cb-b433-4517-9106-fd850cc30984",
+          "Active": true,
+          "Name": "Nav1Mhz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "isNav",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_nav1_fine_down",
+              "Expression": ""
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/radios/stby_nav1_fine_up",
+              "Expression": ""
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encInner"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "encInner",
+          "GUID": "3351086d-3cff-457c-aa37-be6f8301be19",
+          "Active": true,
+          "Name": "Nav1Khz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "Preconditions": [
+            {
+              "Type": "variable",
+              "Ref": "isNav",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Sim": "xplane",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

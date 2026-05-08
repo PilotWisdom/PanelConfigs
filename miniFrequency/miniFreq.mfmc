@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Micro</ModuleType>
+  <ModuleName>miniFreq</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="7segs" ModelType="0" DinPin="2" ClsPin="3" ClkPin="4" Brightness="2" NumModules="2" />
+  <Button Name="btnFlip" Pin="8" />
+  <Button Name="btnSel" Pin="7" />
+  <Encoder Name="encInner" PinLeft="14" PinRight="15" EncoderType="2" />
+  <Encoder Name="encOuter" PinLeft="16" PinRight="18" EncoderType="2" />
+  <Output Name="ledCOM" Pin="5" />
+  <Output Name="ledNAV" Pin="6" />
+  <Output Name="ledBG" Pin="9" />
+</Config>

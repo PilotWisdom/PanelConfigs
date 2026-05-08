@@ -1,9 +1,9 @@
 {
-  "Name": "G507ProMicro-MSFS",
+  "Name": "G507ProMicro-MSFS-CarenadoPC12",
   "ConfigFiles": [
     {
-      "Label": "G507ProMicro-MSFS",
-      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Autopilot-G507\\Mobiflight\\G507ProMicro-MSFS.mcc",
+      "Label": "G507ProMicro-MSFS-CarenadoPC12",
+      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Autopilot-G507\\Mobiflight\\G507ProMicro-MSFS-CarenadoPC12.mcc",
       "ReferenceOnly": false,
       "EmbedContent": true,
       "ConfigItems": [
@@ -768,7 +768,7 @@
             "DataPin": 11,
             "onPress": {
               "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:AP_ALT_HOLD)",
+              "Command": "(>K:AP_ALT_HOLD) \n(>L:AUX_V_AUTOPILOT_ALTITUDE_LOCK)\n",
               "PresetId": "a946ee03-bd6d-4ed4-b1c2-72d26df93848"
             },
             "onRelease": null,

@@ -1,0 +1,355 @@
+{
+  "Name": "compactFreq-MSFS-6pack-COM1",
+  "ConfigFiles": [
+    {
+      "Label": "COM1",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "37a19dbf-bfc5-4193-ac3e-591772069e42",
+              "Value": "(L:RADIO_Mode) 0 == if{\n    (A:COM ACTIVE FREQUENCY:1, KHz)\n} els{\n    (A:NAV ACTIVE FREQUENCY:1, KHz) 10 / flr\n}\n",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "7segs",
+            "DisplayLedAddress": "7segs",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "7segs",
+          "GUID": "9405d7d4-7be1-4a01-b4cd-9e60d6d55f83",
+          "Active": true,
+          "Name": "displayActive",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "RawValue": "11015",
+          "Value": "11015"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "73a2f48d-d613-4b7b-b30d-8065bc150f98",
+              "Value": "(L:RADIO_Mode) 0 == if{\n    (A:COM STANDBY FREQUENCY:1, KHz)\n} els{\n    (A:NAV STANDBY FREQUENCY:1, KHz) 10 / flr\n}\n",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "7segs",
+            "DisplayLedAddress": "7segs",
+            "DisplayLedConnector": 2,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "7segs",
+          "GUID": "d14e7e16-90d6-46f5-96b7-486198984b81",
+          "Active": true,
+          "Name": "displayStandby",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "RawValue": "11675",
+          "Value": "11675"
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:RADIO_Mode) ! (>L:RADIO_Mode)\n",
+              "PresetId": "0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnSel"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnSel",
+          "GUID": "1f5d3a7f-ce36-49c8-8067-d1da6ed020fa",
+          "Active": true,
+          "Name": "btnModeSelect",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:RADIO_Mode) 0 == if{\n    1 (>K:COM1_RADIO_SWAP)\n} els{\n    1 (>K:NAV1_RADIO_SWAP)\n}\n",
+              "PresetId": "0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnFlip"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnFlip",
+          "GUID": "07656671-c2d7-422c-931e-4b91e6c62092",
+          "Active": true,
+          "Name": "btnSwap",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:RADIO_Mode) 0 == if{\n    1 (>K:COM_RADIO_WHOLE_DEC)\n} els{\n    1 (>K:NAV1_RADIO_WHOLE_DEC)\n}\n\n",
+              "PresetId": "0"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:RADIO_Mode) 0 == if{\n    1 (>K:COM_RADIO_WHOLE_INC)\n} els{\n    1 (>K:NAV1_RADIO_WHOLE_INC)\n}\n",
+              "PresetId": "0"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encOuter"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "encOuter",
+          "GUID": "82ef011e-37b9-415f-aad2-126e7bc338bb",
+          "Active": true,
+          "Name": "encoderOuter",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "RawValue": "RIGHT",
+          "Value": " "
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:RADIO_Mode) 0 == if{\n    1 (>K:COM_RADIO_FRACT_DEC)\n} els{\n    1 (>K:NAV1_RADIO_FRACT_DEC)\n}\n",
+              "PresetId": "c9e9d87f-1f76-4bc2-9d21-035f916d2a17"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:RADIO_Mode) 0 == if{\n    1 (>K:COM_RADIO_FRACT_INC)\n} els{\n    1 (>K:NAV1_RADIO_FRACT_INC)\n}\n",
+              "PresetId": "c23d9d2e-493e-4ad7-9bc2-c5ac82015fec"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encInner"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "encInner",
+          "GUID": "1099a2e8-8cd0-4b53-8804-88e85d33d406",
+          "Active": true,
+          "Name": "encoderInner",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "RawValue": "LEFT",
+          "Value": " "
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(L:RADIO_Mode) 0 ==",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledCOM",
+            "Pin": "ledCOM",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledCOM",
+          "GUID": "64b4a611-b1ad-4a2d-b81e-5ce6f562aa72",
+          "Active": true,
+          "Name": "ledCOM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(L:RADIO_Mode) 1 ==",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledNAV",
+            "Pin": "ledNAV",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledNAV",
+          "GUID": "d11ed3a1-3a76-4d46-a1db-4027e3ff530d",
+          "Active": true,
+          "Name": "ledNAV",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledBG",
+            "Pin": "ledBG",
+            "Brightness": 255,
+            "PwmMode": true,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledBG",
+          "GUID": "91cb8c76-9628-498f-b59c-cd38f301d457",
+          "Active": true,
+          "Name": "backlightPWM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "miniFreq",
+            "Serial": "SN-74D-8B8"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "128",
+                "Active": true
+              }
+            ]
+          },
+          "RawValue": "0",
+          "Value": "128"
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}
