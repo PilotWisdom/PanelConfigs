@@ -1,0 +1,626 @@
+{
+  "Name": "PW-Transponder-MSFS-JustFligh",
+  "ConfigFiles": [
+    {
+      "Label": "PW-Transponder-MSFS-JustFligh",
+      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Transponder\\PW-Transponder-MSFS-JustFligh.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "db3bd1a4-4c3c-4e3e-a9aa-3480bf0f4a70",
+              "Value": "(A:TRANSPONDER CODE:1,number)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1200.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "segCode",
+            "DisplayLedAddress": "segCode",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 4,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "segCode",
+          "GUID": "4ff6766a-a31d-4cd6-8732-a3634e309c72",
+          "Active": true,
+          "Name": "Transponder-Code",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(L:KT76_mode_knob)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1234.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "e50a72b9-13cc-4a69-9dbe-9e8cf79af4c5",
+          "Active": true,
+          "Name": "Transponder-Mode",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "0",
+                "IfValue": "OFF ",
+                "ElseValue": "$",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "1",
+                "IfValue": "Sb  ",
+                "ElseValue": "$",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "On  ",
+                "ElseValue": "$",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "3",
+                "IfValue": "Al  ",
+                "ElseValue": "$",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "4",
+                "IfValue": "tst-",
+                "ElseValue": "$",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(L:KT76_ident_light)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 2,
+            "Float64": 0.0,
+            "String": "-Id-"
+          },
+          "Device": {
+            "Name": "segMode",
+            "DisplayLedAddress": "segMode",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 4,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "segMode",
+          "GUID": "1aa85ab6-68ca-48cf-92ad-056851863a6c",
+          "Active": true,
+          "Name": "IDENT_ON",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "1",
+                "IfValue": "-Id-",
+                "ElseValue": "#",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "e50a72b9-13cc-4a69-9dbe-9e8cf79af4c5",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 0,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 5 >\nif{\n  1 (>L:TrPos, Number)\n}\n\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n(L:TrPos, Number) 0 == if{\n  1 (>L:TrPos, Number)\n}\n\n0 (>L:DigitPressed, Number)\n\n(L:TrPos, Number) s0\n\nl0 1 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig1_counter)\n  2 (>L:TrPos, Number)\n}\n\nl0 2 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig2_counter)\n  3 (>L:TrPos, Number)\n}\n\nl0 3 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig3_counter)\n  4 (>L:TrPos, Number)\n}\n\nl0 4 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig4_counter)\n  1 (>L:TrPos, Number)\n}",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 0,
+            "Type": "InputMultiplexer",
+            "Name": "MUXNUM"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MUXNUM",
+          "GUID": "64d5e82f-6292-4a7f-8eb3-3aebdddb0158",
+          "Active": true,
+          "Name": "0",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 1,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 5 >\nif{\n  1 (>L:TrPos, Number)\n}\n\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n(L:TrPos, Number) 0 == if{\n  1 (>L:TrPos, Number)\n}\n\n1 (>L:DigitPressed, Number)\n\n(L:TrPos, Number) s0\n\nl0 1 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig1_counter)\n  2 (>L:TrPos, Number)\n}\n\nl0 2 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig2_counter)\n  3 (>L:TrPos, Number)\n}\n\nl0 3 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig3_counter)\n  4 (>L:TrPos, Number)\n}\n\nl0 4 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig4_counter)\n  1 (>L:TrPos, Number)\n}\n",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 1,
+            "Type": "InputMultiplexer",
+            "Name": "MUXNUM"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MUXNUM",
+          "GUID": "ede44c46-cfd6-4f38-8660-0bf3a4b430bb",
+          "Active": true,
+          "Name": "1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 2,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 5 >\nif{\n  1 (>L:TrPos, Number)\n}\n\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n(L:TrPos, Number) 0 == if{\n  1 (>L:TrPos, Number)\n}\n\n2 (>L:DigitPressed, Number)\n\n(L:TrPos, Number) s0\n\nl0 1 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig1_counter)\n  2 (>L:TrPos, Number)\n}\n\nl0 2 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig2_counter)\n  3 (>L:TrPos, Number)\n}\n\nl0 3 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig3_counter)\n  4 (>L:TrPos, Number)\n}\n\nl0 4 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig4_counter)\n  1 (>L:TrPos, Number)\n}\n",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 2,
+            "Type": "InputMultiplexer",
+            "Name": "MUXNUM"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MUXNUM",
+          "GUID": "b54e8ac2-bb20-4463-b3cb-56b5e93dcebf",
+          "Active": true,
+          "Name": "2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 3,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 5 >\nif{\n  1 (>L:TrPos, Number)\n}\n\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n(L:TrPos, Number) 0 == if{\n  1 (>L:TrPos, Number)\n}\n\n3 (>L:DigitPressed, Number)\n\n(L:TrPos, Number) s0\n\nl0 1 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig1_counter)\n  2 (>L:TrPos, Number)\n}\n\nl0 2 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig2_counter)\n  3 (>L:TrPos, Number)\n}\n\nl0 3 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig3_counter)\n  4 (>L:TrPos, Number)\n}\n\nl0 4 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig4_counter)\n  1 (>L:TrPos, Number)\n}\n",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 3,
+            "Type": "InputMultiplexer",
+            "Name": "MUXNUM"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MUXNUM",
+          "GUID": "f451e81e-8a3a-42c4-8efb-0bf02e638069",
+          "Active": true,
+          "Name": "3",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 4,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 5 >\nif{\n  1 (>L:TrPos, Number)\n}\n\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n(L:TrPos, Number) 0 == if{\n  1 (>L:TrPos, Number)\n}\n\n4 (>L:DigitPressed, Number)\n\n(L:TrPos, Number) s0\n\nl0 1 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig1_counter)\n  2 (>L:TrPos, Number)\n}\n\nl0 2 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig2_counter)\n  3 (>L:TrPos, Number)\n}\n\nl0 3 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig3_counter)\n  4 (>L:TrPos, Number)\n}\n\nl0 4 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig4_counter)\n  1 (>L:TrPos, Number)\n}",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 4,
+            "Type": "InputMultiplexer",
+            "Name": "MUXNUM"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MUXNUM",
+          "GUID": "1f5bfac8-149e-499a-b338-997e4a423ee7",
+          "Active": true,
+          "Name": "4",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 5,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 5 >\nif{\n  1 (>L:TrPos, Number)\n}\n\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n(L:TrPos, Number) 0 == if{\n  1 (>L:TrPos, Number)\n}\n\n5 (>L:DigitPressed, Number)\n\n(L:TrPos, Number) s0\n\nl0 1 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig1_counter)\n  2 (>L:TrPos, Number)\n}\n\nl0 2 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig2_counter)\n  3 (>L:TrPos, Number)\n}\n\nl0 3 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig3_counter)\n  4 (>L:TrPos, Number)\n}\n\nl0 4 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig4_counter)\n  1 (>L:TrPos, Number)\n}",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 5,
+            "Type": "InputMultiplexer",
+            "Name": "MUXNUM"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MUXNUM",
+          "GUID": "4034350f-a4e7-4556-8f5d-39c16a45f8c6",
+          "Active": true,
+          "Name": "5",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 6,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 5 >\nif{\n  1 (>L:TrPos, Number)\n}\n\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n(L:TrPos, Number) 0 == if{\n  1 (>L:TrPos, Number)\n}\n\n6 (>L:DigitPressed, Number)\n\n(L:TrPos, Number) s0\n\nl0 1 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig1_counter)\n  2 (>L:TrPos, Number)\n}\n\nl0 2 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig2_counter)\n  3 (>L:TrPos, Number)\n}\n\nl0 3 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig3_counter)\n  4 (>L:TrPos, Number)\n}\n\nl0 4 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig4_counter)\n  1 (>L:TrPos, Number)\n}",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 6,
+            "Type": "InputMultiplexer",
+            "Name": "MUXNUM"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MUXNUM",
+          "GUID": "61a8050d-898a-49e5-902c-41bd0e171d58",
+          "Active": true,
+          "Name": "6",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 7,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 5 >\nif{\n  1 (>L:TrPos, Number)\n}\n\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n(L:TrPos, Number) 0 == if{\n  1 (>L:TrPos, Number)\n}\n\n7 (>L:DigitPressed, Number)\n\n(L:TrPos, Number) s0\n\nl0 1 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig1_counter)\n  2 (>L:TrPos, Number)\n}\n\nl0 2 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig2_counter)\n  3 (>L:TrPos, Number)\n}\n\nl0 3 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig3_counter)\n  4 (>L:TrPos, Number)\n}\n\nl0 4 == if{\n  (L:DigitPressed, Number) (>L:KT76_dig4_counter)\n  1 (>L:TrPos, Number)\n}",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 7,
+            "Type": "InputMultiplexer",
+            "Name": "MUXNUM"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MUXNUM",
+          "GUID": "1d5e0948-c31b-43c6-a1cc-e372a11501f8",
+          "Active": true,
+          "Name": "7",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 0,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>L:KT76_mode_knob)",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 0,
+            "Type": "InputMultiplexer",
+            "Name": "MUXMODE"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MUXMODE",
+          "GUID": "423d0a23-e95d-41e6-94f6-c8cde2a092c4",
+          "Active": true,
+          "Name": "Off",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 1,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>L:KT76_mode_knob)",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 1,
+            "Type": "InputMultiplexer",
+            "Name": "MUXMODE"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MUXMODE",
+          "GUID": "c213de13-50c5-4f14-807e-ed22cc9d802d",
+          "Active": true,
+          "Name": "Standby",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 2,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "2 (>L:KT76_mode_knob)",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 2,
+            "Type": "InputMultiplexer",
+            "Name": "MUXMODE"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MUXMODE",
+          "GUID": "cf104142-3b21-4953-a09c-d3f400d91da8",
+          "Active": true,
+          "Name": "On",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 3,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "3 (>L:KT76_mode_knob)",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 3,
+            "Type": "InputMultiplexer",
+            "Name": "MUXMODE"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MUXMODE",
+          "GUID": "cea2757f-d5c9-4ef7-9b96-4e6c516f6ed7",
+          "Active": true,
+          "Name": "Alt",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 4,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>L:KT76_dig1_counter)\n2 (>L:KT76_dig2_counter)\n0 (>L:KT76_dig3_counter)\n0 (>L:KT76_dig4_counter)",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 4,
+            "Type": "InputMultiplexer",
+            "Name": "MUXMODE"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MUXMODE",
+          "GUID": "c5a3e17f-07e1-4cec-b675-302cf7a7017d",
+          "Active": true,
+          "Name": "VFR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 5,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 (>L:KT76_ident_button_IsDown)\n1 (>L:KT76_ident_button)\n1 (>L:KT76_ident_light)",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 5,
+            "Type": "InputMultiplexer",
+            "Name": "MUXMODE"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MUXMODE",
+          "GUID": "4164f749-4153-44e6-b77d-88b691ea7a40",
+          "Active": true,
+          "Name": "Ident",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-G3F-392"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}
