@@ -1,5 +1,5 @@
 {
-  "Name": "PW-Transponder-MSFS",
+  "Name": "PW-Transponder.v2-MSFS-Dacota",
   "ConfigFiles": [
     {
       "Label": "PW-Transponder-MSFS",
@@ -73,57 +73,13 @@
           "Controller": {
             "Name": "PW-Transp-v2",
             "Serial": "SN-7B2-A58"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "0",
-                "IfValue": "OFF ",
-                "ElseValue": "$",
-                "Active": true
-              },
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "1",
-                "IfValue": "Sb  ",
-                "ElseValue": "$",
-                "Active": true
-              },
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "2",
-                "IfValue": "tst-",
-                "ElseValue": "$",
-                "Active": true
-              },
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "3",
-                "IfValue": "On  ",
-                "ElseValue": "$",
-                "Active": true
-              },
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "4",
-                "IfValue": "Al  ",
-                "ElseValue": "$",
-                "Active": true
-              }
-            ]
           }
         },
         {
           "Source": {
             "SimConnectValue": {
-              "UUID": "088d5236-57c1-4b4b-9edc-e608e8819821",
-              "Value": "(L:Aircraft.Transponder.Flash)",
+              "UUID": "a6c94337-3700-4762-b288-1dbc0dba26da",
+              "Value": "(A:TRANSPONDER IDENT:1, Bool)",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -164,11 +120,48 @@
           "Modifiers": {
             "Items": [
               {
+                "Type": "Transformation",
+                "Expression": "if($=1,'-Id-',#)",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "0",
+                "IfValue": "Off",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
                 "Type": "Comparison",
                 "Operand": "=",
                 "Value": "1",
-                "IfValue": "-Id-",
-                "ElseValue": "#",
+                "IfValue": "Sb",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "tst-",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "3",
+                "IfValue": "On",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "4",
+                "IfValue": "Al",
+                "ElseValue": "",
                 "Active": true
               }
             ]
@@ -181,6 +174,31 @@
               "TestValue": "1"
             }
           ]
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "a6c94337-3700-4762-b288-1dbc0dba26da",
+              "Value": "(A:TRANSPONDER IDENT:1, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "c618c897-5e53-4327-9e7b-e2469f9de3d0",
+          "Active": true,
+          "Name": "IDENT-is-ON",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-7B2-A58"
+          }
         },
         {
           "inputMultiplexer": {
@@ -435,7 +453,7 @@
             "DataPin": 0,
             "onPress": {
               "Type": "MSFS2020CustomInputAction",
-              "Command": "0 (>A:TRANSPONDER STATE:1, Enum)",
+              "Command": "0 (>L:XMLVAR_TRANSPONDER_KNOB_1)\n(>H:TransponderOFF)\n",
               "PresetId": "6902c298-52d6-41b2-9ed5-14c6f7aafe66"
             },
             "onRelease": null,
@@ -466,7 +484,7 @@
             "DataPin": 1,
             "onPress": {
               "Type": "MSFS2020CustomInputAction",
-              "Command": "1 (>A:TRANSPONDER STATE:1, Enum)",
+              "Command": "1 (>L:XMLVAR_TRANSPONDER_KNOB_1)\n(>H:TransponderSTBY)\n",
               "PresetId": "6bb83f0e-6466-4cc1-9f3d-26c205a340a5"
             },
             "onRelease": null,
@@ -497,7 +515,7 @@
             "DataPin": 2,
             "onPress": {
               "Type": "MSFS2020CustomInputAction",
-              "Command": "3 (>A:TRANSPONDER STATE:1, Enum)",
+              "Command": "3 (>L:XMLVAR_TRANSPONDER_KNOB_1)\n(>H:TransponderON)",
               "PresetId": "f93b81d9-73f3-4734-a9b6-08f9684f179b"
             },
             "onRelease": null,
@@ -528,7 +546,7 @@
             "DataPin": 3,
             "onPress": {
               "Type": "MSFS2020CustomInputAction",
-              "Command": "4 (>A:TRANSPONDER STATE:1, Enum)",
+              "Command": "4 (>L:XMLVAR_TRANSPONDER_KNOB_1)\n(>H:TransponderALT)\n",
               "PresetId": "22f6b23a-79cd-4761-b066-b2bc1a309df6"
             },
             "onRelease": null,
