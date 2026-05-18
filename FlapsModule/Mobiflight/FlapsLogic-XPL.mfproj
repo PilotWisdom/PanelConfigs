@@ -1,0 +1,484 @@
+{
+  "Name": "FlapsLogic-XPL",
+  "ConfigFiles": [
+    {
+      "Label": "FlapsLogic-XPL",
+      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\FlapsModule\\Mobiflight\\FlapsLogic-XPL.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/electrical/bus_volts[1]"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "0e1a7779-3239-4c47-8496-8d88f3271b1c",
+          "Active": true,
+          "Name": "MasterBattery",
+          "Type": "OutputConfigItem",
+          "Controller": null,
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "17",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/flightmodel2/controls/flap1_deploy_ratio"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "F1",
+            "Pin": "F1",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "F1",
+          "GUID": "ef492c75-3a05-4728-8461-53b754151aa5",
+          "Active": true,
+          "Name": "F1LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "FlapsNano",
+            "Serial": "SN-9E7-A64"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "0",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$*#",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "0e1a7779-3239-4c47-8496-8d88f3271b1c",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/flightmodel2/controls/flap1_deploy_ratio"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "F2",
+            "Pin": "F2",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "F2",
+          "GUID": "b1f5b6f7-d806-4747-9aff-76acde60952d",
+          "Active": true,
+          "Name": "F2LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "FlapsNano",
+            "Serial": "SN-9E7-A64"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "0.17",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$*#",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "0e1a7779-3239-4c47-8496-8d88f3271b1c",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/flightmodel2/controls/flap1_deploy_ratio"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "F3",
+            "Pin": "F3",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "F3",
+          "GUID": "e5a39786-bef0-48e9-84ab-da1bcf5c1e12",
+          "Active": true,
+          "Name": "F3LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "FlapsNano",
+            "Serial": "SN-9E7-A64"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "0.33",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$*#",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "0e1a7779-3239-4c47-8496-8d88f3271b1c",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/flightmodel2/controls/flap1_deploy_ratio"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "F4",
+            "Pin": "F4",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "F4",
+          "GUID": "e3b3d092-c4f8-4b84-9767-2c4642918f3d",
+          "Active": true,
+          "Name": "F4LEd",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "FlapsNano",
+            "Serial": "SN-9E7-A64"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "0.5",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$*#",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "0e1a7779-3239-4c47-8496-8d88f3271b1c",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/flightmodel2/controls/flap1_deploy_ratio"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "F5",
+            "Pin": "F5",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "F5",
+          "GUID": "bc9a8307-c8ee-4b79-9d1e-c53c489905e6",
+          "Active": true,
+          "Name": "F5LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "FlapsNano",
+            "Serial": "SN-9E7-A64"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "0.66",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$*#",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "0e1a7779-3239-4c47-8496-8d88f3271b1c",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/flightmodel2/controls/flap1_deploy_ratio"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "F6",
+            "Pin": "F6",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "F6",
+          "GUID": "4aef7396-f54b-45d0-91f7-b04002fc200a",
+          "Active": true,
+          "Name": "F6LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "FlapsNano",
+            "Serial": "SN-9E7-A64"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "0.83",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              },
+              {
+                "Type": "Transformation",
+                "Expression": "$*#",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "0e1a7779-3239-4c47-8496-8d88f3271b1c",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/flightmodel2/controls/flap1_deploy_ratio"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "F7",
+            "Pin": "F7",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "F7",
+          "GUID": "8cee510c-62f8-4029-9115-61834b0b7b5e",
+          "Active": true,
+          "Name": "F7LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "FlapsNano",
+            "Serial": "SN-9E7-A64"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "1.0",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/flight_controls/flaps_up",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "FlapsUp"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "FlapsUp",
+          "GUID": "362afc54-5f35-4fe7-b3ae-0064d05e8deb",
+          "Active": true,
+          "Name": "FlapsUp",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "FlapsNano",
+            "Serial": "SN-9E7-A64"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/flight_controls/flaps_down",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "FlapsDown"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "FlapsDown",
+          "GUID": "1dd42811-1c19-4fcf-9efe-7ea7bd2fe8f6",
+          "Active": true,
+          "Name": "FlapsDown",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "FlapsNano",
+            "Serial": "SN-9E7-A64"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "xplane",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}
