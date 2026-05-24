@@ -76,7 +76,7 @@
           "Source": {
             "SimConnectValue": {
               "UUID": "088d5236-57c1-4b4b-9edc-e608e8819821",
-              "Value": "(L:Aircraft.Transponder.Flash)",
+              "Value": "(A:TRANSPONDER IDENT:1, Bool)",
               "VarType": 2
             },
             "Type": "SimConnectSource"
