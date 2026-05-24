@@ -1,5 +1,5 @@
 {
-  "Name": "G507ProMicro-MSFS",
+  "Name": "PW-G507-MSFS-Dakota",
   "ConfigFiles": [
     {
       "Label": "G507ProMicro-MSFS",
@@ -37,8 +37,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
@@ -70,8 +72,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
@@ -103,8 +107,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
@@ -134,8 +140,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
@@ -167,8 +175,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "1",
+          "Value": "1"
         },
         {
           "Source": {
@@ -200,8 +210,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "1",
+          "Value": "1"
         },
         {
           "Source": {
@@ -233,8 +245,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
@@ -266,8 +280,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
@@ -299,8 +315,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
@@ -332,8 +350,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
@@ -365,8 +385,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
@@ -398,8 +420,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "Source": {
@@ -423,8 +447,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "1",
+          "Value": "1"
         },
         {
           "inputMultiplexer": {
@@ -454,8 +480,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -485,8 +513,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -516,8 +546,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -543,8 +575,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -574,8 +608,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -605,8 +641,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -636,8 +674,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -667,8 +707,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -698,8 +740,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -729,8 +773,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -760,8 +806,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -791,8 +839,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -822,8 +872,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -853,8 +905,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "encoder": {
@@ -891,7 +945,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
+            "Serial": "SN-1G8-DE7"
           }
         },
         {
@@ -929,7 +983,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
+            "Serial": "SN-1G8-DE7"
           }
         },
         {
@@ -959,7 +1013,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
+            "Serial": "SN-1G8-DE7"
           },
           "Preconditions": [
             {
@@ -972,7 +1026,10 @@
               "Logic": "and",
               "Active": true
             }
-          ]
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
         },
         {
           "encoder": {
@@ -1001,7 +1058,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
+            "Serial": "SN-1G8-DE7"
           },
           "Preconditions": [
             {
@@ -1014,7 +1071,10 @@
               "Logic": "and",
               "Active": true
             }
-          ]
+          ],
+          "Status": {
+            "Precondition": "not satisfied"
+          }
         },
         {
           "encoder": {
@@ -1043,7 +1103,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "G507ProMicrov2",
-            "Serial": "SN-8F5-619"
+            "Serial": "SN-1G8-DE7"
           },
           "Preconditions": [
             {

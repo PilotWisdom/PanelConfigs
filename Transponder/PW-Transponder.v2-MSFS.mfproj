@@ -1,8 +1,8 @@
 {
-  "Name": "PW-Transponder-MSFS",
+  "Name": "PW-Transponderv2-MSFS",
   "ConfigFiles": [
     {
-      "Label": "PW-Transponder-MSFS",
+      "Label": "PW-Transponderv2-MSFS",
       "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Transponder\\PW-Transponder-MSFS.mcc",
       "ReferenceOnly": false,
       "EmbedContent": true,
@@ -54,7 +54,7 @@
           "Source": {
             "SimConnectValue": {
               "UUID": "7d54c6ef-2128-4df8-acf6-a5303fe54a8e",
-              "Value": "(L:XMLVAR_TRANSPONDER_KNOB_1,Int)",
+              "Value": "(A:TRANSPONDER STATE:1, Enum)",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -70,54 +70,7 @@
           "Active": true,
           "Name": "Transponder-Mode",
           "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "0",
-                "IfValue": "OFF ",
-                "ElseValue": "$",
-                "Active": true
-              },
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "1",
-                "IfValue": "Sb  ",
-                "ElseValue": "$",
-                "Active": true
-              },
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "2",
-                "IfValue": "tst-",
-                "ElseValue": "$",
-                "Active": true
-              },
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "3",
-                "IfValue": "On  ",
-                "ElseValue": "$",
-                "Active": true
-              },
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "4",
-                "IfValue": "Al  ",
-                "ElseValue": "$",
-                "Active": true
-              }
-            ]
-          }
+          "Controller": null
         },
         {
           "Source": {
@@ -134,8 +87,8 @@
             "String": "-Id-"
           },
           "Device": {
-            "Name": "segMode",
-            "DisplayLedAddress": "segMode",
+            "Name": "0",
+            "DisplayLedAddress": "0",
             "DisplayLedConnector": 1,
             "DisplayLedModuleSize": 4,
             "DisplayLedPadding": false,
@@ -152,23 +105,57 @@
             "Type": "LedModule"
           },
           "DeviceType": "Display Module",
-          "DeviceName": "segMode",
+          "DeviceName": "0",
           "GUID": "1aa85ab6-68ca-48cf-92ad-056851863a6c",
           "Active": true,
           "Name": "IDENT_ON",
           "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          },
+          "Controller": null,
           "Modifiers": {
             "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "if($=1,'-Id-',#)",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "0",
+                "IfValue": "OFF",
+                "ElseValue": "",
+                "Active": true
+              },
               {
                 "Type": "Comparison",
                 "Operand": "=",
                 "Value": "1",
-                "IfValue": "-Id-",
-                "ElseValue": "#",
+                "IfValue": "Sb",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "tst-",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "3",
+                "IfValue": "On",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "4",
+                "IfValue": "Al",
+                "ElseValue": "",
                 "Active": true
               }
             ]

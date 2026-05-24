@@ -2,7 +2,7 @@
   "Name": "PW-Transponder.v2-MSFS-Dacota",
   "ConfigFiles": [
     {
-      "Label": "PW-Transponder-MSFS",
+      "Label": "PW-Transponderv2-MSFS",
       "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Transponder\\PW-Transponder-MSFS.mcc",
       "ReferenceOnly": false,
       "EmbedContent": true,
@@ -47,7 +47,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -72,7 +72,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -115,7 +115,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           },
           "Modifiers": {
             "Items": [
@@ -197,7 +197,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -228,7 +228,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -259,7 +259,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -290,7 +290,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -321,7 +321,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -352,7 +352,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -383,7 +383,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -414,7 +414,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -445,7 +445,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -476,7 +476,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -507,7 +507,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -538,7 +538,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -569,7 +569,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -600,7 +600,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         },
         {
@@ -631,7 +631,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-7B2-A58"
           }
         }
       ]
