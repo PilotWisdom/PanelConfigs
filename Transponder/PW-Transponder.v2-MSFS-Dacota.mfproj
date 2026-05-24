@@ -47,8 +47,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "122",
+          "Value": "122"
         },
         {
           "Source": {
@@ -72,8 +74,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "4",
+          "Value": "4"
         },
         {
           "Source": {
@@ -90,8 +94,8 @@
             "String": "-Id-"
           },
           "Device": {
-            "Name": "0",
-            "DisplayLedAddress": "0",
+            "Name": "segMode",
+            "DisplayLedAddress": "segMode",
             "DisplayLedConnector": 1,
             "DisplayLedModuleSize": 4,
             "DisplayLedPadding": false,
@@ -108,12 +112,15 @@
             "Type": "LedModule"
           },
           "DeviceType": "Display Module",
-          "DeviceName": "0",
+          "DeviceName": "segMode",
           "GUID": "1aa85ab6-68ca-48cf-92ad-056851863a6c",
           "Active": true,
           "Name": "IDENT_ON",
           "Type": "OutputConfigItem",
-          "Controller": null,
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-0C5-137"
+          },
           "Modifiers": {
             "Items": [
               {
@@ -170,13 +177,15 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "0",
+          "Value": "Al"
         },
         {
           "Source": {
             "SimConnectValue": {
               "UUID": "a6c94337-3700-4762-b288-1dbc0dba26da",
-              "Value": "(A:TRANSPONDER IDENT:1, Bool)",
+              "Value": "(B:INSTRUMENT_TRANSPONDER_IDT_Set)",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -189,13 +198,15 @@
           "DeviceType": "-",
           "DeviceName": null,
           "GUID": "c618c897-5e53-4327-9e7b-e2469f9de3d0",
-          "Active": false,
-          "Name": "IDENT-is-ON",
+          "Active": true,
+          "Name": "IDENT-is-ON-temp",
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "0",
+          "Value": "0"
         },
         {
           "inputMultiplexer": {
@@ -225,8 +236,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -256,8 +269,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -287,8 +302,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -318,8 +335,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -349,8 +368,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -380,8 +401,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -411,8 +434,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -442,8 +467,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -473,8 +500,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -504,8 +533,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -535,8 +566,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -566,8 +599,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -597,8 +632,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
-          }
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -626,7 +663,12 @@
           "Active": true,
           "Name": "Ident",
           "Type": "InputConfigItem",
-          "Controller": null
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-0C5-137"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         }
       ]
     }

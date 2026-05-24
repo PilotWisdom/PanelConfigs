@@ -47,7 +47,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         },
         {
@@ -87,8 +87,8 @@
             "String": "-Id-"
           },
           "Device": {
-            "Name": "0",
-            "DisplayLedAddress": "0",
+            "Name": "segMode",
+            "DisplayLedAddress": "segMode",
             "DisplayLedConnector": 1,
             "DisplayLedModuleSize": 4,
             "DisplayLedPadding": false,
@@ -105,12 +105,15 @@
             "Type": "LedModule"
           },
           "DeviceType": "Display Module",
-          "DeviceName": "0",
+          "DeviceName": "segMode",
           "GUID": "1aa85ab6-68ca-48cf-92ad-056851863a6c",
           "Active": true,
           "Name": "IDENT_ON",
           "Type": "OutputConfigItem",
-          "Controller": null,
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-0C5-137"
+          },
           "Modifiers": {
             "Items": [
               {
@@ -197,7 +200,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         },
         {
@@ -228,7 +231,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         },
         {
@@ -259,7 +262,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         },
         {
@@ -290,7 +293,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         },
         {
@@ -321,7 +324,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         },
         {
@@ -352,7 +355,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         },
         {
@@ -383,7 +386,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         },
         {
@@ -414,7 +417,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         },
         {
@@ -445,7 +448,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         },
         {
@@ -476,7 +479,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         },
         {
@@ -507,7 +510,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         },
         {
@@ -538,7 +541,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         },
         {
@@ -569,7 +572,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         },
         {
@@ -600,7 +603,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-7B2-A58"
+            "Serial": "SN-0C5-137"
           }
         }
       ]
