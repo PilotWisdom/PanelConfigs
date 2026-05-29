@@ -1,0 +1,1463 @@
+{
+  "Name": "RFFv2-MSFS",
+  "ConfigFiles": [
+    {
+      "Label": "RadioSelector",
+      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\RadioPanel\\PWRadioPanel-MSFS.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "50a1ca52-4777-46ef-8f66-018177f57c2f",
+              "Value": "(A:COM RECEIVE:1, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledCOM1",
+            "Pin": "ledCOM1",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledCOM1",
+          "GUID": "b965c83a-0892-44fa-97fe-680297406ea6",
+          "Active": true,
+          "Name": "LED-COM1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "50a1ca52-4777-46ef-8f66-018177f57c2f",
+              "Value": "(A:COM RECEIVE:2, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledCOM2",
+            "Pin": "ledCOM2",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledCOM2",
+          "GUID": "c6e6172c-029a-437e-bd5f-1a8bfc7e4b70",
+          "Active": true,
+          "Name": "LED-COM2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(A:COM TRANSMIT:1, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledMIC1",
+            "Pin": "ledMIC1",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledMIC1",
+          "GUID": "1403fe9c-cacf-47a6-a9e0-b36c5110a944",
+          "Active": true,
+          "Name": "LED-MIC1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(A:COM TRANSMIT:2, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledMIC2",
+            "Pin": "ledMIC2",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledMIC2",
+          "GUID": "44afee62-f123-4ae2-841a-ab9dbb544d99",
+          "Active": true,
+          "Name": "LED-MIC2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "d1e941b1-7201-4d75-b347-eb8dc6185959",
+              "Value": "(A:NAV SOUND:1, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledNAV1",
+            "Pin": "ledNAV1",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledNAV1",
+          "GUID": "0be137f3-dc24-4304-93ad-16aef9169847",
+          "Active": true,
+          "Name": "LED-NAV1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(A:NAV SOUND:2, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledNAV2",
+            "Pin": "ledNAV2",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledNAV2",
+          "GUID": "447d7a6d-205e-4d19-8e4c-c75248c46a2f",
+          "Active": true,
+          "Name": "LED-NAV2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(A:DME SOUND, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledDME",
+            "Pin": "ledDME",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledDME",
+          "GUID": "fceb3c61-f4e1-499e-8468-4061265287d6",
+          "Active": true,
+          "Name": "LED-DME",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(A:ADF SOUND, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledADF",
+            "Pin": "ledADF",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledADF",
+          "GUID": "0b7c272d-f6c1-4eb5-a52c-31e3c75661d3",
+          "Active": true,
+          "Name": "LED-ADF",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "798c4ddc-7eb2-474d-b242-dea45d8cecf8",
+              "Value": "(A:OUTER MARKER,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledOM",
+            "Pin": "ledOM",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledOM",
+          "GUID": "16ba44f9-e8df-4b3e-9311-3b2a5589ffc3",
+          "Active": true,
+          "Name": "LED-OM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "e851495e-d47f-4923-b076-d49d5244587e",
+              "Value": "(A:MIDDLE MARKER,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledMM",
+            "Pin": "ledMM",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledMM",
+          "GUID": "44e185b7-0b07-4dac-a277-683ce1451902",
+          "Active": true,
+          "Name": "LED-MM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "94fe3445-0444-4212-afe4-786a5241e924",
+              "Value": "(A:INNER MARKER,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledIM",
+            "Pin": "ledIM",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledIM",
+          "GUID": "a4cd4a9a-6535-4f60-ae67-c9c5b99708ec",
+          "Active": true,
+          "Name": "LED-IM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "fe4800bb-241a-474f-81ea-8503157bc67e",
+              "Value": "(A:MARKER BEACON TEST MUTE,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ledMKR",
+            "Pin": "ledMKR",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledMKR",
+          "GUID": "71450237-7489-4bf5-9878-21217d2fca60",
+          "Active": true,
+          "Name": "LED-MKR",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:COM RECEIVE:1, Bool) ! (>K:COM1_RECEIVE_SELECT)",
+              "PresetId": "b8e059bd-822c-468c-b578-41c5168cb111"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnCOM1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnCOM1",
+          "GUID": "913f6874-4b12-4adb-aea5-335df265b0a3",
+          "Active": true,
+          "Name": "COM1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:COM RECEIVE:2, Bool) ! (>K:COM2_RECEIVE_SELECT)",
+              "PresetId": "d3e7dee5-45eb-40e0-b0ba-839df2a6ee26"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnCOM2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnCOM2",
+          "GUID": "6ee7c7e4-b175-4f1b-9ec4-405094804539",
+          "Active": true,
+          "Name": "COM2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:COM TRANSMIT:1, Bool) ! if{\n    0 (>K:PILOT_TRANSMITTER_SET)\n    0 (>K:COPILOT_TRANSMITTER_SET)\n}\n1 (>H:AS1000_MidCom_COM_Mic_1_Push)\n",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnMIC1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnMIC1",
+          "GUID": "60ced6cc-95d5-4eb4-8a5b-24ded5c70aee",
+          "Active": true,
+          "Name": "MIC1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:COM TRANSMIT:2, Bool) ! if{\n    1 (>K:PILOT_TRANSMITTER_SET)\n    1 (>K:COPILOT_TRANSMITTER_SET)\n}\n1 (>H:AS1000_MidCom_COM_Mic_2_Push)\n",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnMIC2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnMIC2",
+          "GUID": "7b23ab89-c284-4e28-8455-378b0cb358f4",
+          "Active": true,
+          "Name": "MIC2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:NAV SOUND:1, Bool) ! (>K:RADIO_VOR1_IDENT_TOGGLE)",
+              "PresetId": "e63740c5-aaa4-43da-a9c2-b9ca5f4b940b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnNAV1"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnNAV1",
+          "GUID": "ab376f4d-fb45-4efd-ba0d-038fb916f12d",
+          "Active": true,
+          "Name": "NAV1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:NAV SOUND:2, Bool) ! (>K:RADIO_VOR2_IDENT_TOGGLE)",
+              "PresetId": "54d19ede-e668-4f0a-aed8-2ed6aace18f3"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnNAV2"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnNAV2",
+          "GUID": "43c386e3-51b2-4115-bb42-64bd6bb70f74",
+          "Active": true,
+          "Name": "NAV2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:DME SOUND, Bool) ! (>K:RADIO_DME1_IDENT_TOGGLE)",
+              "PresetId": "0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnDME"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnDME",
+          "GUID": "106aa468-c085-4fad-a5ae-50d4edd91927",
+          "Active": true,
+          "Name": "DME",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:ADF SOUND, Bool) ! (>K:RADIO_ADF_IDENT_TOGGLE)\n",
+              "PresetId": "11df6e76-92d7-4ef6-b5cb-fd5ef519293b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnADF"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnADF",
+          "GUID": "53b93ca2-b3ec-4277-a284-2062eee65a9e",
+          "Active": true,
+          "Name": "ADF",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:MARKER BEACON TEST MUTE, Bool) ! (>K:MARKER_BEACON_TEST_MUTE)",
+              "PresetId": "5306a144-4fa1-4341-ade6-c45ed652ff4b"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnMKR"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnMKR",
+          "GUID": "8a00c4ec-d7e0-4954-9565-03d07fb18e34",
+          "Active": true,
+          "Name": "MKR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        }
+      ]
+    },
+    {
+      "Label": "Radio1",
+      "FileName": "FrequencyPanel-1-MSFS.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "b5a95362-411e-422d-9e6e-598b8b0bdcdf",
+              "Value": "(A:COM ACTIVE FREQUENCY:1,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COMNAV1ACT",
+            "DisplayLedAddress": "COMNAV1ACT",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "COMNAV1ACT",
+          "GUID": "91eafc81-5417-463d-b731-d8c61737946f",
+          "Active": true,
+          "Name": "Com1Active",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "123900",
+          "Value": "123900"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0c6afa60-4a6e-405d-91a5-1d7ba95bfe11",
+              "Value": "(A:COM STANDBY FREQUENCY:1,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COMNAV1ACT",
+            "DisplayLedAddress": "COMNAV1ACT",
+            "DisplayLedConnector": 2,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "COMNAV1ACT",
+          "GUID": "996e17df-3616-478f-8ea0-f0bdb43b744e",
+          "Active": true,
+          "Name": "Com1Standby",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "123830",
+          "Value": "123830"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "37a19dbf-bfc5-4193-ac3e-591772069e42",
+              "Value": "(A:NAV ACTIVE FREQUENCY:1,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COMNAV1SBY",
+            "DisplayLedAddress": "COMNAV1SBY",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "COMNAV1SBY",
+          "GUID": "194a07c4-5711-484e-8481-542507c8aca5",
+          "Active": true,
+          "Name": "Nav1Active",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "110500",
+          "Value": "110500"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "73a2f48d-d613-4b7b-b30d-8065bc150f98",
+              "Value": "(A:NAV STANDBY FREQUENCY:1,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COMNAV1SBY",
+            "DisplayLedAddress": "COMNAV1SBY",
+            "DisplayLedConnector": 2,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "COMNAV1SBY",
+          "GUID": "611f11b0-41fa-495d-ac79-afa246b981e1",
+          "Active": true,
+          "Name": "Nav1Standby",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "111600",
+          "Value": "111600"
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM_STBY_RADIO_SWAP)",
+              "PresetId": "838c9003-b049-4182-a9af-44acc6c6619a"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnCOM1flip"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnCOM1flip",
+          "GUID": "a9b4a0a4-a830-46ed-b8d8-b14c1883022a",
+          "Active": true,
+          "Name": "COM1-flip",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV1_RADIO_SWAP)",
+              "PresetId": "0a59b65c-cc38-43df-b005-7a599a4d409a"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnNAV1flip"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnNAV1flip",
+          "GUID": "d9e3017c-da14-4cf4-bebb-c7e1404fa1be",
+          "Active": true,
+          "Name": "NAV1-flip",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM_RADIO_WHOLE_DEC)",
+              "PresetId": "ec154767-41ce-4a2f-865b-3e6fe7c90c89"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM_RADIO_WHOLE_INC)",
+              "PresetId": "e1a79c8b-2e4a-49b2-9284-d1cf0adc5707"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "COM1Outer"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "COM1Outer",
+          "GUID": "42d13e62-7ee6-4efd-b301-fc3525019abe",
+          "Active": true,
+          "Name": "COM1-MHz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM_RADIO_FRACT_DEC)",
+              "PresetId": "04725cc3-7346-4f5d-ad89-c1ffaaa6e978"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM_RADIO_FRACT_INC)",
+              "PresetId": "6b78a3e2-e3dc-411b-bb2d-224b011a2644"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "COM1Inner"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "COM1Inner",
+          "GUID": "021eb82e-8e31-4dbd-8835-157afb994398",
+          "Active": true,
+          "Name": "COM1-KHz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV1_RADIO_WHOLE_DEC)",
+              "PresetId": "bcb45f55-c67a-44b9-a951-096e450ccec7"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV1_RADIO_WHOLE_INC)",
+              "PresetId": "1ae481bc-bea6-4f58-a683-01c9d0c38e32"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "NAV1Outer"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "NAV1Outer",
+          "GUID": "ae9998d3-112f-481e-aae7-84163a0cf216",
+          "Active": true,
+          "Name": "NAV1-MHz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV1_RADIO_FRACT_DEC)",
+              "PresetId": "f92f319c-75e2-471e-845a-764540c65040"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV1_RADIO_FRACT_INC)",
+              "PresetId": "91d424e5-4d6a-48a0-a435-153331c604b3"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "NAV1Inner"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "NAV1Inner",
+          "GUID": "4ea2b53f-c23d-40ef-9a6e-506aa957ac67",
+          "Active": true,
+          "Name": "NAV1-KHz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          }
+        }
+      ]
+    },
+    {
+      "Label": "Radio2",
+      "FileName": "FrequencyPanel-1-MSFS.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "b5a95362-411e-422d-9e6e-598b8b0bdcdf",
+              "Value": "(A:COM ACTIVE FREQUENCY:2,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COMNAV2ACT",
+            "DisplayLedAddress": "COMNAV2ACT",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "COMNAV2ACT",
+          "GUID": "91eafc81-5417-463d-b731-d8c61737946f",
+          "Active": true,
+          "Name": "Com2Active",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0c6afa60-4a6e-405d-91a5-1d7ba95bfe11",
+              "Value": "(A:COM STANDBY FREQUENCY:2,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COMNAV2ACT",
+            "DisplayLedAddress": "COMNAV2ACT",
+            "DisplayLedConnector": 2,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "COMNAV2ACT",
+          "GUID": "996e17df-3616-478f-8ea0-f0bdb43b744e",
+          "Active": true,
+          "Name": "Com2Standby",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "37a19dbf-bfc5-4193-ac3e-591772069e42",
+              "Value": "(A:NAV ACTIVE FREQUENCY:2,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COMNAV2SBY",
+            "DisplayLedAddress": "COMNAV2SBY",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "COMNAV2SBY",
+          "GUID": "194a07c4-5711-484e-8481-542507c8aca5",
+          "Active": true,
+          "Name": "Nav2Active",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "73a2f48d-d613-4b7b-b30d-8065bc150f98",
+              "Value": "(A:NAV STANDBY FREQUENCY:2,KHz)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "COMNAV2SBY",
+            "DisplayLedAddress": "COMNAV2SBY",
+            "DisplayLedConnector": 2,
+            "DisplayLedModuleSize": 6,
+            "DisplayLedPadding": false,
+            "DisplayLedPaddingChar": "0",
+            "DisplayLedDigits": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "DisplayLedDecimalPoints": [
+              "3"
+            ],
+            "DisplayLedReverseDigits": false,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "COMNAV2SBY",
+          "GUID": "611f11b0-41fa-495d-ac79-afa246b981e1",
+          "Active": true,
+          "Name": "Nav2Standby",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM2_RADIO_SWAP)",
+              "PresetId": "b4d05ce0-0005-427a-b698-45c28cde0a18"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnCOM2flip"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnCOM2flip",
+          "GUID": "a9b4a0a4-a830-46ed-b8d8-b14c1883022a",
+          "Active": true,
+          "Name": "COM2-flip",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV2_RADIO_SWAP)",
+              "PresetId": "0a59b65c-cc38-43df-b005-7a599a4d409a"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "btnNAV2flip"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "btnNAV2flip",
+          "GUID": "d9e3017c-da14-4cf4-bebb-c7e1404fa1be",
+          "Active": true,
+          "Name": "NAV2-flip",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM2_RADIO_WHOLE_DEC)",
+              "PresetId": "9e748e8d-2ee3-47fc-9253-dac2452f8cbe"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM2_RADIO_WHOLE_INC)",
+              "PresetId": "e1a79c8b-2e4a-49b2-9284-d1cf0adc5707"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "COM2Outer"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "COM2Outer",
+          "GUID": "42d13e62-7ee6-4efd-b301-fc3525019abe",
+          "Active": true,
+          "Name": "COM2-MHz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM2_RADIO_FRACT_DEC)",
+              "PresetId": "04725cc3-7346-4f5d-ad89-c1ffaaa6e978"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:COM2_RADIO_FRACT_INC)",
+              "PresetId": "6b78a3e2-e3dc-411b-bb2d-224b011a2644"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "COM2Inner"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "COM2Inner",
+          "GUID": "021eb82e-8e31-4dbd-8835-157afb994398",
+          "Active": true,
+          "Name": "COM2-KHz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV2_RADIO_WHOLE_DEC)",
+              "PresetId": "f777e5bf-89b0-4964-ab23-c11870a37d6e"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV2_RADIO_WHOLE_INC)",
+              "PresetId": "1ae481bc-bea6-4f58-a683-01c9d0c38e32"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "NAV2Outer"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "NAV2Outer",
+          "GUID": "ae9998d3-112f-481e-aae7-84163a0cf216",
+          "Active": true,
+          "Name": "NAV2-MHz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV2_RADIO_FRACT_DEC)",
+              "PresetId": "f92f319c-75e2-471e-845a-764540c65040"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:NAV2_RADIO_FRACT_INC)",
+              "PresetId": "91d424e5-4d6a-48a0-a435-153331c604b3"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "NAV2Inner"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "NAV2Inner",
+          "GUID": "4ea2b53f-c23d-40ef-9a6e-506aa957ac67",
+          "Active": true,
+          "Name": "NAV2-KHz",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RFFv2",
+            "Serial": "SN-B84-23B"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

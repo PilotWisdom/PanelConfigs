@@ -3,5 +3,45 @@
   <ModuleType>MobiFlight Mega</ModuleType>
   <ModuleName>PW-RFFv2</ModuleName>
   <PowerSavingTime>600</PowerSavingTime>
-  <Button Name="dummy1" Pin="2" />
+  <Button Name="btnCOM1" Pin="2" />
+  <Button Name="btnCOM2" Pin="4" />
+  <Button Name="btnMIC1" Pin="6" />
+  <Button Name="btnMIC2" Pin="8" />
+  <Button Name="btnNAV1" Pin="10" />
+  <Button Name="btnNAV2" Pin="12" />
+  <Button Name="btnDME" Pin="14" />
+  <Button Name="btnADF" Pin="16" />
+  <Button Name="btnMKR" Pin="21" />
+  <Output Name="ledCOM1" Pin="3" />
+  <Output Name="ledCOM2" Pin="5" />
+  <Output Name="ledMIC1" Pin="7" />
+  <Output Name="ledMIC2" Pin="9" />
+  <Output Name="ledNAV1" Pin="11" />
+  <Output Name="ledNAV2" Pin="13" />
+  <Output Name="ledDME" Pin="15" />
+  <Output Name="ledADF" Pin="17" />
+  <Output Name="ledOM" Pin="18" />
+  <Output Name="ledMM" Pin="19" />
+  <Output Name="ledIM" Pin="20" />
+  <Output Name="ledMKR" Pin="69" />
+  <Button Name="btnCOM1Rtr" Pin="42" />
+  <Button Name="btnNAV1Rtr" Pin="43" />
+  <Button Name="btnCOM2Rtr" Pin="44" />
+  <Button Name="btnNAV2Rtr" Pin="45" />
+  <LedModule Name="COMNAV1ACT" ModelType="0" DinPin="53" ClsPin="52" ClkPin="51" Brightness="2" NumModules="2" />
+  <LedModule Name="COMNAV1SBY" ModelType="0" DinPin="50" ClsPin="49" ClkPin="48" Brightness="2" NumModules="2" />
+  <Encoder Name="COM1Inner" PinLeft="47" PinRight="46" EncoderType="2" />
+  <Encoder Name="COM1Outer" PinLeft="22" PinRight="24" EncoderType="2" />
+  <Button Name="btnCOM1flip" Pin="25" />
+  <Button Name="btnNAV1flip" Pin="23" />
+  <Encoder Name="NAV1Inner" PinLeft="26" PinRight="27" EncoderType="2" />
+  <Encoder Name="NAV1Outer" PinLeft="28" PinRight="29" EncoderType="2" />
+  <LedModule Name="COMNAV2ACT" ModelType="0" DinPin="30" ClsPin="31" ClkPin="32" Brightness="2" NumModules="2" />
+  <LedModule Name="COMNAV2SBY" ModelType="0" DinPin="33" ClsPin="36" ClkPin="37" Brightness="2" NumModules="2" />
+  <Encoder Name="COM2Inner" PinLeft="38" PinRight="39" EncoderType="2" />
+  <Encoder Name="COM2Outer" PinLeft="54" PinRight="56" EncoderType="2" />
+  <Button Name="btnCOM2flip" Pin="57" />
+  <Button Name="btnNAV2flip" Pin="55" />
+  <Encoder Name="NAV2Inner" PinLeft="58" PinRight="59" EncoderType="2" />
+  <Encoder Name="NAV2Outer" PinLeft="34" PinRight="35" EncoderType="2" />
 </Config>

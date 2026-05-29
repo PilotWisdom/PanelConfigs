@@ -1,0 +1,1088 @@
+{
+  "Name": "G507ProMicro-XPlane",
+  "ConfigFiles": [
+    {
+      "Label": "G507ProMicro-XPlane",
+      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Autopilot-G507\\Mobiflight\\G507ProMicro-XPlane.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/heading_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 2.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ShiftReg-LEDs",
+            "Pin": "Output 0",
+            "Address": "ShiftReg-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "ShiftReg-LEDs",
+          "GUID": "0495dd21-4526-4ef3-a054-6bfe0f9f85d5",
+          "Active": true,
+          "Name": "HDG-LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/approach_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ShiftReg-LEDs",
+            "Pin": "Output 1",
+            "Address": "ShiftReg-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "ShiftReg-LEDs",
+          "GUID": "5f64e4fc-4699-48ac-b093-83fe1d71e55c",
+          "Active": true,
+          "Name": "APR-LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/nav_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ShiftReg-LEDs",
+            "Pin": "Output 2",
+            "Address": "ShiftReg-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "ShiftReg-LEDs",
+          "GUID": "5e4a2b1f-1fa0-42dc-87fa-184eb6f6cac5",
+          "Active": true,
+          "Name": "NAV-LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/track_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ShiftReg-LEDs",
+            "Pin": "Output 3",
+            "Address": "ShiftReg-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "ShiftReg-LEDs",
+          "GUID": "c5cf2f89-6557-4a0c-89dd-e96d5ff4aeb5",
+          "Active": true,
+          "Name": "TRK-LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit/autopilot/autopilot_mode"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ShiftReg-LEDs",
+            "Pin": "Output 4",
+            "Address": "ShiftReg-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "ShiftReg-LEDs",
+          "GUID": "2e4fa2d3-0009-40e1-a8f9-c7ad291c3b99",
+          "Active": true,
+          "Name": "AP-LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/flight_director_mode"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ShiftReg-LEDs",
+            "Pin": "Output 5",
+            "Address": "ShiftReg-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "ShiftReg-LEDs",
+          "GUID": "caffe8ee-5863-4fed-934c-a3236e20606e",
+          "Active": true,
+          "Name": "FD-LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/roll_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ShiftReg-LEDs",
+            "Pin": "Output 6",
+            "Address": "ShiftReg-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "ShiftReg-LEDs",
+          "GUID": "23e6174a-6524-4c45-9988-64b41f3791e1",
+          "Active": true,
+          "Name": "LVL-LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit/switches/yaw_damper_on"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ShiftReg-LEDs",
+            "Pin": "Output 7",
+            "Address": "ShiftReg-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "ShiftReg-LEDs",
+          "GUID": "bdf2a95c-f97c-4f2d-8a90-919081578a67",
+          "Active": true,
+          "Name": "YD-LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/speed_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ShiftReg-LEDs",
+            "Pin": "Output 8",
+            "Address": "ShiftReg-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "ShiftReg-LEDs",
+          "GUID": "8250d846-8230-4c64-9023-9a53c291be17",
+          "Active": true,
+          "Name": "IAS-LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/vnav_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ShiftReg-LEDs",
+            "Pin": "Output 9",
+            "Address": "ShiftReg-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "ShiftReg-LEDs",
+          "GUID": "4a75ea4f-e471-42b9-b667-20e9831b070d",
+          "Active": true,
+          "Name": "VNAV-LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/vvi_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ShiftReg-LEDs",
+            "Pin": "Output 10",
+            "Address": "ShiftReg-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "ShiftReg-LEDs",
+          "GUID": "a2f00ba4-cecc-4488-90ed-78aded9b253f",
+          "Active": true,
+          "Name": "VS-LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/altitude_hold_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "ShiftReg-LEDs",
+            "Pin": "Output 11",
+            "Address": "ShiftReg-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "ShiftReg-LEDs",
+          "GUID": "b24c566c-86cb-41e2-9855-69b3212f0477",
+          "Active": true,
+          "Name": "ALT-LED",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 0,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/heading",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 0,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "18f2103f-f962-480b-8dc4-3c10904c33b4",
+          "Active": true,
+          "Name": "HDG",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 1,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/approach",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 1,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "74cfd168-b450-4654-a229-531a28bd3f08",
+          "Active": true,
+          "Name": "APR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 2,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/NAV",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 2,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "3b1edc91-3fb1-4f0f-8e33-fd3bf9eabfb5",
+          "Active": true,
+          "Name": "NAV",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 3,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/track",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 3,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "556323dc-7fd6-4d6d-8efd-bb8892cc8aea",
+          "Active": true,
+          "Name": "TRK",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 4,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/servos_toggle",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 4,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "1f9a86a9-bfff-4c40-b9e5-d055e744944f",
+          "Active": true,
+          "Name": "AP",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 5,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/fdir_toggle",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 5,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "30e9d03e-6db6-4130-990e-0474628bfc8f",
+          "Active": true,
+          "Name": "FD",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 6,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/wing_leveler",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 6,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "c1a77af7-c4b1-489c-8c3d-de890a2f47e8",
+          "Active": true,
+          "Name": "LVL",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 7,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/systems/yaw_damper_toggle",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 7,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "6603e9ae-12a3-4583-a8bf-08d147805093",
+          "Active": true,
+          "Name": "YD",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 8,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/level_change",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 8,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "82bb4d66-08d3-4817-9f2d-d3f5f2a85905",
+          "Active": true,
+          "Name": "IAS",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 9,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/vnav",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 9,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "85e02dbb-9c87-42b6-bb36-f1ec68ef37b9",
+          "Active": true,
+          "Name": "VNAV",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 10,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/vertical_speed",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 10,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "a3b94d8b-e47b-4bff-8bb5-7c409f617543",
+          "Active": true,
+          "Name": "VS",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 11,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/altitude_hold",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 11,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "97b3e51b-87bb-4adb-b9b8-ef98579bfa08",
+          "Active": true,
+          "Name": "ALT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 12,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/heading_sync",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 12,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "253695a3-df58-4835-8360-aa69d15602cf",
+          "Active": true,
+          "Name": "HDG-BTN",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 13,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/altitude_sync",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 13,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "b709e1d3-11b3-446b-a694-fa26bffe2b14",
+          "Active": true,
+          "Name": "ALT-BTN",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/heading_down",
+              "Expression": ""
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/heading_up",
+              "Expression": ""
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "HDG-enc"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "HDG-enc",
+          "GUID": "0cab957b-aa4c-48f7-87bb-668ca87bdb3a",
+          "Active": true,
+          "Name": "HDG-Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/altitude_down",
+              "Expression": ""
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/altitude_up",
+              "Expression": ""
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "ALT-enc"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "ALT-enc",
+          "GUID": "93ca519c-77a4-482b-91de-fcba72229619",
+          "Active": true,
+          "Name": "ALT-Knob",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/vertical_speed_up",
+              "Expression": ""
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/vertical_speed_down",
+              "Expression": ""
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "Wheel-enc"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Wheel-enc",
+          "GUID": "44c62f2b-8d78-4776-9b8a-1c7a427ced81",
+          "Active": true,
+          "Name": "Wheel-VS",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "a2f00ba4-cecc-4488-90ed-78aded9b253f",
+              "Serial": null,
+              "Pin": null,
+              "Operand": ">=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/airspeed_up",
+              "Expression": ""
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/autopilot/airspeed_down",
+              "Expression": ""
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "Wheel-enc"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Wheel-enc",
+          "GUID": "3227121b-aefd-4edf-9cf2-d0a9c1dd8d4c",
+          "Active": true,
+          "Name": "Wheel-IAS",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-1G8-DE7"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "8250d846-8230-4c64-9023-9a53c291be17",
+              "Serial": null,
+              "Pin": null,
+              "Operand": ">=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Sim": "xplane",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Micro</ModuleType>
+  <ModuleName>PWRadioClassic</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="Button" Pin="0" />
+  <Button Name="Button 1" Pin="1" />
+  <InputMultiplexer Name="MuxButtons" DataPin="6" NumBytes="2">
+    <Selector Name="MultiplexerDriver" PinSx="2 3 4 5" />
+  </InputMultiplexer>
+  <ShiftRegister Name="SR-LEDs" LatchPin="9" ClockPin="8" DataPin="7" NumModules="1" />
+</Config>
