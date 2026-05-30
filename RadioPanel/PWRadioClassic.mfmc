@@ -8,5 +8,5 @@
   <InputMultiplexer Name="MuxButtons" DataPin="6" NumBytes="2">
     <Selector Name="MultiplexerDriver" PinSx="2 3 4 5" />
   </InputMultiplexer>
-  <ShiftRegister Name="SR-LEDs" LatchPin="9" ClockPin="8" DataPin="7" NumModules="1" />
+  <ShiftRegister Name="SR-LEDs" LatchPin="8" ClockPin="9" DataPin="7" NumModules="2" />
 </Config>

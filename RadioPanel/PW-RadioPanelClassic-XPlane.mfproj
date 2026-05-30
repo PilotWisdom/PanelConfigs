@@ -1,0 +1,672 @@
+{
+  "Name": "PW-RadioPanelClassic",
+  "ConfigFiles": [
+    {
+      "Label": "PW-RadioClassic-XPL",
+      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\RadioPanel\\OlderVersions\\PWRadioPanel-Xplane.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_com1"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 0",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "b965c83a-0892-44fa-97fe-680297406ea6",
+          "Active": true,
+          "Name": "LED-COM1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_com2"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 1",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "c6e6172c-029a-437e-bd5f-1a8bfc7e4b70",
+          "Active": true,
+          "Name": "LED-COM2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_marker_enabled"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 2",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "1403fe9c-cacf-47a6-a9e0-b36c5110a944",
+          "Active": true,
+          "Name": "LED-MIC1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 3",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "44afee62-f123-4ae2-841a-ab9dbb544d99",
+          "Active": true,
+          "Name": "LED-MIC2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_nav1"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 4",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "0be137f3-dc24-4304-93ad-16aef9169847",
+          "Active": true,
+          "Name": "LED-NAV1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_nav2"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 5",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "447d7a6d-205e-4d19-8e4c-c75248c46a2f",
+          "Active": true,
+          "Name": "LED-NAV2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_dme1"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 6",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "fceb3c61-f4e1-499e-8468-4061265287d6",
+          "Active": true,
+          "Name": "LED-DME",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_adf1"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 7",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "0b7c272d-f6c1-4eb5-a52c-31e3c75661d3",
+          "Active": true,
+          "Name": "LED-ADF",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_marker_enabled"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 8",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "2d6fc376-08d4-49f9-8d6f-f973da551003",
+          "Active": true,
+          "Name": "LED-MKR",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/indicators/outer_marker_lit"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 9",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "16ba44f9-e8df-4b3e-9311-3b2a5589ffc3",
+          "Active": true,
+          "Name": "LED-OM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/indicators/middle_marker_lit"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 10",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "44e185b7-0b07-4dac-a277-683ce1451902",
+          "Active": true,
+          "Name": "LED-MM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/indicators/inner_marker_lit"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 11",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "a4cd4a9a-6535-4f60-ae67-c9c5b99708ec",
+          "Active": true,
+          "Name": "LED-IM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 0,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_com1",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 0,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "913f6874-4b12-4adb-aea5-335df265b0a3",
+          "Active": true,
+          "Name": "COM1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 1,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_com2",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 1,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "6ee7c7e4-b175-4f1b-9ec4-405094804539",
+          "Active": true,
+          "Name": "COM2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 2,
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 2,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "60ced6cc-95d5-4eb4-8a5b-24ded5c70aee",
+          "Active": true,
+          "Name": "MIC1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 3,
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 3,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "7b23ab89-c284-4e28-8455-378b0cb358f4",
+          "Active": true,
+          "Name": "MIC2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 4,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_nav1",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 4,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "ab376f4d-fb45-4efd-ba0d-038fb916f12d",
+          "Active": true,
+          "Name": "NAV1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 5,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_nav2",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 5,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "43c386e3-51b2-4115-bb42-64bd6bb70f74",
+          "Active": true,
+          "Name": "NAV2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 6,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_dme",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 6,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "106aa468-c085-4fad-a5ae-50d4edd91927",
+          "Active": true,
+          "Name": "DME",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 7,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_adf1",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 7,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "53b93ca2-b3ec-4277-a284-2062eee65a9e",
+          "Active": true,
+          "Name": "ADF",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 8,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_mkr",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 8,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "8a00c4ec-d7e0-4954-9565-03d07fb18e34",
+          "Active": true,
+          "Name": "MKR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-89C-045"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "xplane",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}
