@@ -1,8 +1,8 @@
 {
-  "Name": "PW-Transponder-MSFS-JustFligh",
+  "Name": "PW-Transp.v2-MSFS-JustFligh",
   "ConfigFiles": [
     {
-      "Label": "PW-Transponder-MSFS-JustFligh",
+      "Label": "PW-Transp.v2-MSFS-JustFligh",
       "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Transponder\\PW-Transponder-MSFS-JustFligh.mcc",
       "ReferenceOnly": false,
       "EmbedContent": true,
@@ -47,8 +47,10 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "7000",
+          "Value": "7000"
         },
         {
           "Source": {
@@ -70,7 +72,10 @@
           "Active": true,
           "Name": "Transponder-Mode",
           "Type": "OutputConfigItem",
-          "Controller": null,
+          "Controller": {
+            "Name": "PW-Transp-v2",
+            "Serial": "SN-1G8-DE7"
+          },
           "Modifiers": {
             "Items": [
               {
@@ -79,7 +84,7 @@
                 "Value": "0",
                 "IfValue": "OFF ",
                 "ElseValue": "$",
-                "Active": true
+                "Active": false
               },
               {
                 "Type": "Comparison",
@@ -87,7 +92,7 @@
                 "Value": "1",
                 "IfValue": "Sb  ",
                 "ElseValue": "$",
-                "Active": true
+                "Active": false
               },
               {
                 "Type": "Comparison",
@@ -95,7 +100,7 @@
                 "Value": "2",
                 "IfValue": "On  ",
                 "ElseValue": "$",
-                "Active": true
+                "Active": false
               },
               {
                 "Type": "Comparison",
@@ -103,7 +108,7 @@
                 "Value": "3",
                 "IfValue": "Al  ",
                 "ElseValue": "$",
-                "Active": true
+                "Active": false
               },
               {
                 "Type": "Comparison",
@@ -111,10 +116,12 @@
                 "Value": "4",
                 "IfValue": "tst-",
                 "ElseValue": "$",
-                "Active": true
+                "Active": false
               }
             ]
-          }
+          },
+          "RawValue": "3",
+          "Value": "3"
         },
         {
           "Source": {
@@ -156,16 +163,53 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
+            "Serial": "SN-1G8-DE7"
           },
           "Modifiers": {
             "Items": [
               {
+                "Type": "Transformation",
+                "Expression": "if($=1,'-Id-',#)",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "0",
+                "IfValue": "OFF",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
                 "Type": "Comparison",
                 "Operand": "=",
                 "Value": "1",
-                "IfValue": "-Id-",
-                "ElseValue": "#",
+                "IfValue": "Sb",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "On",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "3",
+                "IfValue": "Al",
+                "ElseValue": "",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "4",
+                "IfValue": "tst-",
+                "ElseValue": "",
                 "Active": true
               }
             ]
@@ -177,7 +221,9 @@
               "Placeholder": "#",
               "TestValue": "1"
             }
-          ]
+          ],
+          "RawValue": "1",
+          "Value": "-Id-"
         },
         {
           "inputMultiplexer": {
@@ -207,8 +253,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -238,8 +286,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -269,8 +319,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -300,8 +352,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -331,8 +385,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -362,8 +418,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -393,8 +451,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -424,8 +484,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -455,8 +517,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -486,8 +550,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -517,8 +583,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -548,8 +616,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -579,8 +649,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         },
         {
           "inputMultiplexer": {
@@ -610,8 +682,10 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
-            "Serial": "SN-G3F-392"
-          }
+            "Serial": "SN-1G8-DE7"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
         }
       ]
     }
