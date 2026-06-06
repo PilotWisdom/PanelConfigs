@@ -1,0 +1,729 @@
+{
+  "Name": "PW-RadioPanelClassic-MSFS",
+  "ConfigFiles": [
+    {
+      "Label": "PWRadioClassic-MSFS",
+      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\RadioPanel\\OlderVersions\\PWRadioPanel-MSFS.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "50a1ca52-4777-46ef-8f66-018177f57c2f",
+              "Value": "(A:COM RECEIVE:1, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 0",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "b965c83a-0892-44fa-97fe-680297406ea6",
+          "Active": true,
+          "Name": "LED-COM1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "50a1ca52-4777-46ef-8f66-018177f57c2f",
+              "Value": "(A:COM RECEIVE:2, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 1",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "c6e6172c-029a-437e-bd5f-1a8bfc7e4b70",
+          "Active": true,
+          "Name": "LED-COM2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "fe4800bb-241a-474f-81ea-8503157bc67e",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 2",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "1403fe9c-cacf-47a6-a9e0-b36c5110a944",
+          "Active": true,
+          "Name": "LED-MIC1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 3",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "44afee62-f123-4ae2-841a-ab9dbb544d99",
+          "Active": true,
+          "Name": "LED-MIC2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "d1e941b1-7201-4d75-b347-eb8dc6185959",
+              "Value": "(A:NAV SOUND:1, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 4",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "0be137f3-dc24-4304-93ad-16aef9169847",
+          "Active": true,
+          "Name": "LED-NAV1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(A:NAV SOUND:2, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 5",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "447d7a6d-205e-4d19-8e4c-c75248c46a2f",
+          "Active": true,
+          "Name": "LED-NAV2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(A:DME SOUND, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 6",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "fceb3c61-f4e1-499e-8468-4061265287d6",
+          "Active": true,
+          "Name": "LED-DME",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "0",
+              "Value": "(A:ADF SOUND, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 7",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "0b7c272d-f6c1-4eb5-a52c-31e3c75661d3",
+          "Active": true,
+          "Name": "LED-ADF",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "fe4800bb-241a-474f-81ea-8503157bc67e",
+              "Value": "(A:MARKER SOUND:1, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 8",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "40b68ed0-8068-4aa7-9a71-9c41d1a18eb5",
+          "Active": true,
+          "Name": "LED-MKR",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "1",
+          "Value": "1"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "798c4ddc-7eb2-474d-b242-dea45d8cecf8",
+              "Value": "(A:OUTER MARKER,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 9",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "16ba44f9-e8df-4b3e-9311-3b2a5589ffc3",
+          "Active": true,
+          "Name": "LED-OM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "e851495e-d47f-4923-b076-d49d5244587e",
+              "Value": "(A:MIDDLE MARKER,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 10",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "44e185b7-0b07-4dac-a277-683ce1451902",
+          "Active": true,
+          "Name": "LED-MM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "94fe3445-0444-4212-afe4-786a5241e924",
+              "Value": "(A:INNER MARKER,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 11",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "a4cd4a9a-6535-4f60-ae67-c9c5b99708ec",
+          "Active": true,
+          "Name": "LED-IM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "0",
+          "Value": "0"
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 0,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:COM RECEIVE:1, Bool) ! (>K:COM1_RECEIVE_SELECT)",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 0,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "913f6874-4b12-4adb-aea5-335df265b0a3",
+          "Active": true,
+          "Name": "COM1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 1,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:COM RECEIVE:2, Bool) ! (>K:COM2_RECEIVE_SELECT)",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 1,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "6ee7c7e4-b175-4f1b-9ec4-405094804539",
+          "Active": true,
+          "Name": "COM2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 2,
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 2,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "60ced6cc-95d5-4eb4-8a5b-24ded5c70aee",
+          "Active": true,
+          "Name": "MIC1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 3,
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 3,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "7b23ab89-c284-4e28-8455-378b0cb358f4",
+          "Active": true,
+          "Name": "MIC2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 4,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:NAV SOUND:1, Bool) ! (>K:RADIO_VOR1_IDENT_TOGGLE)",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 4,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "ab376f4d-fb45-4efd-ba0d-038fb916f12d",
+          "Active": true,
+          "Name": "NAV1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 5,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:NAV SOUND:2, Bool) ! (>K:RADIO_VOR2_IDENT_TOGGLE)",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 5,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "43c386e3-51b2-4115-bb42-64bd6bb70f74",
+          "Active": true,
+          "Name": "NAV2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 6,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:DME SOUND, Bool) ! (>K:RADIO_DME1_IDENT_TOGGLE)",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 6,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "106aa468-c085-4fad-a5ae-50d4edd91927",
+          "Active": true,
+          "Name": "DME",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 7,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:ADF SOUND, Bool) ! (>K:RADIO_ADF_IDENT_TOGGLE)",
+              "PresetId": "-"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 7,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "53b93ca2-b3ec-4277-a284-2062eee65a9e",
+          "Active": true,
+          "Name": "ADF",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 8,
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:MARKER SOUND:1, Bool) ! (>K:MARKER_SOUND_TOGGLE)",
+              "PresetId": "0"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 8,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "8a00c4ec-d7e0-4954-9565-03d07fb18e34",
+          "Active": true,
+          "Name": "MKR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PWRadioClassic",
+            "Serial": "SN-941-A61"
+          },
+          "RawValue": "RELEASE",
+          "Value": " "
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Micro</ModuleType>
+  <ModuleName>PW-Radio-Backlit</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="Button" Pin="0" />
+  <Button Name="Button 1" Pin="1" />
+  <Button Name="btnCOM1" Pin="2" />
+  <Button Name="btnCOM2" Pin="3" />
+  <Button Name="btnMIC1" Pin="4" />
+  <Button Name="btnNAV1" Pin="5" />
+  <Button Name="btnNAV2" Pin="6" />
+  <Button Name="btnVOR" Pin="7" />
+  <Button Name="btnADF" Pin="8" />
+  <Button Name="btnMKR" Pin="9" />
+  <ShiftRegister Name="SR-LEDs" LatchPin="14" ClockPin="16" DataPin="15" NumModules="2" />
+</Config>
