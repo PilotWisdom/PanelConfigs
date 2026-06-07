@@ -1,22 +1,24 @@
 {
-  "Name": "G507ProMicro-XPlane",
+  "Name": "G507ProMicrov3-MSFS",
   "ConfigFiles": [
     {
-      "Label": "G507ProMicro-XPlane",
-      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Autopilot-G507\\Mobiflight\\G507ProMicro-XPlane.mcc",
+      "Label": "G507ProMicrov3-MSFS",
+      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Autopilot-G507\\Mobiflight\\G507ProMicro-MSFS.mcc",
       "ReferenceOnly": false,
       "EmbedContent": true,
       "ConfigItems": [
         {
           "Source": {
-            "XplaneDataRef": {
-              "Path": "sim/cockpit2/autopilot/heading_status"
+            "SimConnectValue": {
+              "UUID": "4eb2a124-0af9-45c5-a665-00b94bc0c207",
+              "Value": "(A:AUTOPILOT HEADING LOCK,Bool)",
+              "VarType": 2
             },
-            "Type": "XplaneSource"
+            "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
-            "Float64": 2.0,
+            "Float64": 1.0,
             "String": null
           },
           "Device": {
@@ -34,28 +36,18 @@
           "Name": "HDG-LED",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "2",
-                "IfValue": "1",
-                "ElseValue": "0",
-                "Active": true
-              }
-            ]
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "Source": {
-            "XplaneDataRef": {
-              "Path": "sim/cockpit2/autopilot/approach_status"
+            "SimConnectValue": {
+              "UUID": "d7187230-2fd2-41a7-b22e-55e3e8a0ec12",
+              "Value": "(A:AUTOPILOT APPROACH HOLD,Bool)",
+              "VarType": 2
             },
-            "Type": "XplaneSource"
+            "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
@@ -77,28 +69,18 @@
           "Name": "APR-LED",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "2",
-                "IfValue": "1",
-                "ElseValue": "0",
-                "Active": true
-              }
-            ]
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "Source": {
-            "XplaneDataRef": {
-              "Path": "sim/cockpit2/autopilot/nav_status"
+            "SimConnectValue": {
+              "UUID": "4224fc05-b6e9-44d4-9468-c546a05a99c4",
+              "Value": "(A:AUTOPILOT NAV1 LOCK,Bool)",
+              "VarType": 2
             },
-            "Type": "XplaneSource"
+            "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
@@ -120,28 +102,16 @@
           "Name": "NAV-LED",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "2",
-                "IfValue": "1",
-                "ElseValue": "0",
-                "Active": true
-              }
-            ]
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "Source": {
-            "XplaneDataRef": {
-              "Path": "sim/cockpit2/autopilot/track_status"
+            "SimConnectValue": {
+              "VarType": 0
             },
-            "Type": "XplaneSource"
+            "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
@@ -163,28 +133,18 @@
           "Name": "TRK-LED",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "2",
-                "IfValue": "1",
-                "ElseValue": "0",
-                "Active": true
-              }
-            ]
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "Source": {
-            "XplaneDataRef": {
-              "Path": "sim/cockpit/autopilot/autopilot_mode"
+            "SimConnectValue": {
+              "UUID": "59411677-275b-4f69-82d2-eb93c20db76c",
+              "Value": "(A:AUTOPILOT MASTER,Bool)",
+              "VarType": 2
             },
-            "Type": "XplaneSource"
+            "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
@@ -206,28 +166,18 @@
           "Name": "AP-LED",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "2",
-                "IfValue": "1",
-                "ElseValue": "0",
-                "Active": true
-              }
-            ]
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "Source": {
-            "XplaneDataRef": {
-              "Path": "sim/cockpit2/autopilot/flight_director_mode"
+            "SimConnectValue": {
+              "UUID": "2ac729ee-dcb3-4103-b61b-da3913a471e2",
+              "Value": "(A:AUTOPILOT FLIGHT DIRECTOR ACTIVE,Bool)",
+              "VarType": 2
             },
-            "Type": "XplaneSource"
+            "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
@@ -249,16 +199,18 @@
           "Name": "FD-LED",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "Source": {
-            "XplaneDataRef": {
-              "Path": "sim/cockpit2/autopilot/roll_status"
+            "SimConnectValue": {
+              "UUID": "4fcd3b6a-1ff4-406f-a140-4bbbf4fed3f6",
+              "Value": "(A:AUTOPILOT WING LEVELER, Bool)\n",
+              "VarType": 2
             },
-            "Type": "XplaneSource"
+            "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
@@ -280,16 +232,18 @@
           "Name": "LVL-LED",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "Source": {
-            "XplaneDataRef": {
-              "Path": "sim/cockpit/switches/yaw_damper_on"
+            "SimConnectValue": {
+              "UUID": "01313b08-3560-48b5-9992-44eb1b4b87ae",
+              "Value": "(A:AUTOPILOT YAW DAMPER,Bool)",
+              "VarType": 2
             },
-            "Type": "XplaneSource"
+            "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
@@ -311,16 +265,18 @@
           "Name": "YD-LED",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "Source": {
-            "XplaneDataRef": {
-              "Path": "sim/cockpit2/autopilot/speed_status"
+            "SimConnectValue": {
+              "UUID": "29f91cf4-fa4c-43ca-9023-89d0f82cff29",
+              "Value": "(A:AUTOPILOT FLIGHT LEVEL CHANGE, Bool)",
+              "VarType": 2
             },
-            "Type": "XplaneSource"
+            "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
@@ -342,16 +298,18 @@
           "Name": "IAS-LED",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "Source": {
-            "XplaneDataRef": {
-              "Path": "sim/cockpit2/autopilot/vnav_status"
+            "SimConnectValue": {
+              "UUID": "841b5507-563d-4bfd-ab33-fd9bda278ffa",
+              "Value": "(L:XMLVAR_VNAVButtonValue)",
+              "VarType": 2
             },
-            "Type": "XplaneSource"
+            "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
@@ -373,28 +331,18 @@
           "Name": "VNAV-LED",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "2",
-                "IfValue": "1",
-                "ElseValue": "0",
-                "Active": true
-              }
-            ]
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "Source": {
-            "XplaneDataRef": {
-              "Path": "sim/cockpit2/autopilot/vvi_status"
+            "SimConnectValue": {
+              "UUID": "3c5c84e5-a499-4a07-8d0c-f812004f60fe",
+              "Value": "(A:AUTOPILOT VERTICAL HOLD, Bool)\n",
+              "VarType": 2
             },
-            "Type": "XplaneSource"
+            "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
@@ -416,28 +364,18 @@
           "Name": "VS-LED",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "2",
-                "IfValue": "1",
-                "ElseValue": "0",
-                "Active": true
-              }
-            ]
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "Source": {
-            "XplaneDataRef": {
-              "Path": "sim/cockpit2/autopilot/altitude_hold_status"
+            "SimConnectValue": {
+              "UUID": "09df7de7-01e4-43ac-8015-9573385d8acb",
+              "Value": "(A:AUTOPILOT ALTITUDE LOCK,Bool)",
+              "VarType": 2
             },
-            "Type": "XplaneSource"
+            "Type": "SimConnectSource"
           },
           "TestValue": {
             "type": 1,
@@ -459,30 +397,42 @@
           "Name": "ALT-LED",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:AUTOPILOT PITCH HOLD, Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
           },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "2",
-                "IfValue": "1",
-                "ElseValue": "0",
-                "Active": true
-              }
-            ]
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "DeviceType": "-",
+          "DeviceName": null,
+          "GUID": "ef6fe69e-eb8a-49c7-a3c6-4f0e9c316158",
+          "Active": true,
+          "Name": "Pitch-Active",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "inputMultiplexer": {
             "DataPin": 0,
             "onPress": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/heading",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_PANEL_HEADING_HOLD)",
+              "PresetId": "3f56b530-ef2e-4430-8811-ad9b135309f4"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -503,18 +453,17 @@
           "Name": "HDG",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "inputMultiplexer": {
             "DataPin": 1,
             "onPress": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/approach",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:AUTOPILOT APPROACH HOLD,Bool) (A:AUTOPILOT GLIDESLOPE HOLD, Bool) ! and if{ (>K:AP_APR_HOLD) } (>K:AP_APR_HOLD)",
+              "PresetId": "ea9a2313-6fa8-42e5-b392-f7f28907e241"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -535,18 +484,17 @@
           "Name": "APR",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "inputMultiplexer": {
             "DataPin": 2,
             "onPress": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/NAV",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_NAV1_HOLD)",
+              "PresetId": "f8ec79b7-46e7-424f-b715-477343d3e151"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -567,19 +515,14 @@
           "Name": "NAV",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "inputMultiplexer": {
             "DataPin": 3,
-            "onPress": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/track",
-              "Expression": ""
-            },
+            "onPress": null,
             "onRelease": null,
             "onLongRelease": null,
             "onHold": null,
@@ -599,18 +542,17 @@
           "Name": "TRK",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "inputMultiplexer": {
             "DataPin": 4,
             "onPress": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/servos_toggle",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_MASTER)",
+              "PresetId": "b17146c8-2db3-4239-b797-e7bc11d557da"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -631,18 +573,17 @@
           "Name": "AP",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "inputMultiplexer": {
             "DataPin": 5,
             "onPress": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/fdir_toggle",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:TOGGLE_FLIGHT_DIRECTOR)",
+              "PresetId": "fad1ae94-e742-4bee-8982-c45da3585497"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -663,18 +604,17 @@
           "Name": "FD",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "inputMultiplexer": {
             "DataPin": 6,
             "onPress": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/wing_leveler",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_WING_LEVELER)\n",
+              "PresetId": "dd17c9f1-199f-466e-befc-d4d73b0172cc"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -695,18 +635,17 @@
           "Name": "LVL",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "inputMultiplexer": {
             "DataPin": 7,
             "onPress": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/systems/yaw_damper_toggle",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:YAW_DAMPER_TOGGLE)",
+              "PresetId": "2beef46b-a8ac-4a25-b7eb-6d75b136f1f9"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -727,18 +666,17 @@
           "Name": "YD",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "inputMultiplexer": {
             "DataPin": 8,
             "onPress": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/level_change",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:FLIGHT_LEVEL_CHANGE)\n(A:AIRSPEED INDICATED, knots) (>K:AP_SPD_VAR_SET)\n",
+              "PresetId": "0"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -759,18 +697,17 @@
           "Name": "IAS",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "inputMultiplexer": {
             "DataPin": 9,
             "onPress": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/vnav",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "p0 1 min 0 max (>O:AUTOPILOT_VNAV_Mode_Position) (L:XMLVAR_VNAVButtonValue) ! (>L:XMLVAR_VNAVButtonValue) 1 (>O:_ButtonAnimVar) (L:XMLVAR_VNAVButtonValue) sp0 1 0 l0 ? (>O:AUTOPILOT_VNAV_Mode_Position)",
+              "PresetId": "ae7e3f46-16f2-4073-9b8f-959754289b5b"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -791,18 +728,17 @@
           "Name": "VNAV",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "inputMultiplexer": {
             "DataPin": 10,
             "onPress": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/vertical_speed",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_PANEL_VS_HOLD)",
+              "PresetId": "6a81e461-5a7b-4dbf-b0b2-7cacc179df42"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -823,18 +759,17 @@
           "Name": "VS",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "inputMultiplexer": {
             "DataPin": 11,
             "onPress": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/altitude_hold",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(>K:AP_ALT_HOLD)",
+              "PresetId": "a946ee03-bd6d-4ed4-b1c2-72d26df93848"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -855,18 +790,17 @@
           "Name": "ALT",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "inputMultiplexer": {
             "DataPin": 12,
             "onPress": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/heading_sync",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:HEADING INDICATOR, degrees) (>K:HEADING_BUG_SET)",
+              "PresetId": "cd445f2a-c26a-4e6f-9248-ea4eda07580f"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -887,18 +821,17 @@
           "Name": "HDG-BTN",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "inputMultiplexer": {
             "DataPin": 13,
             "onPress": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/altitude_sync",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:INDICATED ALTITUDE, feet) 100 / near 100 * (>K:AP_ALT_VAR_SET_ENGLISH)",
+              "PresetId": "29ce838a-1f1c-4c9b-8653-3c9403ef1c7f"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -919,26 +852,32 @@
           "Name": "ALT-BTN",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "encoder": {
             "onLeft": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/heading_down",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "-1 s0\n(A:AUTOPILOT HEADING LOCK DIR:1, degrees) 1 s0 * + dnor (>K:2:HEADING_BUG_SET)",
+              "PresetId": "cab52499-c789-4249-bc21-31f920d4e604"
             },
-            "onLeftFast": null,
+            "onLeftFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "-5 s0\n(A:AUTOPILOT HEADING LOCK DIR:1, degrees) s0 + dnor (>K:2:HEADING_BUG_SET)",
+              "PresetId": "0"
+            },
             "onRight": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/heading_up",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "1 s0\n(A:AUTOPILOT HEADING LOCK DIR:1, degrees) 1 s0 * + dnor (>K:2:HEADING_BUG_SET)",
+              "PresetId": "debca2cf-3a15-40f0-b839-3e1e153cd0f4"
             },
-            "onRightFast": null
+            "onRightFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "5 s0\n(A:AUTOPILOT HEADING LOCK DIR:1, degrees) s0 + dnor (>K:2:HEADING_BUG_SET)",
+              "PresetId": "0"
+            }
           },
           "Device": {
             "Type": "Encoder",
@@ -951,26 +890,32 @@
           "Name": "HDG-Knob",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "encoder": {
             "onLeft": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/altitude_down",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:AUTOPILOT ALTITUDE LOCK VAR:0, feet) 100 - 0 max (>K:2:AP_ALT_VAR_SET_ENGLISH)\n",
+              "PresetId": "143e3af0-1d51-4067-8385-5b24346932ef"
             },
-            "onLeftFast": null,
+            "onLeftFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:AUTOPILOT ALTITUDE LOCK VAR:0, feet) 1000 - 0 max (>K:2:AP_ALT_VAR_SET_ENGLISH)\n",
+              "PresetId": "0"
+            },
             "onRight": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/altitude_up",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:AUTOPILOT ALTITUDE LOCK VAR:0, feet) 100 + 0 max (>K:2:AP_ALT_VAR_SET_ENGLISH)\n",
+              "PresetId": "6b70bc27-97bf-499e-ba49-3d63984aa593"
             },
-            "onRightFast": null
+            "onRightFast": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:AUTOPILOT ALTITUDE LOCK VAR:0, feet) 1000 + 0 max (>K:2:AP_ALT_VAR_SET_ENGLISH)\n",
+              "PresetId": "0"
+            }
           },
           "Device": {
             "Type": "Encoder",
@@ -983,24 +928,22 @@
           "Name": "ALT-Knob",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           }
         },
         {
           "encoder": {
             "onLeft": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/vertical_speed_up",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:AUTOPILOT VERTICAL HOLD VAR:1, feet per minute) 100 - (>K:2:AP_VS_VAR_SET_ENGLISH)\n",
+              "PresetId": "-"
             },
             "onLeftFast": null,
             "onRight": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/vertical_speed_down",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:AUTOPILOT VERTICAL HOLD VAR:1, feet per minute) 100 + (>K:2:AP_VS_VAR_SET_ENGLISH)\n",
+              "PresetId": "-"
             },
             "onRightFast": null
           },
@@ -1012,11 +955,11 @@
           "DeviceName": "Wheel-enc",
           "GUID": "44c62f2b-8d78-4776-9b8a-1c7a427ced81",
           "Active": true,
-          "Name": "Wheel-VS",
+          "Name": "WheelVS",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           },
           "Preconditions": [
             {
@@ -1024,7 +967,7 @@
               "Ref": "a2f00ba4-cecc-4488-90ed-78aded9b253f",
               "Serial": null,
               "Pin": null,
-              "Operand": ">=",
+              "Operand": "=",
               "Value": "1",
               "Logic": "and",
               "Active": true
@@ -1034,17 +977,15 @@
         {
           "encoder": {
             "onLeft": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/airspeed_up",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:XMLVAR_AirSpeedIsInMach) if{\n    (A:AUTOPILOT MACH HOLD VAR, number) 0.01 - (>K:AP_MACH_VAR_SET)\n} els{\n    (A:AUTOPILOT AIRSPEED HOLD VAR, knot) 1 - (>K:AP_SPD_VAR_SET)\n}\n",
+              "PresetId": "-"
             },
             "onLeftFast": null,
             "onRight": {
-              "Type": "XplaneInputAction",
-              "InputType": "Command",
-              "Path": "sim/autopilot/airspeed_down",
-              "Expression": ""
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(L:XMLVAR_AirSpeedIsInMach) if{\n    (A:AUTOPILOT MACH HOLD VAR, number) 0.01 + (>K:AP_MACH_VAR_SET)\n} els{\n    (A:AUTOPILOT AIRSPEED HOLD VAR, knot) 1 + (>K:AP_SPD_VAR_SET)\n}\n",
+              "PresetId": "-"
             },
             "onRightFast": null
           },
@@ -1054,13 +995,13 @@
           },
           "DeviceType": "Encoder",
           "DeviceName": "Wheel-enc",
-          "GUID": "3227121b-aefd-4edf-9cf2-d0a9c1dd8d4c",
+          "GUID": "ef2ed750-8587-4668-ba9f-90fb41903374",
           "Active": true,
-          "Name": "Wheel-IAS",
+          "Name": "WheelIAS",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "G507ProMicrov2",
-            "Serial": "SN-292-B48"
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
           },
           "Preconditions": [
             {
@@ -1068,17 +1009,100 @@
               "Ref": "8250d846-8230-4c64-9023-9a53c291be17",
               "Serial": null,
               "Pin": null,
-              "Operand": ">=",
+              "Operand": "=",
               "Value": "1",
               "Logic": "and",
               "Active": true
             }
           ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:AUTOPILOT PITCH HOLD REF, degrees) 0.2 - (>K:AP_PITCH_REF_SET)\n",
+              "PresetId": "-"
+            },
+            "onLeftFast": null,
+            "onRight": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "(A:AUTOPILOT PITCH HOLD REF, degrees) 0.2 + (>K:AP_PITCH_REF_SET)\n",
+              "PresetId": "-"
+            },
+            "onRightFast": null
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "Wheel-enc"
+          },
+          "DeviceType": "Encoder",
+          "DeviceName": "Wheel-enc",
+          "GUID": "c08024cc-673d-4a3b-9b67-aa71e3397684",
+          "Active": true,
+          "Name": "WheelPitch",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "ef6fe69e-eb8a-49c7-a3c6-4f0e9c316158",
+              "Serial": null,
+              "Pin": null,
+              "Operand": "=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "LEDPWM",
+            "Pin": "LEDPWM",
+            "Brightness": 255,
+            "PwmMode": true,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "LEDPWM",
+          "GUID": "8db19ae3-8f4c-46b6-ba9f-048608e82746",
+          "Active": true,
+          "Name": "LED-PWM-CONTROL",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov3",
+            "Serial": "SN-G94-532"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "128",
+                "Active": true
+              }
+            ]
+          }
         }
       ]
     }
   ],
-  "Sim": "xplane",
+  "Sim": "msfs",
   "Aircraft": [],
   "Features": {
     "FSUIPC": false,
