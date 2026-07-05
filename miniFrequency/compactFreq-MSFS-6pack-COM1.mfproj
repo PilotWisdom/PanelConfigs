@@ -51,10 +51,8 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "11015",
-          "Value": "11015"
+            "Serial": "SN-941-A61"
+          }
         },
         {
           "Source": {
@@ -100,10 +98,8 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "11675",
-          "Value": "11675"
+            "Serial": "SN-941-A61"
+          }
         },
         {
           "button": {
@@ -131,10 +127,8 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Serial": "SN-941-A61"
+          }
         },
         {
           "button": {
@@ -162,10 +156,8 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Serial": "SN-941-A61"
+          }
         },
         {
           "encoder": {
@@ -194,10 +186,8 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "RIGHT",
-          "Value": " "
+            "Serial": "SN-941-A61"
+          }
         },
         {
           "encoder": {
@@ -226,10 +216,8 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "LEFT",
-          "Value": " "
+            "Serial": "SN-941-A61"
+          }
         },
         {
           "Source": {
@@ -260,10 +248,8 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "0",
-          "Value": "0"
+            "Serial": "SN-941-A61"
+          }
         },
         {
           "Source": {
@@ -294,10 +280,8 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "1",
-          "Value": "1"
+            "Serial": "SN-941-A61"
+          }
         },
         {
           "Source": {
@@ -328,7 +312,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
+            "Serial": "SN-941-A61"
           },
           "Modifiers": {
             "Items": [
@@ -338,9 +322,7 @@
                 "Active": true
               }
             ]
-          },
-          "RawValue": "0",
-          "Value": "128"
+          }
         }
       ]
     }

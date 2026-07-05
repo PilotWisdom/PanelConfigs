@@ -1,20 +1,18 @@
 {
-  "Name": "PW-Transponderv2-MSFS",
+  "Name": "PW-Transponder-XPlane",
   "ConfigFiles": [
     {
-      "Label": "PW-Transponderv2-MSFS",
-      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Transponder\\PW-Transponder-MSFS.mcc",
+      "Label": "PW-Transponder-XPlane",
+      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Transponder\\Previous versions\\PW-Transponder-XPlane.mcc",
       "ReferenceOnly": false,
       "EmbedContent": true,
       "ConfigItems": [
         {
           "Source": {
-            "SimConnectValue": {
-              "UUID": "db3bd1a4-4c3c-4e3e-a9aa-3480bf0f4a70",
-              "Value": "(A:TRANSPONDER CODE:1,number)",
-              "VarType": 2
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/transponder_code"
             },
-            "Type": "SimConnectSource"
+            "Type": "XplaneSource"
           },
           "TestValue": {
             "type": 1,
@@ -52,46 +50,22 @@
         },
         {
           "Source": {
-            "SimConnectValue": {
-              "UUID": "7d54c6ef-2128-4df8-acf6-a5303fe54a8e",
-              "Value": "(A:TRANSPONDER STATE:1, Enum)",
-              "VarType": 2
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/transponder_mode"
             },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1234.0,
-            "String": null
-          },
-          "DeviceType": "-",
-          "DeviceName": null,
-          "GUID": "e50a72b9-13cc-4a69-9dbe-9e8cf79af4c5",
-          "Active": true,
-          "Name": "Transponder-Mode",
-          "Type": "OutputConfigItem",
-          "Controller": null
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "088d5236-57c1-4b4b-9edc-e608e8819821",
-              "Value": "(A:TRANSPONDER IDENT:1, Bool)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
+            "Type": "XplaneSource"
           },
           "TestValue": {
             "type": 2,
             "Float64": 0.0,
-            "String": "-Id-"
+            "String": "OFF"
           },
           "Device": {
             "Name": "segMode",
             "DisplayLedAddress": "segMode",
             "DisplayLedConnector": 1,
             "DisplayLedModuleSize": 4,
-            "DisplayLedPadding": false,
+            "DisplayLedPadding": true,
             "DisplayLedPaddingChar": " ",
             "DisplayLedDigits": [
               "0",
@@ -106,9 +80,9 @@
           },
           "DeviceType": "Display Module",
           "DeviceName": "segMode",
-          "GUID": "1aa85ab6-68ca-48cf-92ad-056851863a6c",
+          "GUID": "e50a72b9-13cc-4a69-9dbe-9e8cf79af4c5",
           "Active": true,
-          "Name": "IDENT_ON",
+          "Name": "Transponder-Mode",
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
@@ -117,74 +91,46 @@
           "Modifiers": {
             "Items": [
               {
-                "Type": "Transformation",
-                "Expression": "if($=1,'-Id-',#)",
-                "Active": false
-              },
-              {
-                "Type": "Transformation",
-                "Expression": "#",
-                "Active": true
-              },
-              {
                 "Type": "Comparison",
                 "Operand": "=",
                 "Value": "0",
-                "IfValue": "OFF",
-                "ElseValue": "",
+                "IfValue": "OFF ",
+                "ElseValue": "$",
                 "Active": true
               },
               {
                 "Type": "Comparison",
                 "Operand": "=",
                 "Value": "1",
-                "IfValue": "Sb",
-                "ElseValue": "",
+                "IfValue": "Sb  ",
+                "ElseValue": "$",
                 "Active": true
               },
               {
                 "Type": "Comparison",
                 "Operand": "=",
                 "Value": "2",
-                "IfValue": "tst-",
-                "ElseValue": "",
+                "IfValue": "On  ",
+                "ElseValue": "$",
                 "Active": true
               },
               {
                 "Type": "Comparison",
                 "Operand": "=",
                 "Value": "3",
-                "IfValue": "On",
-                "ElseValue": "",
-                "Active": true
-              },
-              {
-                "Type": "Comparison",
-                "Operand": "=",
-                "Value": "4",
-                "IfValue": "Al",
-                "ElseValue": "",
+                "IfValue": "Al  ",
+                "ElseValue": "$",
                 "Active": true
               }
             ]
-          },
-          "ConfigRefs": [
-            {
-              "Active": true,
-              "Ref": "e50a72b9-13cc-4a69-9dbe-9e8cf79af4c5",
-              "Placeholder": "#",
-              "TestValue": "0"
-            }
-          ]
+          }
         },
         {
           "Source": {
-            "SimConnectValue": {
-              "UUID": "-",
-              "Value": "(A:TRANSPONDER IDENT:1, Bool)",
-              "VarType": 2
+            "XplaneDataRef": {
+              "Path": "sim/cockpit/radios/transponder_id"
             },
-            "Type": "SimConnectSource"
+            "Type": "XplaneSource"
           },
           "TestValue": {
             "type": 1,
@@ -200,9 +146,9 @@
           },
           "DeviceType": "Output",
           "DeviceName": "ledID",
-          "GUID": "f900a504-5aa5-4aa5-a96f-f9dfe9b21a82",
+          "GUID": "1aa85ab6-68ca-48cf-92ad-056851863a6c",
           "Active": true,
-          "Name": "LED_IDENT",
+          "Name": "IDENT_ON",
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
@@ -213,9 +159,10 @@
           "inputMultiplexer": {
             "DataPin": 0,
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>H:Transponder0)",
-              "PresetId": "0"
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_0",
+              "Expression": ""
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -244,9 +191,10 @@
           "inputMultiplexer": {
             "DataPin": 1,
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>H:Transponder1)",
-              "PresetId": "09ddd15e-a50f-4f62-9532-3fd306f996cb"
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_1",
+              "Expression": ""
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -262,7 +210,7 @@
           },
           "DeviceType": "InputMultiplexer",
           "DeviceName": "MUXNUM",
-          "GUID": "ede44c46-cfd6-4f38-8660-0bf3a4b430bb",
+          "GUID": "129308c3-3eff-4221-b0e6-2006865e0bd3",
           "Active": true,
           "Name": "1",
           "Type": "InputConfigItem",
@@ -275,9 +223,10 @@
           "inputMultiplexer": {
             "DataPin": 2,
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>H:Transponder2)",
-              "PresetId": "1eb9ae7f-c95d-443c-ba87-dd3810fe6216"
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_2",
+              "Expression": ""
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -293,7 +242,7 @@
           },
           "DeviceType": "InputMultiplexer",
           "DeviceName": "MUXNUM",
-          "GUID": "b54e8ac2-bb20-4463-b3cb-56b5e93dcebf",
+          "GUID": "9f43f478-aef2-492c-9087-5c0f390f19b7",
           "Active": true,
           "Name": "2",
           "Type": "InputConfigItem",
@@ -306,9 +255,10 @@
           "inputMultiplexer": {
             "DataPin": 3,
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>H:Transponder3)",
-              "PresetId": "8f2a5b95-d06d-4156-af6c-f294e2d1438a"
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_3",
+              "Expression": ""
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -324,7 +274,7 @@
           },
           "DeviceType": "InputMultiplexer",
           "DeviceName": "MUXNUM",
-          "GUID": "f451e81e-8a3a-42c4-8efb-0bf02e638069",
+          "GUID": "d87a9f3c-106f-4b80-9ca5-4b14237facbe",
           "Active": true,
           "Name": "3",
           "Type": "InputConfigItem",
@@ -337,9 +287,10 @@
           "inputMultiplexer": {
             "DataPin": 4,
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>H:Transponder4)",
-              "PresetId": "a0777872-878e-4d48-ac84-34e87c041930"
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_4",
+              "Expression": ""
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -355,7 +306,7 @@
           },
           "DeviceType": "InputMultiplexer",
           "DeviceName": "MUXNUM",
-          "GUID": "1f5bfac8-149e-499a-b338-997e4a423ee7",
+          "GUID": "75f9bb6c-10b2-4e7f-bff2-df8b46fdb6cc",
           "Active": true,
           "Name": "4",
           "Type": "InputConfigItem",
@@ -368,9 +319,10 @@
           "inputMultiplexer": {
             "DataPin": 5,
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>H:Transponder5)",
-              "PresetId": "99255895-102e-41b9-8763-2fc144768ed0"
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_5",
+              "Expression": ""
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -386,7 +338,7 @@
           },
           "DeviceType": "InputMultiplexer",
           "DeviceName": "MUXNUM",
-          "GUID": "4034350f-a4e7-4556-8f5d-39c16a45f8c6",
+          "GUID": "0eac8b67-3f3d-41a0-97b1-dfe14c6c2440",
           "Active": true,
           "Name": "5",
           "Type": "InputConfigItem",
@@ -399,9 +351,10 @@
           "inputMultiplexer": {
             "DataPin": 6,
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>H:Transponder6)",
-              "PresetId": "38faa3cf-4058-454e-b486-f1726aeef8e6"
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_6",
+              "Expression": ""
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -417,7 +370,7 @@
           },
           "DeviceType": "InputMultiplexer",
           "DeviceName": "MUXNUM",
-          "GUID": "61a8050d-898a-49e5-902c-41bd0e171d58",
+          "GUID": "1f73e205-6a8c-4254-8050-0e1da4925d1f",
           "Active": true,
           "Name": "6",
           "Type": "InputConfigItem",
@@ -430,9 +383,10 @@
           "inputMultiplexer": {
             "DataPin": 7,
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>H:Transponder7)",
-              "PresetId": "611e1dee-1148-4196-8a43-0d691368b979"
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_7",
+              "Expression": ""
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -448,7 +402,7 @@
           },
           "DeviceType": "InputMultiplexer",
           "DeviceName": "MUXNUM",
-          "GUID": "1d5e0948-c31b-43c6-a1cc-e372a11501f8",
+          "GUID": "97fc21ff-750e-4c9b-b61c-6561f7c804ce",
           "Active": true,
           "Name": "7",
           "Type": "InputConfigItem",
@@ -461,9 +415,10 @@
           "inputMultiplexer": {
             "DataPin": 0,
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "0 (>A:TRANSPONDER STATE:1, Enum)",
-              "PresetId": "6902c298-52d6-41b2-9ed5-14c6f7aafe66"
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_off",
+              "Expression": ""
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -492,9 +447,10 @@
           "inputMultiplexer": {
             "DataPin": 1,
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "1 (>A:TRANSPONDER STATE:1, Enum)",
-              "PresetId": "6bb83f0e-6466-4cc1-9f3d-26c205a340a5"
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_standby",
+              "Expression": ""
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -510,9 +466,9 @@
           },
           "DeviceType": "InputMultiplexer",
           "DeviceName": "MUXMODE",
-          "GUID": "c213de13-50c5-4f14-807e-ed22cc9d802d",
+          "GUID": "02d25a3e-a582-4d46-a886-f2ba8980be75",
           "Active": true,
-          "Name": "Standby",
+          "Name": "Off",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
@@ -523,9 +479,10 @@
           "inputMultiplexer": {
             "DataPin": 2,
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "3 (>A:TRANSPONDER STATE:1, Enum)",
-              "PresetId": "f93b81d9-73f3-4734-a9b6-08f9684f179b"
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_on",
+              "Expression": ""
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -541,9 +498,9 @@
           },
           "DeviceType": "InputMultiplexer",
           "DeviceName": "MUXMODE",
-          "GUID": "cf104142-3b21-4953-a09c-d3f400d91da8",
+          "GUID": "a1a728e6-aa92-4e1a-abf9-139eba5e3861",
           "Active": true,
-          "Name": "On",
+          "Name": "Off",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
@@ -554,9 +511,10 @@
           "inputMultiplexer": {
             "DataPin": 3,
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "4 (>A:TRANSPONDER STATE:1, Enum)",
-              "PresetId": "22f6b23a-79cd-4761-b066-b2bc1a309df6"
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_alt",
+              "Expression": ""
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -572,9 +530,9 @@
           },
           "DeviceType": "InputMultiplexer",
           "DeviceName": "MUXMODE",
-          "GUID": "cea2757f-d5c9-4ef7-9b96-4e6c516f6ed7",
+          "GUID": "2b630c60-9432-4a8a-b02c-8add3a004297",
           "Active": true,
-          "Name": "Alt",
+          "Name": "Off",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
@@ -585,9 +543,10 @@
           "inputMultiplexer": {
             "DataPin": 4,
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>H:TransponderVFR)",
-              "PresetId": "cb4278d8-5c94-47b1-bb60-958da077feb6"
+              "Type": "XplaneInputAction",
+              "InputType": "DataRef",
+              "Path": "sim/cockpit2/radios/actuators/transponder_code",
+              "Expression": "1200"
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -603,9 +562,9 @@
           },
           "DeviceType": "InputMultiplexer",
           "DeviceName": "MUXMODE",
-          "GUID": "c5a3e17f-07e1-4cec-b675-302cf7a7017d",
+          "GUID": "e13e58d4-6e4b-4d28-9198-6f714043a25a",
           "Active": true,
-          "Name": "VFR",
+          "Name": "Off",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
@@ -616,9 +575,10 @@
           "inputMultiplexer": {
             "DataPin": 5,
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
-              "Command": "(>K:XPNDR_IDENT_ON)",
-              "PresetId": "89bf635f-a9f1-42a0-8229-039842286a22"
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_ident",
+              "Expression": ""
             },
             "onRelease": null,
             "onLongRelease": null,
@@ -634,9 +594,9 @@
           },
           "DeviceType": "InputMultiplexer",
           "DeviceName": "MUXMODE",
-          "GUID": "4164f749-4153-44e6-b77d-88b691ea7a40",
+          "GUID": "f403a99a-6854-47a7-97a6-36f5e843f86d",
           "Active": true,
-          "Name": "Ident",
+          "Name": "Off",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v2",
@@ -646,7 +606,7 @@
       ]
     }
   ],
-  "Sim": "msfs",
+  "Sim": "xplane",
   "Aircraft": [],
   "Features": {
     "FSUIPC": false,
