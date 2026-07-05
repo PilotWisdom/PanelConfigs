@@ -68,7 +68,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "FlapsNano",
-            "Serial": "SN-9E7-A64"
+            "Serial": "SN-6EE-882"
           },
           "Modifiers": {
             "Items": [
@@ -125,7 +125,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "FlapsNano",
-            "Serial": "SN-9E7-A64"
+            "Serial": "SN-6EE-882"
           },
           "Modifiers": {
             "Items": [
@@ -182,7 +182,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "FlapsNano",
-            "Serial": "SN-9E7-A64"
+            "Serial": "SN-6EE-882"
           },
           "Modifiers": {
             "Items": [
@@ -239,7 +239,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "FlapsNano",
-            "Serial": "SN-9E7-A64"
+            "Serial": "SN-6EE-882"
           },
           "Modifiers": {
             "Items": [
@@ -296,7 +296,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "FlapsNano",
-            "Serial": "SN-9E7-A64"
+            "Serial": "SN-6EE-882"
           },
           "Modifiers": {
             "Items": [
@@ -353,7 +353,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "FlapsNano",
-            "Serial": "SN-9E7-A64"
+            "Serial": "SN-6EE-882"
           },
           "Modifiers": {
             "Items": [
@@ -410,7 +410,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "FlapsNano",
-            "Serial": "SN-9E7-A64"
+            "Serial": "SN-6EE-882"
           },
           "Modifiers": {
             "Items": [
@@ -460,7 +460,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "FlapsNano",
-            "Serial": "SN-9E7-A64"
+            "Serial": "SN-6EE-882"
           }
         },
         {
@@ -489,7 +489,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "FlapsNano",
-            "Serial": "SN-9E7-A64"
+            "Serial": "SN-6EE-882"
           }
         },
         {
@@ -518,7 +518,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "FlapsNano",
-            "Serial": "SN-9E7-A64"
+            "Serial": "SN-6EE-882"
           }
         }
       ]
