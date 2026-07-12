@@ -1,5 +1,5 @@
 {
-  "Name": "PW-RadioRSG",
+  "Name": "PW-RadioRSG-MSFS",
   "ConfigFiles": [
     {
       "Label": "PWRadioRSG-MSFS",
@@ -37,7 +37,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -70,7 +70,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -103,7 +103,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -136,7 +136,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -169,7 +169,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -202,7 +202,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -235,7 +235,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -268,7 +268,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -301,7 +301,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -334,7 +334,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -367,7 +367,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -400,7 +400,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -431,7 +431,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -462,7 +462,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -489,7 +489,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -516,7 +516,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -547,7 +547,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -578,7 +578,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -609,7 +609,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -640,7 +640,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
+            "Serial": "SN-G94-532"
           }
         },
         {
@@ -671,48 +671,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 255.0,
-            "String": null
-          },
-          "Device": {
-            "Name": "LED-PWM",
-            "Pin": "LED-PWM",
-            "Brightness": 255,
-            "PwmMode": true,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "LED-PWM",
-          "GUID": "b4eee6d3-71ac-4de7-b2b1-1cae1a290c5a",
-          "Active": false,
-          "Name": "LEDPWM",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "PW-RadioRSG",
-            "Serial": "SN-3B3-74D"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Transformation",
-                "Expression": "128",
-                "Active": true
-              }
-            ]
+            "Serial": "SN-G94-532"
           }
         }
       ]

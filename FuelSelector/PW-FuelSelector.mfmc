@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Micro</ModuleType>
+  <ModuleName>PW-FuelSelector</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="selOFF" Pin="2" />
+  <Button Name="selLEFT" Pin="4" />
+  <Button Name="selRIGHT" Pin="6" />
+</Config>

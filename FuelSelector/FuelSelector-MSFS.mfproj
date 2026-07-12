@@ -1,0 +1,107 @@
+{
+  "Name": "FuelSelector-MSFS+Dacota",
+  "ConfigFiles": [
+    {
+      "Label": "fuelSelector",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "0 (>K:FUEL_SELECTOR_SET)\n1 1 (>K:2:FUELSYSTEM_JUNCTION_SET)",
+              "PresetId": "52c5e823-2f9f-4efc-a45d-64089e54d347"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "selOFF"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "selOFF",
+          "GUID": "5287931d-851f-4848-80b1-ec1792bb651a",
+          "Active": true,
+          "Name": "fuelOFF",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-FuelSelector",
+            "Serial": "SN-0C5-137"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "2 (>K:FUEL_SELECTOR_SET)\n2 1 (>K:2:FUELSYSTEM_JUNCTION_SET)",
+              "PresetId": "00a2f0f8-71dc-4594-a75b-8176090d0057"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "selLEFT"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "selLEFT",
+          "GUID": "a75abec2-f002-49b4-b160-487d242d0663",
+          "Active": true,
+          "Name": "fuelLEFT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-FuelSelector",
+            "Serial": "SN-0C5-137"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Type": "MSFS2020CustomInputAction",
+              "Command": "3 (>K:FUEL_SELECTOR_SET)\n3 1 (>K:2:FUELSYSTEM_JUNCTION_SET)",
+              "PresetId": "d08104c1-b441-409f-af64-b5550ccf38b5"
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "selRIGHT"
+          },
+          "DeviceType": "Button",
+          "DeviceName": "selRIGHT",
+          "GUID": "5fd687b3-328a-4807-9f27-ec8487e424b5",
+          "Active": true,
+          "Name": "fuelRIGHT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-FuelSelector",
+            "Serial": "SN-0C5-137"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}
