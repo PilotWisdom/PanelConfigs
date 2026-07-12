@@ -1,0 +1,670 @@
+{
+  "Name": "PW-RadioRSG-XPL",
+  "ConfigFiles": [
+    {
+      "Label": "PW-RadioRSG-XPL",
+      "FileName": null,
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_com1"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 0",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "30cf5788-790d-4d54-a652-4e377a5d921b",
+          "Active": true,
+          "Name": "LED-COM1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_com2"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 1",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "67606da9-88b6-4aea-b490-d6bdbfcc1431",
+          "Active": true,
+          "Name": "LED-COM2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "1"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 2",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "3057ad62-b3dc-40a4-882f-3abd7795d2cb",
+          "Active": true,
+          "Name": "LED-MIC1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": ""
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 3",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "00629191-2b17-4b4c-9451-18ace12d05b5",
+          "Active": true,
+          "Name": "LED-MIC2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_nav1"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 4",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "58e4a438-5c91-4968-b619-b47b6bb7ae5c",
+          "Active": true,
+          "Name": "LED-NAV1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_nav2"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 5",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "ec96c26d-7654-4003-a692-f8dadef9828d",
+          "Active": true,
+          "Name": "LED-NAV2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_dme1"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 6",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "1720d27d-1575-4eb8-8b14-11d019082c6c",
+          "Active": true,
+          "Name": "LED-DME",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_selection_adf1"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 7",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "bb8855e5-6c99-4c59-aed0-e0a65662ee8b",
+          "Active": true,
+          "Name": "LED-ADF",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/audio_marker_enabled"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 8",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "20d7bbdb-ca2d-49a9-a4eb-f6b0db6fb722",
+          "Active": true,
+          "Name": "LED-MKR",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/indicators/outer_marker_lit"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 9",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "1af5da6e-a873-4182-9687-5137011a2203",
+          "Active": true,
+          "Name": "LED-OM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/indicators/middle_marker_lit"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 10",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "74bf2155-c65a-4d19-8e98-f221f908327e",
+          "Active": true,
+          "Name": "LED-MM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/indicators/inner_marker_lit"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0,
+            "String": null
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 11",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "b847bd3e-511d-44b3-ab19-d821d50d9b95",
+          "Active": true,
+          "Name": "LED-IM",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 0,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_com1",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 0,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "f3167640-f613-4211-865a-f817bff1993e",
+          "Active": true,
+          "Name": "btnCOM1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 1,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_com2",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 1,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "cc0801b0-b7a9-428d-8fc0-bb570906d18f",
+          "Active": true,
+          "Name": "btnCOM2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 2,
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 2,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "a765eef4-6cea-448e-9848-f10655332216",
+          "Active": true,
+          "Name": "btnMIC1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 3,
+            "onPress": null,
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 3,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "6df26e22-7767-4402-999c-236459f74bb2",
+          "Active": true,
+          "Name": "btnMIC2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 4,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_nav1",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 4,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "1a9dc32c-3706-403e-8cc4-b4f344e0cf69",
+          "Active": true,
+          "Name": "btnNAV1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 5,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_nav2",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 5,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "e580b630-0bc7-483c-9225-708ce9fd9b30",
+          "Active": true,
+          "Name": "btnNAV2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 6,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_dme",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 6,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "32f1c6fd-3f6c-4402-b07c-355adf065e19",
+          "Active": true,
+          "Name": "btnDME",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 7,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_adf1",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 7,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "ccec3020-b1db-45e7-844f-472b6792a626",
+          "Active": true,
+          "Name": "btnADF",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        },
+        {
+          "inputMultiplexer": {
+            "DataPin": 8,
+            "onPress": {
+              "Type": "XplaneInputAction",
+              "InputType": "Command",
+              "Path": "sim/audio_panel/monitor_audio_mkr",
+              "Expression": ""
+            },
+            "onRelease": null,
+            "onLongRelease": null,
+            "onHold": null,
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "SubIndex": 8,
+            "Type": "InputMultiplexer",
+            "Name": "MuxButtons"
+          },
+          "DeviceType": "InputMultiplexer",
+          "DeviceName": "MuxButtons",
+          "GUID": "dedf2b33-ed78-4090-926d-081313d30b82",
+          "Active": true,
+          "Name": "btnMKR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-RadioRSG",
+            "Serial": "SN-9G6-39D"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "xplane",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.9"
+}
