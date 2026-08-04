@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Micro</ModuleType>
+  <ModuleName>PW-Transp-v3</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="Button" Pin="0" />
+  <Button Name="Button 1" Pin="1" />
+  <InputMultiplexer Name="MUX" DataPin="14" NumBytes="2">
+    <Selector Name="MultiplexerDriver" PinSx="2 3 4 5" />
+  </InputMultiplexer>
+  <Output Name="ledID" Pin="6" />
+  <LedModule Name="Displays" ModelType="0" DinPin="7" ClsPin="8" ClkPin="9" Brightness="2" NumModules="1" />
+</Config>

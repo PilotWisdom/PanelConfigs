@@ -1,0 +1,516 @@
+{
+  "Name": "PW-Transponder-v3-XPL",
+  "ConfigFiles": [
+    {
+      "Label": "PW-Transponder-v3",
+      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Transponder\\Previous versions\\PW-Transponder-XPlane.mcc",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/transponder_code"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1200.0
+          },
+          "Device": {
+            "Name": "Displays",
+            "DisplayLedAddress": "Displays",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": true,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "Displays",
+          "GUID": "4ff6766a-a31d-4cd6-8732-a3634e309c72",
+          "Active": true,
+          "Name": "Transponder-Code",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/radios/actuators/transponder_mode"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 2,
+            "Float64": 0.0,
+            "String": "OFF"
+          },
+          "Device": {
+            "Name": "Displays",
+            "DisplayLedAddress": "Displays",
+            "DisplayLedConnector": 1,
+            "DisplayLedModuleSize": 8,
+            "DisplayLedPadding": true,
+            "DisplayLedPaddingChar": " ",
+            "DisplayLedDigits": [
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "DisplayLedDecimalPoints": [],
+            "DisplayLedReverseDigits": true,
+            "DisplayLedBrightnessReference": "",
+            "Type": "LedModule"
+          },
+          "DeviceType": "Display Module",
+          "DeviceName": "Displays",
+          "GUID": "e50a72b9-13cc-4a69-9dbe-9e8cf79af4c5",
+          "Active": true,
+          "Name": "Transponder-Mode",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "0",
+                "IfValue": "OFF ",
+                "ElseValue": "$",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "1",
+                "IfValue": "Sb  ",
+                "ElseValue": "$",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "On  ",
+                "ElseValue": "$",
+                "Active": true
+              },
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "3",
+                "IfValue": "Al  ",
+                "ElseValue": "$",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit/radios/transponder_id"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "ledID",
+            "Pin": "ledID",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledID",
+          "GUID": "1aa85ab6-68ca-48cf-92ad-056851863a6c",
+          "Active": true,
+          "Name": "IDENT_ON",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_0",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX:0"
+          },
+          "GUID": "64d5e82f-6292-4a7f-8eb3-3aebdddb0158",
+          "Active": true,
+          "Name": "0",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_1",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX:1"
+          },
+          "GUID": "129308c3-3eff-4221-b0e6-2006865e0bd3",
+          "Active": true,
+          "Name": "1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_2",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX:2"
+          },
+          "GUID": "9f43f478-aef2-492c-9087-5c0f390f19b7",
+          "Active": true,
+          "Name": "2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_3",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX:3"
+          },
+          "GUID": "d87a9f3c-106f-4b80-9ca5-4b14237facbe",
+          "Active": true,
+          "Name": "3",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_4",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX:4"
+          },
+          "GUID": "75f9bb6c-10b2-4e7f-bff2-df8b46fdb6cc",
+          "Active": true,
+          "Name": "4",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_5",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX:5"
+          },
+          "GUID": "0eac8b67-3f3d-41a0-97b1-dfe14c6c2440",
+          "Active": true,
+          "Name": "5",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_6",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX:6"
+          },
+          "GUID": "1f73e205-6a8c-4254-8050-0e1da4925d1f",
+          "Active": true,
+          "Name": "6",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_digit_7",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX:7"
+          },
+          "GUID": "97fc21ff-750e-4c9b-b61c-6561f7c804ce",
+          "Active": true,
+          "Name": "7",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_off",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX:8"
+          },
+          "GUID": "423d0a23-e95d-41e6-94f6-c8cde2a092c4",
+          "Active": true,
+          "Name": "Off",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_standby",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX:9"
+          },
+          "GUID": "02d25a3e-a582-4d46-a886-f2ba8980be75",
+          "Active": true,
+          "Name": "Sby",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_on",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX:10"
+          },
+          "GUID": "a1a728e6-aa92-4e1a-abf9-139eba5e3861",
+          "Active": true,
+          "Name": "On",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_alt",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX:11"
+          },
+          "GUID": "2b630c60-9432-4a8a-b02c-8add3a004297",
+          "Active": true,
+          "Name": "Alt",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "DataRef",
+              "Path": "sim/cockpit2/radios/actuators/transponder_code",
+              "Expression": "1200",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX:12"
+          },
+          "GUID": "e13e58d4-6e4b-4d28-9198-6f714043a25a",
+          "Active": true,
+          "Name": "VFR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/transponder/transponder_ident",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX:13"
+          },
+          "GUID": "f403a99a-6854-47a7-97a6-36f5e843f86d",
+          "Active": true,
+          "Name": "ID",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-Transp-v3",
+            "Serial": "SN-FGB-7D1"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "xplane",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.10"
+}

@@ -37,7 +37,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -70,7 +70,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -103,7 +103,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -136,7 +136,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -169,7 +169,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -202,7 +202,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -235,7 +235,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -268,7 +268,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -301,7 +301,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -334,7 +334,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -367,7 +367,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -400,7 +400,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -431,7 +431,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -462,7 +462,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -489,7 +489,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -516,7 +516,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -547,7 +547,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -578,7 +578,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -609,7 +609,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -640,7 +640,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         },
         {
@@ -671,7 +671,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG",
-            "Serial": "SN-G94-532"
+            "Serial": "SN-4G2-FC9"
           }
         }
       ]
