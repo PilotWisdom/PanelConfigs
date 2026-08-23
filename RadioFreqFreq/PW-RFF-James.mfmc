@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>PW-RFF-James</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <InputMultiplexer Name="MuxRadio" DataPin="34" NumBytes="2">
+    <Selector Name="MultiplexerDriver" PinSx="2 4 6 8" />
+  </InputMultiplexer>
+  <ShiftRegister Name="SR-Radio" LatchPin="10" ClockPin="12" DataPin="14" NumModules="2" />
+  <Button Name="btnCom1Flip" Pin="36" />
+  <Button Name="btnNav1Flip" Pin="37" />
+  <Button Name="btnCom2Flip" Pin="28" />
+  <Button Name="btnNav2Flip" Pin="29" />
+  <Encoder Name="Com1-Inner" PinLeft="3" PinRight="5" EncoderType="2" />
+  <Encoder Name="Com1-Outer" PinLeft="7" PinRight="9" EncoderType="2" />
+  <Encoder Name="Nav1-Inner" PinLeft="11" PinRight="13" EncoderType="2" />
+  <Encoder Name="Nav1-Outer" PinLeft="15" PinRight="17" EncoderType="2" />
+  <Encoder Name="Com2-Inner" PinLeft="46" PinRight="47" EncoderType="2" />
+  <Encoder Name="Com2-Outer" PinLeft="48" PinRight="49" EncoderType="2" />
+  <Encoder Name="Nav2-Inner" PinLeft="50" PinRight="51" EncoderType="2" />
+  <Encoder Name="Nav2-Outer" PinLeft="52" PinRight="53" EncoderType="2" />
+  <LedModule Name="Com1-7seg" ModelType="0" DinPin="54" ClsPin="55" ClkPin="56" Brightness="3" NumModules="2" />
+  <LedModule Name="Nav1-7seg" ModelType="0" DinPin="57" ClsPin="58" ClkPin="59" Brightness="3" NumModules="2" />
+  <LedModule Name="Com2-7seg" ModelType="0" DinPin="22" ClsPin="23" ClkPin="24" Brightness="3" NumModules="2" />
+  <LedModule Name="Nav2-7seg" ModelType="0" DinPin="25" ClsPin="26" ClkPin="27" Brightness="3" NumModules="2" />
+</Config>
