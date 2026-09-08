@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Micro</ModuleType>
+  <ModuleName>PW-AOA</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="ledNegNeg" Pin="2" />
+  <Output Name="ledNeg" Pin="3" />
+  <Output Name="LedNeutral" Pin="4" />
+  <Output Name="ledPositive1" Pin="5" />
+  <Output Name="ledPositive2" Pin="6" />
+  <Output Name="ledPositiveAmber" Pin="7" />
+  <Output Name="ledPositiveRed" Pin="8" />
+</Config>
