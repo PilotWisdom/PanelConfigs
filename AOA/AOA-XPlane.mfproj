@@ -8,372 +8,6 @@
       "ConfigItems": [
         {
           "Source": {
-            "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0
-          },
-          "Device": {
-            "Name": "ledPositiveRed",
-            "Pin": "ledPositiveRed",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "ledPositiveRed",
-          "GUID": "9bb1b28a-647f-4bdd-af22-7944a0a426a9",
-          "Active": true,
-          "Name": "PosRed",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "PW-AOA",
-            "Serial": "SN-8F5-619"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Transformation",
-                "Expression": "if ( (# > 0.8*!),1,0)",
-                "Active": true
-              }
-            ]
-          },
-          "ConfigRefs": [
-            {
-              "Active": true,
-              "Ref": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
-              "Placeholder": "#",
-              "TestValue": "1"
-            },
-            {
-              "Active": true,
-              "Ref": "76c414fe-65cb-4529-959f-79ac72ae505b",
-              "Placeholder": "!",
-              "TestValue": "1"
-            }
-          ]
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0
-          },
-          "Device": {
-            "Name": "ledPositiveAmber",
-            "Pin": "ledPositiveAmber",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "ledPositiveAmber",
-          "GUID": "90277272-28b3-44a8-a20a-b07222a6ec9d",
-          "Active": true,
-          "Name": "PosAmber",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "PW-AOA",
-            "Serial": "SN-8F5-619"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Transformation",
-                "Expression": "if ( (# > 0.6*!),1,0)",
-                "Active": true
-              }
-            ]
-          },
-          "ConfigRefs": [
-            {
-              "Active": true,
-              "Ref": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
-              "Placeholder": "#",
-              "TestValue": "1"
-            },
-            {
-              "Active": true,
-              "Ref": "76c414fe-65cb-4529-959f-79ac72ae505b",
-              "Placeholder": "!",
-              "TestValue": "1"
-            }
-          ]
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0
-          },
-          "Device": {
-            "Name": "ledPositive2",
-            "Pin": "ledPositive2",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "ledPositive2",
-          "GUID": "b17b86f6-78e6-467e-8e28-fbd9f0b753b5",
-          "Active": true,
-          "Name": "Pos2",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "PW-AOA",
-            "Serial": "SN-8F5-619"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Transformation",
-                "Expression": "if ( (# > 0.4*!),1,0)",
-                "Active": true
-              }
-            ]
-          },
-          "ConfigRefs": [
-            {
-              "Active": true,
-              "Ref": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
-              "Placeholder": "#",
-              "TestValue": "1"
-            },
-            {
-              "Active": true,
-              "Ref": "76c414fe-65cb-4529-959f-79ac72ae505b",
-              "Placeholder": "!",
-              "TestValue": "1"
-            }
-          ]
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0
-          },
-          "Device": {
-            "Name": "ledPositive1",
-            "Pin": "ledPositive1",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "ledPositive1",
-          "GUID": "5413aa9c-c010-4651-b7df-aabab0242e7d",
-          "Active": true,
-          "Name": "Pos1",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "PW-AOA",
-            "Serial": "SN-8F5-619"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Transformation",
-                "Expression": "if (  (# > 0.2*!),1,0)",
-                "Active": true
-              }
-            ]
-          },
-          "ConfigRefs": [
-            {
-              "Active": true,
-              "Ref": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
-              "Placeholder": "#",
-              "TestValue": "1"
-            },
-            {
-              "Active": true,
-              "Ref": "76c414fe-65cb-4529-959f-79ac72ae505b",
-              "Placeholder": "!",
-              "TestValue": "1"
-            }
-          ]
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0
-          },
-          "Device": {
-            "Name": "LedNeutral",
-            "Pin": "LedNeutral",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "LedNeutral",
-          "GUID": "8dc7751d-7605-4407-8c6e-b2ff6dacc696",
-          "Active": true,
-          "Name": "Neutral",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "PW-AOA",
-            "Serial": "SN-8F5-619"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Transformation",
-                "Expression": "if ( (# >=0 ), 1, 0 )",
-                "Active": true
-              }
-            ]
-          },
-          "ConfigRefs": [
-            {
-              "Active": true,
-              "Ref": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
-              "Placeholder": "#",
-              "TestValue": "1"
-            }
-          ]
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0
-          },
-          "Device": {
-            "Name": "ledNeg",
-            "Pin": "ledNeg",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "ledNeg",
-          "GUID": "d251bc1b-7b58-4e5f-9f4c-ee6e2396d866",
-          "Active": true,
-          "Name": "Neg",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "PW-AOA",
-            "Serial": "SN-8F5-619"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Transformation",
-                "Expression": "if ( (# < 0),1,0 )",
-                "Active": true
-              }
-            ]
-          },
-          "ConfigRefs": [
-            {
-              "Active": true,
-              "Ref": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
-              "Placeholder": "#",
-              "TestValue": "1"
-            }
-          ]
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "40f981cc-dbf0-4e72-b7b8-c0340a6b8e21",
-              "Value": "",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0
-          },
-          "Device": {
-            "Name": "ledNegNeg",
-            "Pin": "ledNegNeg",
-            "Brightness": 255,
-            "PwmMode": false,
-            "Type": "Output"
-          },
-          "DeviceType": "Output",
-          "DeviceName": "ledNegNeg",
-          "GUID": "e4ba7b0c-3378-4131-bc4c-c3dcec371a36",
-          "Active": true,
-          "Name": "NegNeg",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "PW-AOA",
-            "Serial": "SN-8F5-619"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Transformation",
-                "Expression": "if( ( # <= !*0.6) ,1 ,0 )",
-                "Active": true
-              }
-            ]
-          },
-          "ConfigRefs": [
-            {
-              "Active": true,
-              "Ref": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
-              "Placeholder": "#",
-              "TestValue": "1"
-            },
-            {
-              "Active": true,
-              "Ref": "d85305aa-3e10-48ff-ab8b-001b19585e84",
-              "Placeholder": "!",
-              "TestValue": "1"
-            }
-          ]
-        },
-        {
-          "Source": {
             "XplaneDataRef": {
               "Path": "sim/flightmodel/position/alpha"
             },
@@ -381,7 +15,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 5.0
+            "Float64": -177.0
           },
           "DeviceType": "-",
           "GUID": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
@@ -396,7 +30,7 @@
             "Items": [
               {
                 "Type": "Transformation",
-                "Expression": "if($ < -90, 180+$,$)",
+                "Expression": "if($<-90,180+$,$)",
                 "Active": true
               }
             ]
@@ -404,12 +38,12 @@
         },
         {
           "Source": {
-            "SimConnectValue": {
-              "UUID": "828ddebb-e0f2-4aa4-8dc2-423e8462814d",
-              "Value": "",
-              "VarType": 2
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "",
+              "Expression": "$"
             },
-            "Type": "SimConnectSource"
+            "Type": "VariableSource"
           },
           "TestValue": {
             "type": 1,
@@ -436,12 +70,12 @@
         },
         {
           "Source": {
-            "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
-              "VarType": 2
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "",
+              "Expression": "$"
             },
-            "Type": "SimConnectSource"
+            "Type": "VariableSource"
           },
           "TestValue": {
             "type": 1,
@@ -465,6 +99,372 @@
               }
             ]
           }
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "ledPositiveRed",
+            "Pin": "ledPositiveRed",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledPositiveRed",
+          "GUID": "9bb1b28a-647f-4bdd-af22-7944a0a426a9",
+          "Active": true,
+          "Name": "PosRed",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-AOA",
+            "Serial": "SN-8F5-619"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "if((#>0.8*!),1,0)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "76c414fe-65cb-4529-959f-79ac72ae505b",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "ledPositiveAmber",
+            "Pin": "ledPositiveAmber",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledPositiveAmber",
+          "GUID": "90277272-28b3-44a8-a20a-b07222a6ec9d",
+          "Active": true,
+          "Name": "PosAmber",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-AOA",
+            "Serial": "SN-8F5-619"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "if((#>0.6*!),1,0)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "76c414fe-65cb-4529-959f-79ac72ae505b",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "ledPositive2",
+            "Pin": "ledPositive2",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledPositive2",
+          "GUID": "b17b86f6-78e6-467e-8e28-fbd9f0b753b5",
+          "Active": true,
+          "Name": "Pos2",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-AOA",
+            "Serial": "SN-8F5-619"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "if((#>0.4*!),1,0)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "76c414fe-65cb-4529-959f-79ac72ae505b",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "ledPositive1",
+            "Pin": "ledPositive1",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledPositive1",
+          "GUID": "5413aa9c-c010-4651-b7df-aabab0242e7d",
+          "Active": true,
+          "Name": "Pos1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-AOA",
+            "Serial": "SN-8F5-619"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "if((#>0.2*!),1,0)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "76c414fe-65cb-4529-959f-79ac72ae505b",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "LedNeutral",
+            "Pin": "LedNeutral",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "LedNeutral",
+          "GUID": "8dc7751d-7605-4407-8c6e-b2ff6dacc696",
+          "Active": true,
+          "Name": "Neutral",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-AOA",
+            "Serial": "SN-8F5-619"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "if((#>=0),1,0)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "ledNeg",
+            "Pin": "ledNeg",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledNeg",
+          "GUID": "d251bc1b-7b58-4e5f-9f4c-ee6e2396d866",
+          "Active": true,
+          "Name": "Neg",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-AOA",
+            "Serial": "SN-8F5-619"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "if((#<0),1,0)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
+              "Placeholder": "#",
+              "TestValue": "1"
+            }
+          ]
+        },
+        {
+          "Source": {
+            "MobiFlightVariable": {
+              "TYPE": "number",
+              "Name": "",
+              "Expression": "$"
+            },
+            "Type": "VariableSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "ledNegNeg",
+            "Pin": "ledNegNeg",
+            "Brightness": 255,
+            "PwmMode": false,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "ledNegNeg",
+          "GUID": "e4ba7b0c-3378-4131-bc4c-c3dcec371a36",
+          "Active": true,
+          "Name": "NegNeg",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-AOA",
+            "Serial": "SN-8F5-619"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "if(#<=!*0.6,1,0)",
+                "Active": true
+              }
+            ]
+          },
+          "ConfigRefs": [
+            {
+              "Active": true,
+              "Ref": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
+              "Placeholder": "#",
+              "TestValue": "1"
+            },
+            {
+              "Active": true,
+              "Ref": "d85305aa-3e10-48ff-ab8b-001b19585e84",
+              "Placeholder": "!",
+              "TestValue": "1"
+            }
+          ]
         }
       ]
     }
