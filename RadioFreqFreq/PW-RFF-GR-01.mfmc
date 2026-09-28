@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>PW-RFF-GR-01</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="btnCOM1" Pin="16" />
+  <Button Name="btnCOM2" Pin="14" />
+  <Button Name="btnMIC1" Pin="12" />
+  <Button Name="btnMIC2" Pin="10" />
+  <Button Name="btnNAV1" Pin="8" />
+  <Button Name="btnNAV2" Pin="6" />
+  <Button Name="btnDME" Pin="4" />
+  <Button Name="btnADF" Pin="2" />
+  <Button Name="btnMKR" Pin="21" />
+  <Button Name="btnFlipC1" Pin="36" />
+  <Button Name="btnFlipN1" Pin="40" />
+  <Button Name="btnFlipC2" Pin="33" />
+  <Button Name="btnFlipN2" Pin="31" />
+  <Output Name="ledOM" Pin="18" />
+  <Output Name="ledMM" Pin="19" />
+  <Output Name="ledIM" Pin="20" />
+  <Output Name="ledCOM1" Pin="17" />
+  <Output Name="ledCOM2" Pin="15" />
+  <Output Name="ledMIC1" Pin="13" />
+  <Output Name="ledMIC2" Pin="11" />
+  <Output Name="ledNAV1" Pin="9" />
+  <Output Name="ledNAV2" Pin="7" />
+  <Output Name="ledDME" Pin="5" />
+  <Output Name="ledADF" Pin="3" />
+  <Output Name="ledMKR" Pin="34" />
+  <LedModule Name="segR1COM" ModelType="0" DinPin="46" ClsPin="47" ClkPin="48" Brightness="3" NumModules="2" />
+  <LedModule Name="segR1NAV" ModelType="0" DinPin="49" ClsPin="50" ClkPin="51" Brightness="3" NumModules="2" />
+  <Encoder Name="encR1Com_OUT" PinLeft="54" PinRight="55" EncoderType="2" />
+  <Encoder Name="encR1Com_IN" PinLeft="52" PinRight="53" EncoderType="2" />
+  <Encoder Name="encR1Nav_OUT" PinLeft="58" PinRight="59" EncoderType="2" />
+  <Encoder Name="encR1Nav_IN" PinLeft="56" PinRight="57" EncoderType="2" />
+  <LedModule Name="segR2COM" ModelType="0" DinPin="25" ClsPin="24" ClkPin="23" Brightness="3" NumModules="2" />
+  <LedModule Name="segR2NAV" ModelType="0" DinPin="22" ClsPin="29" ClkPin="28" Brightness="3" NumModules="2" />
+  <Encoder Name="encR2Com_IN" PinLeft="27" PinRight="26" EncoderType="2" />
+  <Encoder Name="encR2Com_OUT" PinLeft="30" PinRight="32" EncoderType="2" />
+  <Encoder Name="encR2Nav_IN" PinLeft="60" PinRight="61" EncoderType="2" />
+  <Encoder Name="encR2Nav_OUT" PinLeft="62" PinRight="63" EncoderType="2" />
+</Config>

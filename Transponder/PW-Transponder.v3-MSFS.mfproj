@@ -46,7 +46,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -108,7 +108,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           },
           "Modifiers": {
             "Items": [
@@ -176,7 +176,7 @@
         {
           "Source": {
             "SimConnectValue": {
-              "UUID": "-",
+              "UUID": "a6c94337-3700-4762-b288-1dbc0dba26da",
               "Value": "(A:TRANSPONDER IDENT:1, Bool)",
               "VarType": 2
             },
@@ -201,7 +201,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -225,7 +225,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -249,7 +249,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -273,7 +273,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -297,7 +297,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -321,7 +321,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -345,7 +345,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -369,7 +369,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -393,7 +393,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -417,7 +417,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -441,7 +441,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -465,7 +465,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -489,7 +489,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -513,7 +513,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         },
         {
@@ -537,7 +537,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-FGB-7D1"
+            "Serial": "SN-796-F0C"
           }
         }
       ]
