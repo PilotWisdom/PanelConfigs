@@ -46,7 +46,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -108,7 +108,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           },
           "Modifiers": {
             "Items": [
@@ -201,7 +201,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -225,7 +225,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -249,7 +249,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -273,7 +273,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -297,7 +297,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -321,7 +321,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -345,7 +345,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -369,7 +369,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -393,7 +393,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -417,7 +417,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -441,7 +441,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -465,7 +465,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -489,7 +489,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -513,7 +513,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         },
         {
@@ -537,7 +537,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-3F1-3D4"
           }
         }
       ]
