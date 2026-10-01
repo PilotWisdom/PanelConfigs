@@ -13,7 +13,7 @@
   <Button Name="btnADF" Pin="2" />
   <Button Name="btnMKR" Pin="21" />
   <Button Name="btnFlipC1" Pin="36" />
-  <Button Name="btnFlipN1" Pin="40" />
+  <Button Name="btnFlipN1" Pin="37" />
   <Button Name="btnFlipC2" Pin="33" />
   <Button Name="btnFlipN2" Pin="31" />
   <Output Name="ledOM" Pin="18" />
