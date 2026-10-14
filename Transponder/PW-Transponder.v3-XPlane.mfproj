@@ -3,7 +3,6 @@
   "ConfigFiles": [
     {
       "Label": "PW-Transponder-v3",
-      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Transponder\\Previous versions\\PW-Transponder-XPlane.mcc",
       "ReferenceOnly": false,
       "EmbedContent": true,
       "ConfigItems": [

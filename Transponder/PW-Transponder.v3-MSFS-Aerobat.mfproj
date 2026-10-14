@@ -3,7 +3,6 @@
   "ConfigFiles": [
     {
       "Label": "PW-v3-MSFS-KT76",
-      "FileName": "D:\\CloudStorage\\OneDrive\\Business\\Etsy\\SoftRepo\\PanelConfigs\\Transponder\\PW-Transponder-MSFS.mcc",
       "ReferenceOnly": false,
       "EmbedContent": true,
       "ConfigItems": [
