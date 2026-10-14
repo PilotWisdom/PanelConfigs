@@ -9,6 +9,93 @@
         {
           "Source": {
             "SimConnectValue": {
+              "UUID": "828ddebb-e0f2-4aa4-8dc2-423e8462814d",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "DeviceType": "-",
+          "GUID": "76c414fe-65cb-4529-959f-79ac72ae505b",
+          "Active": true,
+          "Name": "PositiveMaxAOA",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-AOA",
+            "Serial": "SN-85E-53D"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "0.30",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "DeviceType": "-",
+          "GUID": "d85305aa-3e10-48ff-ab8b-001b19585e84",
+          "Active": true,
+          "Name": "NegativeMaxAOA",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-AOA",
+            "Serial": "SN-85E-53D"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "-0.16",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "40f981cc-dbf0-4e72-b7b8-c0340a6b8e21",
+              "Value": "(A:INCIDENCE ALPHA,Radians)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "DeviceType": "-",
+          "GUID": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
+          "Active": true,
+          "Name": "AOA-1",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-AOA",
+            "Serial": "SN-85E-53D"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
               "UUID": "-",
               "Value": "",
               "VarType": 2
@@ -34,7 +121,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-AOA",
-            "Serial": "SN-8G1-2E4"
+            "Serial": "SN-85E-53D"
           },
           "Modifiers": {
             "Items": [
@@ -88,7 +175,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-AOA",
-            "Serial": "SN-8G1-2E4"
+            "Serial": "SN-85E-53D"
           },
           "Modifiers": {
             "Items": [
@@ -142,7 +229,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-AOA",
-            "Serial": "SN-8G1-2E4"
+            "Serial": "SN-85E-53D"
           },
           "Modifiers": {
             "Items": [
@@ -196,7 +283,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-AOA",
-            "Serial": "SN-8G1-2E4"
+            "Serial": "SN-85E-53D"
           },
           "Modifiers": {
             "Items": [
@@ -250,7 +337,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-AOA",
-            "Serial": "SN-8G1-2E4"
+            "Serial": "SN-85E-53D"
           },
           "Modifiers": {
             "Items": [
@@ -298,7 +385,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-AOA",
-            "Serial": "SN-8G1-2E4"
+            "Serial": "SN-85E-53D"
           },
           "Modifiers": {
             "Items": [
@@ -346,7 +433,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-AOA",
-            "Serial": "SN-8G1-2E4"
+            "Serial": "SN-85E-53D"
           },
           "Modifiers": {
             "Items": [
@@ -371,93 +458,6 @@
               "TestValue": "1"
             }
           ]
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "40f981cc-dbf0-4e72-b7b8-c0340a6b8e21",
-              "Value": "(A:INCIDENCE ALPHA,Radians)",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0
-          },
-          "DeviceType": "-",
-          "GUID": "8dfe3d93-4481-4811-b4f4-013a8095ab75",
-          "Active": true,
-          "Name": "AOA-1",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "PW-AOA",
-            "Serial": "SN-8G1-2E4"
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "828ddebb-e0f2-4aa4-8dc2-423e8462814d",
-              "Value": "",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0
-          },
-          "DeviceType": "-",
-          "GUID": "76c414fe-65cb-4529-959f-79ac72ae505b",
-          "Active": true,
-          "Name": "PositiveMaxAOA",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "PW-AOA",
-            "Serial": "SN-8G1-2E4"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Transformation",
-                "Expression": "0.30",
-                "Active": true
-              }
-            ]
-          }
-        },
-        {
-          "Source": {
-            "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
-              "VarType": 2
-            },
-            "Type": "SimConnectSource"
-          },
-          "TestValue": {
-            "type": 1,
-            "Float64": 1.0
-          },
-          "DeviceType": "-",
-          "GUID": "d85305aa-3e10-48ff-ab8b-001b19585e84",
-          "Active": true,
-          "Name": "NegativeMaxAOA",
-          "Type": "OutputConfigItem",
-          "Controller": {
-            "Name": "PW-AOA",
-            "Serial": "SN-8G1-2E4"
-          },
-          "Modifiers": {
-            "Items": [
-              {
-                "Type": "Transformation",
-                "Expression": "-0.16",
-                "Active": true
-              }
-            ]
-          }
         }
       ]
     }
