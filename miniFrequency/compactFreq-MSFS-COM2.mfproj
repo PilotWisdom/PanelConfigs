@@ -1,9 +1,8 @@
 {
-  "Name": "compactFreq-MSFS-Glass-COM2",
+  "Name": "compactFreq-MSFS-COM2",
   "ConfigFiles": [
     {
       "Label": "COM2",
-      "FileName": null,
       "ReferenceOnly": false,
       "EmbedContent": true,
       "ConfigItems": [
@@ -18,8 +17,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "7segs",
@@ -51,10 +49,8 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "120765",
-          "Value": "120765"
+            "Serial": "SN-49D-D2A"
+          }
         },
         {
           "Source": {
@@ -67,8 +63,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "7segs",
@@ -100,21 +95,16 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "123805",
-          "Value": "123805"
+            "Serial": "SN-49D-D2A"
+          }
         },
         {
           "button": {
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
               "Command": "(L:RADIO_Mode) ! (>L:RADIO_Mode)\n",
-              "PresetId": "0"
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -123,29 +113,22 @@
             "Type": "Button",
             "Name": "btnSel"
           },
-          "DeviceType": "Button",
-          "DeviceName": "btnSel",
           "GUID": "1f5d3a7f-ce36-49c8-8067-d1da6ed020fa",
           "Active": true,
           "Name": "btnModeSelect",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Serial": "SN-49D-D2A"
+          }
         },
         {
           "button": {
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
               "Command": "(L:RADIO_Mode) 0 == if{\n   1 (>K:COM2_RADIO_SWAP)\n} els{\n   1 (>K:NAV2_RADIO_SWAP)\n}\n",
-              "PresetId": "0"
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -154,82 +137,66 @@
             "Type": "Button",
             "Name": "btnFlip"
           },
-          "DeviceType": "Button",
-          "DeviceName": "btnFlip",
           "GUID": "07656671-c2d7-422c-931e-4b91e6c62092",
           "Active": true,
           "Name": "btnSwap",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "RELEASE",
-          "Value": " "
+            "Serial": "SN-49D-D2A"
+          }
         },
         {
           "encoder": {
             "onLeft": {
-              "Type": "MSFS2020CustomInputAction",
               "Command": "(L:RADIO_Mode) 0 == if{\n    1 (>K:COM2_RADIO_WHOLE_DEC)\n} els{\n    1 (>K:NAV2_RADIO_WHOLE_DEC)\n}\n\n",
-              "PresetId": "0"
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
             },
-            "onLeftFast": null,
             "onRight": {
-              "Type": "MSFS2020CustomInputAction",
               "Command": "(L:RADIO_Mode) 0 == if{\n    1 (>K:COM2_RADIO_WHOLE_INC)\n} els{\n    1 (>K:NAV2_RADIO_WHOLE_INC)\n}",
-              "PresetId": "0"
-            },
-            "onRightFast": null
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            }
           },
           "Device": {
             "Type": "Encoder",
             "Name": "encOuter"
           },
-          "DeviceType": "Encoder",
-          "DeviceName": "encOuter",
           "GUID": "82ef011e-37b9-415f-aad2-126e7bc338bb",
           "Active": true,
           "Name": "encoderOuter",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "LEFT",
-          "Value": " "
+            "Serial": "SN-49D-D2A"
+          }
         },
         {
           "encoder": {
             "onLeft": {
-              "Type": "MSFS2020CustomInputAction",
               "Command": "(L:RADIO_Mode) 0 == if{\n    1 (>K:COM2_RADIO_FRACT_DEC)\n} els{\n    1 (>K:NAV2_RADIO_FRACT_DEC)\n}",
-              "PresetId": "c9e9d87f-1f76-4bc2-9d21-035f916d2a17"
+              "PresetId": "c9e9d87f-1f76-4bc2-9d21-035f916d2a17",
+              "Type": "MSFS2020CustomInputAction"
             },
-            "onLeftFast": null,
             "onRight": {
-              "Type": "MSFS2020CustomInputAction",
               "Command": "(L:RADIO_Mode) 0 == if{\n    1 (>K:COM2_RADIO_FRACT_INC)\n} els{\n    1 (>K:NAV2_RADIO_FRACT_INC)\n}\n",
-              "PresetId": "c23d9d2e-493e-4ad7-9bc2-c5ac82015fec"
-            },
-            "onRightFast": null
+              "PresetId": "c23d9d2e-493e-4ad7-9bc2-c5ac82015fec",
+              "Type": "MSFS2020CustomInputAction"
+            }
           },
           "Device": {
             "Type": "Encoder",
             "Name": "encInner"
           },
-          "DeviceType": "Encoder",
-          "DeviceName": "encInner",
           "GUID": "1099a2e8-8cd0-4b53-8804-88e85d33d406",
           "Active": true,
           "Name": "encoderInner",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "LEFT",
-          "Value": " "
+            "Serial": "SN-49D-D2A"
+          }
         },
         {
           "Source": {
@@ -242,8 +209,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "ledCOM",
@@ -260,10 +226,8 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "1",
-          "Value": "1"
+            "Serial": "SN-49D-D2A"
+          }
         },
         {
           "Source": {
@@ -276,8 +240,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "ledNAV",
@@ -294,10 +257,8 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
-          },
-          "RawValue": "0",
-          "Value": "0"
+            "Serial": "SN-49D-D2A"
+          }
         },
         {
           "Source": {
@@ -310,8 +271,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "ledBG",
@@ -328,7 +288,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-74D-8B8"
+            "Serial": "SN-49D-D2A"
           },
           "Modifiers": {
             "Items": [
@@ -338,9 +298,7 @@
                 "Active": true
               }
             ]
-          },
-          "RawValue": "0",
-          "Value": "128"
+          }
         }
       ]
     }
@@ -351,5 +309,5 @@
     "FSUIPC": false,
     "ProSim": false
   },
-  "_version": "0.9"
+  "_version": "0.10"
 }
