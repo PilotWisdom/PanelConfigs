@@ -2,7 +2,7 @@
   "Name": "PW-Transponderv3-MSFS",
   "ConfigFiles": [
     {
-      "Label": "PW-Transponderv3-MSFS",
+      "Label": "PW-v3-MSFS",
       "ReferenceOnly": false,
       "EmbedContent": true,
       "ConfigItems": [
@@ -24,7 +24,7 @@
             "DisplayLedAddress": "Displays",
             "DisplayLedConnector": 1,
             "DisplayLedModuleSize": 8,
-            "DisplayLedPadding": false,
+            "DisplayLedPadding": true,
             "DisplayLedPaddingChar": "0",
             "DisplayLedDigits": [
               "0",
@@ -45,7 +45,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
@@ -107,7 +107,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           },
           "Modifiers": {
             "Items": [
@@ -200,14 +200,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
           "button": {
             "onPress": {
-              "Command": "(>H:Transponder0)",
-              "PresetId": "0",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 3 >\n(L:TrPos, Number) 1 < or\nif{\n  1 (>L:TrPos, Number)\n  (A:TRANSPONDER CODE:1, Number) sp0\n  l0 1000 / flr (>L:TrD1, Number)\n  l0 100 / flr 10 % (>L:TrD2, Number)\n  l0 10 / flr 10 % (>L:TrD3, Number)\n  l0 10 % (>L:TrD4, Number)\n}\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n0 sp5\n\n(L:TrPos, Number) 1 == if{ l5 (>L:TrD1, Number) }\n(L:TrPos, Number) 2 == if{ l5 (>L:TrD2, Number) }\n(L:TrPos, Number) 3 == if{ l5 (>L:TrD3, Number) }\n(L:TrPos, Number) 4 == if{ l5 (>L:TrD4, Number) }\n\n(L:TrD1, Number) 4096 * (L:TrD2, Number) 256 * + (L:TrD3, Number) 16 * + (L:TrD4, Number) + (>K:XPNDR_SET)\n\n(L:TrPos, Number) 4 % 1 + (>L:TrPos, Number)",
+              "PresetId": "",
               "Type": "MSFS2020CustomInputAction"
             },
             "LongReleaseDelay": 350,
@@ -224,14 +224,14 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
           "button": {
             "onPress": {
-              "Command": "(>H:Transponder1)",
-              "PresetId": "09ddd15e-a50f-4f62-9532-3fd306f996cb",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 3 >\n(L:TrPos, Number) 1 < or\nif{\n  1 (>L:TrPos, Number)\n  (A:TRANSPONDER CODE:1, Number) sp0\n  l0 1000 / flr (>L:TrD1, Number)\n  l0 100 / flr 10 % (>L:TrD2, Number)\n  l0 10 / flr 10 % (>L:TrD3, Number)\n  l0 10 % (>L:TrD4, Number)\n}\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n1 sp5\n\n(L:TrPos, Number) 1 == if{ l5 (>L:TrD1, Number) }\n(L:TrPos, Number) 2 == if{ l5 (>L:TrD2, Number) }\n(L:TrPos, Number) 3 == if{ l5 (>L:TrD3, Number) }\n(L:TrPos, Number) 4 == if{ l5 (>L:TrD4, Number) }\n\n(L:TrD1, Number) 4096 * (L:TrD2, Number) 256 * + (L:TrD3, Number) 16 * + (L:TrD4, Number) + (>K:XPNDR_SET)\n\n(L:TrPos, Number) 4 % 1 + (>L:TrPos, Number)",
+              "PresetId": "",
               "Type": "MSFS2020CustomInputAction"
             },
             "LongReleaseDelay": 350,
@@ -248,14 +248,14 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
           "button": {
             "onPress": {
-              "Command": "(>H:Transponder2)",
-              "PresetId": "1eb9ae7f-c95d-443c-ba87-dd3810fe6216",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 3 >\n(L:TrPos, Number) 1 < or\nif{\n  1 (>L:TrPos, Number)\n  (A:TRANSPONDER CODE:1, Number) sp0\n  l0 1000 / flr (>L:TrD1, Number)\n  l0 100 / flr 10 % (>L:TrD2, Number)\n  l0 10 / flr 10 % (>L:TrD3, Number)\n  l0 10 % (>L:TrD4, Number)\n}\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n2 sp5\n\n(L:TrPos, Number) 1 == if{ l5 (>L:TrD1, Number) }\n(L:TrPos, Number) 2 == if{ l5 (>L:TrD2, Number) }\n(L:TrPos, Number) 3 == if{ l5 (>L:TrD3, Number) }\n(L:TrPos, Number) 4 == if{ l5 (>L:TrD4, Number) }\n\n(L:TrD1, Number) 4096 * (L:TrD2, Number) 256 * + (L:TrD3, Number) 16 * + (L:TrD4, Number) + (>K:XPNDR_SET)\n\n(L:TrPos, Number) 4 % 1 + (>L:TrPos, Number)",
+              "PresetId": "",
               "Type": "MSFS2020CustomInputAction"
             },
             "LongReleaseDelay": 350,
@@ -272,14 +272,14 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
           "button": {
             "onPress": {
-              "Command": "(>H:Transponder3)",
-              "PresetId": "8f2a5b95-d06d-4156-af6c-f294e2d1438a",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 3 >\n(L:TrPos, Number) 1 < or\nif{\n  1 (>L:TrPos, Number)\n  (A:TRANSPONDER CODE:1, Number) sp0\n  l0 1000 / flr (>L:TrD1, Number)\n  l0 100 / flr 10 % (>L:TrD2, Number)\n  l0 10 / flr 10 % (>L:TrD3, Number)\n  l0 10 % (>L:TrD4, Number)\n}\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n3 sp5\n\n(L:TrPos, Number) 1 == if{ l5 (>L:TrD1, Number) }\n(L:TrPos, Number) 2 == if{ l5 (>L:TrD2, Number) }\n(L:TrPos, Number) 3 == if{ l5 (>L:TrD3, Number) }\n(L:TrPos, Number) 4 == if{ l5 (>L:TrD4, Number) }\n\n(L:TrD1, Number) 4096 * (L:TrD2, Number) 256 * + (L:TrD3, Number) 16 * + (L:TrD4, Number) + (>K:XPNDR_SET)\n\n(L:TrPos, Number) 4 % 1 + (>L:TrPos, Number)",
+              "PresetId": "",
               "Type": "MSFS2020CustomInputAction"
             },
             "LongReleaseDelay": 350,
@@ -296,14 +296,14 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
           "button": {
             "onPress": {
-              "Command": "(>H:Transponder4)",
-              "PresetId": "a0777872-878e-4d48-ac84-34e87c041930",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 3 >\n(L:TrPos, Number) 1 < or\nif{\n  1 (>L:TrPos, Number)\n  (A:TRANSPONDER CODE:1, Number) sp0\n  l0 1000 / flr (>L:TrD1, Number)\n  l0 100 / flr 10 % (>L:TrD2, Number)\n  l0 10 / flr 10 % (>L:TrD3, Number)\n  l0 10 % (>L:TrD4, Number)\n}\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n4 sp5\n\n(L:TrPos, Number) 1 == if{ l5 (>L:TrD1, Number) }\n(L:TrPos, Number) 2 == if{ l5 (>L:TrD2, Number) }\n(L:TrPos, Number) 3 == if{ l5 (>L:TrD3, Number) }\n(L:TrPos, Number) 4 == if{ l5 (>L:TrD4, Number) }\n\n(L:TrD1, Number) 4096 * (L:TrD2, Number) 256 * + (L:TrD3, Number) 16 * + (L:TrD4, Number) + (>K:XPNDR_SET)\n\n(L:TrPos, Number) 4 % 1 + (>L:TrPos, Number)",
+              "PresetId": "",
               "Type": "MSFS2020CustomInputAction"
             },
             "LongReleaseDelay": 350,
@@ -320,14 +320,14 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
           "button": {
             "onPress": {
-              "Command": "(>H:Transponder5)",
-              "PresetId": "99255895-102e-41b9-8763-2fc144768ed0",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 3 >\n(L:TrPos, Number) 1 < or\nif{\n  1 (>L:TrPos, Number)\n  (A:TRANSPONDER CODE:1, Number) sp0\n  l0 1000 / flr (>L:TrD1, Number)\n  l0 100 / flr 10 % (>L:TrD2, Number)\n  l0 10 / flr 10 % (>L:TrD3, Number)\n  l0 10 % (>L:TrD4, Number)\n}\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n5 sp5\n\n(L:TrPos, Number) 1 == if{ l5 (>L:TrD1, Number) }\n(L:TrPos, Number) 2 == if{ l5 (>L:TrD2, Number) }\n(L:TrPos, Number) 3 == if{ l5 (>L:TrD3, Number) }\n(L:TrPos, Number) 4 == if{ l5 (>L:TrD4, Number) }\n\n(L:TrD1, Number) 4096 * (L:TrD2, Number) 256 * + (L:TrD3, Number) 16 * + (L:TrD4, Number) + (>K:XPNDR_SET)\n\n(L:TrPos, Number) 4 % 1 + (>L:TrPos, Number)",
+              "PresetId": "",
               "Type": "MSFS2020CustomInputAction"
             },
             "LongReleaseDelay": 350,
@@ -344,14 +344,14 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
           "button": {
             "onPress": {
-              "Command": "(>H:Transponder6)",
-              "PresetId": "38faa3cf-4058-454e-b486-f1726aeef8e6",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 3 >\n(L:TrPos, Number) 1 < or\nif{\n  1 (>L:TrPos, Number)\n  (A:TRANSPONDER CODE:1, Number) sp0\n  l0 1000 / flr (>L:TrD1, Number)\n  l0 100 / flr 10 % (>L:TrD2, Number)\n  l0 10 / flr 10 % (>L:TrD3, Number)\n  l0 10 % (>L:TrD4, Number)\n}\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n6 sp5\n\n(L:TrPos, Number) 1 == if{ l5 (>L:TrD1, Number) }\n(L:TrPos, Number) 2 == if{ l5 (>L:TrD2, Number) }\n(L:TrPos, Number) 3 == if{ l5 (>L:TrD3, Number) }\n(L:TrPos, Number) 4 == if{ l5 (>L:TrD4, Number) }\n\n(L:TrD1, Number) 4096 * (L:TrD2, Number) 256 * + (L:TrD3, Number) 16 * + (L:TrD4, Number) + (>K:XPNDR_SET)\n\n(L:TrPos, Number) 4 % 1 + (>L:TrPos, Number)",
+              "PresetId": "",
               "Type": "MSFS2020CustomInputAction"
             },
             "LongReleaseDelay": 350,
@@ -368,14 +368,14 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
           "button": {
             "onPress": {
-              "Command": "(>H:Transponder7)",
-              "PresetId": "611e1dee-1148-4196-8a43-0d691368b979",
+              "Command": "(E:ABSOLUTE TIME, Seconds) (L:TrPos_LastUpdate, Number) - 3 >\n(L:TrPos, Number) 1 < or\nif{\n  1 (>L:TrPos, Number)\n  (A:TRANSPONDER CODE:1, Number) sp0\n  l0 1000 / flr (>L:TrD1, Number)\n  l0 100 / flr 10 % (>L:TrD2, Number)\n  l0 10 / flr 10 % (>L:TrD3, Number)\n  l0 10 % (>L:TrD4, Number)\n}\n(E:ABSOLUTE TIME, Seconds) (>L:TrPos_LastUpdate, Number)\n\n7 sp5\n\n(L:TrPos, Number) 1 == if{ l5 (>L:TrD1, Number) }\n(L:TrPos, Number) 2 == if{ l5 (>L:TrD2, Number) }\n(L:TrPos, Number) 3 == if{ l5 (>L:TrD3, Number) }\n(L:TrPos, Number) 4 == if{ l5 (>L:TrD4, Number) }\n\n(L:TrD1, Number) 4096 * (L:TrD2, Number) 256 * + (L:TrD3, Number) 16 * + (L:TrD4, Number) + (>K:XPNDR_SET)\n\n(L:TrPos, Number) 4 % 1 + (>L:TrPos, Number)",
+              "PresetId": "",
               "Type": "MSFS2020CustomInputAction"
             },
             "LongReleaseDelay": 350,
@@ -392,7 +392,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
@@ -416,7 +416,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
@@ -440,7 +440,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
@@ -464,7 +464,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
@@ -488,14 +488,14 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
           "button": {
             "onPress": {
-              "Command": "(>H:TransponderVFR)",
-              "PresetId": "cb4278d8-5c94-47b1-bb60-958da077feb6",
+              "Command": "4608 (>K:XPNDR_SET)\n0 (>L:TrPos, Number)",
+              "PresetId": "",
               "Type": "MSFS2020CustomInputAction"
             },
             "LongReleaseDelay": 350,
@@ -512,7 +512,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         },
         {
@@ -536,7 +536,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-796-F0C"
+            "Serial": "SN-397-DF0"
           }
         }
       ]
