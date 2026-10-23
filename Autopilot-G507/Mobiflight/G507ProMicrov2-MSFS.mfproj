@@ -922,6 +922,46 @@
               "Active": true
             }
           ]
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "PWM",
+            "Pin": "PWM",
+            "Brightness": 255,
+            "PwmMode": true,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "PWM",
+          "GUID": "82234f00-4836-4463-b255-15fc335f1c91",
+          "Active": true,
+          "Name": "BrightnessControl",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "G507ProMicrov2",
+            "Serial": "SN-FF7-65D"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "192",
+                "Active": true
+              }
+            ]
+          }
         }
       ]
     }

@@ -10,4 +10,5 @@
   <Encoder Name="HDG-enc" PinLeft="8" PinRight="7" EncoderType="1" />
   <Encoder Name="Wheel-enc" PinLeft="15" PinRight="14" EncoderType="1" />
   <Encoder Name="ALT-enc" PinLeft="18" PinRight="16" EncoderType="1" />
+  <Output Name="PWM" Pin="5" />
 </Config>
