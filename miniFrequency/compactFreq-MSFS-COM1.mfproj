@@ -49,7 +49,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-49D-D2A"
+            "Serial": "SN-568-9EE"
           }
         },
         {
@@ -95,7 +95,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-49D-D2A"
+            "Serial": "SN-568-9EE"
           }
         },
         {
@@ -119,7 +119,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-49D-D2A"
+            "Serial": "SN-568-9EE"
           }
         },
         {
@@ -143,7 +143,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-49D-D2A"
+            "Serial": "SN-568-9EE"
           }
         },
         {
@@ -169,7 +169,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-49D-D2A"
+            "Serial": "SN-568-9EE"
           }
         },
         {
@@ -195,7 +195,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-49D-D2A"
+            "Serial": "SN-568-9EE"
           }
         },
         {
@@ -226,7 +226,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-49D-D2A"
+            "Serial": "SN-568-9EE"
           }
         },
         {
@@ -257,7 +257,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-49D-D2A"
+            "Serial": "SN-568-9EE"
           }
         },
         {
@@ -288,7 +288,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "miniFreq",
-            "Serial": "SN-49D-D2A"
+            "Serial": "SN-568-9EE"
           },
           "Modifiers": {
             "Items": [

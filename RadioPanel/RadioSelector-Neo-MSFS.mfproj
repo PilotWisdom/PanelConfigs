@@ -1,5 +1,5 @@
 {
-  "Name": "RadioSelectorNeo-MSFS",
+  "Name": "PW-RadioNeo-MSFS",
   "ConfigFiles": [
     {
       "Label": "RadioNeo",
@@ -18,8 +18,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "SR-LEDs",
@@ -37,7 +36,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
@@ -51,8 +50,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "SR-LEDs",
@@ -70,7 +68,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
@@ -84,8 +82,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "SR-LEDs",
@@ -103,7 +100,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
@@ -115,8 +112,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "SR-LEDs",
@@ -134,7 +130,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
@@ -148,8 +144,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "SR-LEDs",
@@ -167,7 +162,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
@@ -181,8 +176,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "SR-LEDs",
@@ -200,7 +194,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
@@ -214,8 +208,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "SR-LEDs",
@@ -233,7 +226,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
@@ -247,8 +240,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "SR-LEDs",
@@ -266,7 +258,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
@@ -280,8 +272,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "SR-LEDs",
@@ -299,7 +290,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
@@ -313,8 +304,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "SR-LEDs",
@@ -332,7 +322,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
@@ -346,8 +336,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "SR-LEDs",
@@ -365,7 +354,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
@@ -379,8 +368,7 @@
           },
           "TestValue": {
             "type": 1,
-            "Float64": 1.0,
-            "String": null
+            "Float64": 1.0
           },
           "Device": {
             "Name": "SR-LEDs",
@@ -398,19 +386,16 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
           "button": {
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
               "Command": "(A:COM RECEIVE:1, Bool) ! (>K:COM1_RECEIVE_SELECT)",
-              "PresetId": "b8e059bd-822c-468c-b578-41c5168cb111"
+              "PresetId": "b8e059bd-822c-468c-b578-41c5168cb111",
+              "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -419,27 +404,22 @@
             "Type": "Button",
             "Name": "btnCOM1"
           },
-          "DeviceType": "Button",
-          "DeviceName": "btnCOM1",
           "GUID": "913f6874-4b12-4adb-aea5-335df265b0a3",
           "Active": true,
           "Name": "COM1",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
           "button": {
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
               "Command": "(A:COM RECEIVE:2, Bool) ! (>K:COM2_RECEIVE_SELECT)",
-              "PresetId": "d3e7dee5-45eb-40e0-b0ba-839df2a6ee26"
+              "PresetId": "d3e7dee5-45eb-40e0-b0ba-839df2a6ee26",
+              "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -448,23 +428,17 @@
             "Type": "Button",
             "Name": "btnCOM2"
           },
-          "DeviceType": "Button",
-          "DeviceName": "btnCOM2",
           "GUID": "6ee7c7e4-b175-4f1b-9ec4-405094804539",
           "Active": true,
           "Name": "COM2",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
           "button": {
-            "onPress": null,
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -473,23 +447,17 @@
             "Type": "Button",
             "Name": "btnMIC1"
           },
-          "DeviceType": "Button",
-          "DeviceName": "btnMIC1",
           "GUID": "60ced6cc-95d5-4eb4-8a5b-24ded5c70aee",
           "Active": true,
           "Name": "MIC1",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
           "button": {
-            "onPress": null,
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -498,27 +466,22 @@
             "Type": "Button",
             "Name": "btnMIC2"
           },
-          "DeviceType": "Button",
-          "DeviceName": "btnMIC2",
           "GUID": "7b23ab89-c284-4e28-8455-378b0cb358f4",
           "Active": false,
           "Name": "MIC2",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
           "button": {
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
               "Command": "(A:NAV SOUND:1, Bool) ! (>K:RADIO_VOR1_IDENT_TOGGLE)",
-              "PresetId": "e63740c5-aaa4-43da-a9c2-b9ca5f4b940b"
+              "PresetId": "e63740c5-aaa4-43da-a9c2-b9ca5f4b940b",
+              "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -527,27 +490,22 @@
             "Type": "Button",
             "Name": "btnNAV1"
           },
-          "DeviceType": "Button",
-          "DeviceName": "btnNAV1",
           "GUID": "ab376f4d-fb45-4efd-ba0d-038fb916f12d",
           "Active": true,
           "Name": "NAV1",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
           "button": {
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
               "Command": "(A:NAV SOUND:2, Bool) ! (>K:RADIO_VOR2_IDENT_TOGGLE)",
-              "PresetId": "54d19ede-e668-4f0a-aed8-2ed6aace18f3"
+              "PresetId": "54d19ede-e668-4f0a-aed8-2ed6aace18f3",
+              "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -556,27 +514,22 @@
             "Type": "Button",
             "Name": "btnNAV2"
           },
-          "DeviceType": "Button",
-          "DeviceName": "btnNAV2",
           "GUID": "43c386e3-51b2-4115-bb42-64bd6bb70f74",
           "Active": true,
           "Name": "NAV2",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
           "button": {
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
               "Command": "(A:DME SOUND, Bool) ! (>K:RADIO_DME1_IDENT_TOGGLE)",
-              "PresetId": "0"
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -585,27 +538,22 @@
             "Type": "Button",
             "Name": "btnDME"
           },
-          "DeviceType": "Button",
-          "DeviceName": "btnDME",
           "GUID": "106aa468-c085-4fad-a5ae-50d4edd91927",
           "Active": true,
           "Name": "DME",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
           "button": {
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
               "Command": "(A:ADF SOUND, Bool) ! (>K:RADIO_ADF_IDENT_TOGGLE)\n",
-              "PresetId": "11df6e76-92d7-4ef6-b5cb-fd5ef519293b"
+              "PresetId": "11df6e76-92d7-4ef6-b5cb-fd5ef519293b",
+              "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -614,27 +562,22 @@
             "Type": "Button",
             "Name": "btnADF"
           },
-          "DeviceType": "Button",
-          "DeviceName": "btnADF",
           "GUID": "53b93ca2-b3ec-4277-a284-2062eee65a9e",
           "Active": true,
           "Name": "ADF",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         },
         {
           "button": {
             "onPress": {
-              "Type": "MSFS2020CustomInputAction",
               "Command": "(A:MARKER BEACON TEST MUTE, Bool) ! (>K:MARKER_BEACON_TEST_MUTE)",
-              "PresetId": "5306a144-4fa1-4341-ade6-c45ed652ff4b"
+              "PresetId": "5306a144-4fa1-4341-ade6-c45ed652ff4b",
+              "Type": "MSFS2020CustomInputAction"
             },
-            "onRelease": null,
-            "onLongRelease": null,
-            "onHold": null,
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -643,15 +586,13 @@
             "Type": "Button",
             "Name": "btnMKR"
           },
-          "DeviceType": "Button",
-          "DeviceName": "btnMKR",
           "GUID": "8a00c4ec-d7e0-4954-9565-03d07fb18e34",
           "Active": true,
           "Name": "MKR",
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Radio-Backlit",
-            "Serial": "SN-1G8-DE7"
+            "Serial": "SN-203-534"
           }
         }
       ]
@@ -663,5 +604,5 @@
     "FSUIPC": false,
     "ProSim": false
   },
-  "_version": "0.9"
+  "_version": "0.10"
 }
