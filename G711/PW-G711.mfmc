@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight RaspiPico</ModuleType>
+  <ModuleName>PW-G711</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <InputMultiplexer Name="MUX1" DataPin="22" NumBytes="2">
+    <Selector Name="MultiplexerDriver" PinSx="0 1 2 3" />
+  </InputMultiplexer>
+  <InputMultiplexer Name="MUX2" DataPin="26" NumBytes="2">
+    <Selector Name="MultiplexerDriver" PinSx="0 1 2 3" />
+  </InputMultiplexer>
+  <ShiftRegister Name="SR-LEDs" LatchPin="4" ClockPin="5" DataPin="6" NumModules="2" />
+  <Output Name="LEDPWM" Pin="7" />
+  <Encoder Name="encHDG" PinLeft="9" PinRight="8" EncoderType="1" />
+  <Encoder Name="encCRS1" PinLeft="11" PinRight="10" EncoderType="1" />
+  <Encoder Name="encALT" PinLeft="13" PinRight="12" EncoderType="1" />
+  <Encoder Name="encSPDOuter" PinLeft="14" PinRight="15" EncoderType="2" />
+  <Encoder Name="encSPDInner" PinLeft="16" PinRight="17" EncoderType="2" />
+  <Encoder Name="encCRS2" PinLeft="19" PinRight="18" EncoderType="1" />
+  <Encoder Name="encWHEEL" PinLeft="20" PinRight="21" EncoderType="1" />
+</Config>

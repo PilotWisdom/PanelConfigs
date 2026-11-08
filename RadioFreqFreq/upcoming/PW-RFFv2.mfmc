@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>PW-RFFv2</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="btnFlipC1" Pin="11" />
+  <Button Name="btnFlipN1" Pin="13" />
+  <Button Name="btnFlipC2" Pin="21" />
+  <Button Name="btnFlipN2" Pin="19" />
+  <LedModule Name="segR1COM" ModelType="0" DinPin="54" ClsPin="55" ClkPin="56" Brightness="3" NumModules="2" />
+  <LedModule Name="segR1NAV" ModelType="0" DinPin="57" ClsPin="58" ClkPin="59" Brightness="3" NumModules="2" />
+  <Encoder Name="encR1Com_OUT" PinLeft="60" PinRight="61" EncoderType="2" />
+  <Encoder Name="encR1Com_IN" PinLeft="10" PinRight="12" EncoderType="2" />
+  <Encoder Name="encR1Nav_OUT" PinLeft="14" PinRight="15" EncoderType="2" />
+  <Encoder Name="encR1Nav_IN" PinLeft="16" PinRight="17" EncoderType="2" />
+  <LedModule Name="segR2COM" ModelType="0" DinPin="62" ClsPin="63" ClkPin="64" Brightness="3" NumModules="2" />
+  <LedModule Name="segR2NAV" ModelType="0" DinPin="65" ClsPin="66" ClkPin="67" Brightness="3" NumModules="2" />
+  <Encoder Name="encR2Com_IN" PinLeft="18" PinRight="20" EncoderType="2" />
+  <Encoder Name="encR2Com_OUT" PinLeft="68" PinRight="69" EncoderType="2" />
+  <Encoder Name="encR2Nav_IN" PinLeft="24" PinRight="25" EncoderType="2" />
+  <Encoder Name="encR2Nav_OUT" PinLeft="22" PinRight="23" EncoderType="2" />
+  <ShiftRegister Name="SRRadioLEDs" LatchPin="6" ClockPin="7" DataPin="8" NumModules="2" />
+  <InputMultiplexer Name="MuxRadioBtns" DataPin="2" NumBytes="2">
+    <Selector Name="MultiplexerDriver" PinSx="50 51 52 53" />
+  </InputMultiplexer>
+</Config>

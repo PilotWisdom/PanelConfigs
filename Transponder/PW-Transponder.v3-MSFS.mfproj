@@ -45,7 +45,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -107,7 +107,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           },
           "Modifiers": {
             "Items": [
@@ -200,7 +200,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -224,7 +224,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -248,7 +248,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -272,7 +272,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -296,7 +296,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -320,7 +320,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -344,7 +344,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -368,7 +368,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -392,7 +392,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -416,7 +416,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -440,7 +440,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -464,7 +464,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -488,7 +488,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -512,7 +512,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         },
         {
@@ -536,7 +536,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-Transp-v3",
-            "Serial": "SN-397-DF0"
+            "Serial": "SN-2BD-394"
           }
         }
       ]

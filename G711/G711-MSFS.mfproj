@@ -1,0 +1,917 @@
+{
+  "Name": "G711-MSFS",
+  "ConfigFiles": [
+    {
+      "Label": "PW-G711",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 128.0
+          },
+          "Device": {
+            "Name": "LEDPWM",
+            "Pin": "LEDPWM",
+            "Brightness": 255,
+            "PwmMode": true,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "LEDPWM",
+          "GUID": "c5e005a9-d109-4ecf-a18d-ccfdbaff8d13",
+          "Active": false,
+          "Name": "LEDs_brightness",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 0|Output 1|Output 2|Output 3|Output 4|Output 6|Output 7|Output 8|Output 9|Output 10|Output 11|Output 12|Output 13|Output 14|Output 15",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "f8ec2fdf-f7e0-4e3e-9a74-3add23cb1e48",
+          "Active": false,
+          "Name": "ALL_LEDs",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:0"
+          },
+          "GUID": "3b2311f2-1326-4372-8959-95689d910a0f",
+          "Active": true,
+          "Name": "btnHDG",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:1"
+          },
+          "GUID": "43803647-0585-494c-909a-69e9cf9cac30",
+          "Active": true,
+          "Name": "btnAPR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:2"
+          },
+          "GUID": "e7f6a95c-36e7-442d-8493-c3e54cd5ad5a",
+          "Active": true,
+          "Name": "btnNAV",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:3"
+          },
+          "GUID": "230b12c0-8e3d-4585-9ef0-ffce0bcb2e44",
+          "Active": true,
+          "Name": "btnBC",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:6"
+          },
+          "GUID": "b666ab32-b0ad-4db7-a560-9c00d38f3570",
+          "Active": true,
+          "Name": "btnFD",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:15"
+          },
+          "GUID": "5042453d-8544-4ad2-bbbd-e65fdb5eed2a",
+          "Active": true,
+          "Name": "btnBANK",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:8"
+          },
+          "GUID": "ed985cae-fce2-4bd9-8c9b-584329f94a01",
+          "Active": true,
+          "Name": "btnAP",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:9"
+          },
+          "GUID": "afa70959-6ca8-496b-a4af-690f9626c585",
+          "Active": true,
+          "Name": "btnYD",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:10"
+          },
+          "GUID": "2bc60dfa-3f77-40cf-8d46-b5e52e3011e3",
+          "Active": true,
+          "Name": "btnAT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:11"
+          },
+          "GUID": "8b2c6c4a-5242-460d-af20-f05654c6c91e",
+          "Active": true,
+          "Name": "btnXFR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:0"
+          },
+          "GUID": "31804717-51cf-4cd8-9126-41cf863ed42b",
+          "Active": true,
+          "Name": "btnALT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:1"
+          },
+          "GUID": "8920b497-d426-4bbc-a30f-9cc872797524",
+          "Active": true,
+          "Name": "btnVS",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:2"
+          },
+          "GUID": "80b7dcc8-3ede-4dad-8313-832ba164d287",
+          "Active": true,
+          "Name": "btnVNV",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:4"
+          },
+          "GUID": "ba88b018-5756-495b-a220-0ae5f6d061a1",
+          "Active": true,
+          "Name": "btnFLC",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:4"
+          },
+          "GUID": "02a1fc8f-634b-41ee-9f6c-d4cca8f3498e",
+          "Active": true,
+          "Name": "pushHDG",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:5"
+          },
+          "GUID": "9ebbb6dd-f817-41e3-b1e3-f640d230607f",
+          "Active": true,
+          "Name": "pushCRS1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:1"
+          },
+          "GUID": "4616de90-09f8-45a5-9f53-aa13a7f6987a",
+          "Active": true,
+          "Name": "pushALT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:5"
+          },
+          "GUID": "a6448645-4b06-40fe-ac57-7ced423bfe30",
+          "Active": true,
+          "Name": "pushSPD",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:6"
+          },
+          "GUID": "4a1c87d6-1f84-4f66-9f08-23a947a6f60b",
+          "Active": true,
+          "Name": "pushCRS2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encHDG"
+          },
+          "GUID": "66059bf5-eaf2-436d-9833-4f9d3ae7fad5",
+          "Active": true,
+          "Name": "encHDG",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encCRS1"
+          },
+          "GUID": "7aa43759-dd50-43e9-8594-5920d83ce2a3",
+          "Active": true,
+          "Name": "encCRS1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encALT"
+          },
+          "GUID": "446db4de-bb35-462e-b0bc-6f3630f4f41e",
+          "Active": true,
+          "Name": "encALT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encSPDOuter"
+          },
+          "GUID": "70386f8e-5c8b-48e5-a848-d3d88a3c54c8",
+          "Active": true,
+          "Name": "encSPD-Outer",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encSPDInner"
+          },
+          "GUID": "4344acc9-b744-45b5-9e04-89a4b21835f7",
+          "Active": true,
+          "Name": "encSPD-Inner",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encCRS2"
+          },
+          "GUID": "58002d30-12df-4c86-a1da-d5e1c0199e25",
+          "Active": true,
+          "Name": "encCRS2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 0",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "f2d3d6a9-03aa-45be-a91b-3be06f933c40",
+          "Active": true,
+          "Name": "ledHDG",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 1",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "c04bb3c3-0576-40f7-bc0d-91e17e1bb434",
+          "Active": true,
+          "Name": "ledAPR",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 2",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "2103c488-3a59-4851-9850-c8e8255ce9bf",
+          "Active": true,
+          "Name": "ledNAV",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 3",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "025655cb-7793-47f6-a73d-528d6a0483c1",
+          "Active": true,
+          "Name": "ledBC",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 4",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "5a107e37-5d08-49dd-a2de-0efd6ca7bb17",
+          "Active": true,
+          "Name": "ledFD",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 5",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "7bbe4a18-e2cc-4e05-8f13-ee5dc96ee80e",
+          "Active": true,
+          "Name": "ledBANK",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 6",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "68ed29c1-d515-4132-bf19-f056db31858c",
+          "Active": true,
+          "Name": "ledAP",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 7",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "f5374c5d-3c64-479a-9a61-fbe807c6f6ff",
+          "Active": true,
+          "Name": "ledYD",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 8",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "2933d482-8dea-4cce-b6b9-ebf198f5350f",
+          "Active": true,
+          "Name": "ledAT",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 9",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "0eacf288-93de-48b6-b2f1-f1a084ca4757",
+          "Active": true,
+          "Name": "ledXFR-Left",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 10",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "c7782517-565c-44b9-80a0-67236798e5bf",
+          "Active": true,
+          "Name": "ledXFR-Right",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 11",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "cfb2fab3-3016-4af5-bfd6-f38d8fd452b1",
+          "Active": true,
+          "Name": "ledALT",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 12",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "3c17ab91-5566-4c59-a09e-539aee366a06",
+          "Active": true,
+          "Name": "ledVS",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 13",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "299f3299-9a07-483c-a966-4f4114f033b8",
+          "Active": true,
+          "Name": "ledVNV",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 14",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "f4c7bbf1-0ceb-485c-8f2d-0b37e6b716d4",
+          "Active": true,
+          "Name": "ledFLC",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [
+    {
+      "Name": "Generic",
+      "Vendor": "Microsoft"
+    }
+  ],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.10"
+}

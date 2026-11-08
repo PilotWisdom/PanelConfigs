@@ -1,0 +1,70 @@
+{
+  "Name": "Test-RFF",
+  "ConfigFiles": [
+    {
+      "Label": "New file",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "Multiplexer:0"
+          },
+          "GUID": "222bca0e-e5bb-4429-9ee7-616ff1a566e7",
+          "Active": true,
+          "Name": "btnCOM1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "RFFv2",
+            "Serial": "SN-4F6-017"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-Radio",
+            "Pin": "Output 0|Output 1|Output 2|Output 3|Output 4|Output 5|Output 6|Output 7|Output 8|Output 9|Output 10|Output 11|Output 12",
+            "Address": "SR-Radio",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-Radio",
+          "GUID": "495f9530-7325-4180-ae19-b9f95e69ed38",
+          "Active": true,
+          "Name": "New Output Config",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "RFFv2",
+            "Serial": "SN-4F6-017"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [
+    {
+      "Name": "Generic",
+      "Vendor": "Microsoft"
+    }
+  ],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.10"
+}

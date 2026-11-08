@@ -35,7 +35,7 @@
           "Name": "LED-COM1",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -67,7 +67,7 @@
           "Name": "LED-COM2",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -99,7 +99,7 @@
           "Name": "LED-MIC1",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -129,7 +129,7 @@
           "Name": "LED-MIC2",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -161,7 +161,7 @@
           "Name": "LED-NAV1",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -193,7 +193,7 @@
           "Name": "LED-NAV2",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -225,7 +225,7 @@
           "Name": "LED-DME",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -257,7 +257,7 @@
           "Name": "LED-ADF",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -289,7 +289,7 @@
           "Name": "LED-MKR",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -321,7 +321,7 @@
           "Name": "LED-OM",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -353,7 +353,7 @@
           "Name": "LED-MM",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -385,7 +385,7 @@
           "Name": "LED-IM",
           "Type": "OutputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -409,7 +409,7 @@
           "Name": "COM1",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -433,7 +433,7 @@
           "Name": "COM2",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -452,7 +452,7 @@
           "Name": "MIC1",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -471,7 +471,7 @@
           "Name": "MIC2",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -495,7 +495,7 @@
           "Name": "NAV1",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -519,7 +519,7 @@
           "Name": "NAV2",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -543,7 +543,7 @@
           "Name": "DME",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -567,7 +567,7 @@
           "Name": "ADF",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         },
@@ -591,7 +591,7 @@
           "Name": "MKR",
           "Type": "InputConfigItem",
           "Controller": {
-            "Name": "PW-Radio-Backlit",
+            "Name": "PW-Radio-Neo",
             "Serial": "SN-203-534"
           }
         }
