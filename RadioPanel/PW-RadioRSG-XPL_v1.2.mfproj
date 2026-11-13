@@ -33,7 +33,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -63,13 +63,13 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
           "Source": {
             "XplaneDataRef": {
-              "Path": "1"
+              "Path": "sim/cockpit2/radios/actuators/audio_com_selection"
             },
             "Type": "XplaneSource"
           },
@@ -93,13 +93,25 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "6",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
           }
         },
         {
           "Source": {
             "XplaneDataRef": {
-              "Path": ""
+              "Path": "sim/cockpit2/radios/actuators/audio_com_selection"
             },
             "Type": "XplaneSource"
           },
@@ -123,7 +135,19 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "7",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
           }
         },
         {
@@ -153,7 +177,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -183,7 +207,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -213,7 +237,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -243,7 +267,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -273,7 +297,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -303,7 +327,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -333,7 +357,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -363,7 +387,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -388,7 +412,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -413,11 +437,17 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
           "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/audio_panel/transmit_audio_com1",
+              "Expression": "$",
+              "Type": "XplaneInputAction"
+            },
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -432,11 +462,17 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
           "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/audio_panel/transmit_audio_com2",
+              "Expression": "$",
+              "Type": "XplaneInputAction"
+            },
             "LongReleaseDelay": 350,
             "HoldDelay": 350,
             "RepeatDelay": 0
@@ -451,7 +487,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -476,7 +512,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -501,7 +537,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -526,7 +562,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -551,7 +587,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         },
         {
@@ -576,7 +612,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-91E-626"
           }
         }
       ]

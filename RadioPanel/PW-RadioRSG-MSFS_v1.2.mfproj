@@ -36,7 +36,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -68,7 +68,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -100,7 +100,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -132,7 +132,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -164,7 +164,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -196,7 +196,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -228,7 +228,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -260,7 +260,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -292,7 +292,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -324,7 +324,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -356,7 +356,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -388,7 +388,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -412,7 +412,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -436,7 +436,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -455,7 +455,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -474,7 +474,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -498,7 +498,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -522,7 +522,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -546,7 +546,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -570,7 +570,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         },
         {
@@ -594,7 +594,7 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-RadioRSG_1-2",
-            "Serial": "SN-292-B48"
+            "Serial": "SN-E4F-8FC"
           }
         }
       ]
