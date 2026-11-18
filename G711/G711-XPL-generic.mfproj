@@ -1,0 +1,1397 @@
+{
+  "Name": "G711-XPL-generic",
+  "ConfigFiles": [
+    {
+      "Label": "PW-G711",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": ""
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 128.0
+          },
+          "Device": {
+            "Name": "LEDPWM",
+            "Pin": "LEDPWM",
+            "Brightness": 255,
+            "PwmMode": true,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "LEDPWM",
+          "GUID": "33bf035f-3552-4ecf-a0e4-09bf70dbbe54",
+          "Active": true,
+          "Name": "LEDs_brightness",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "192",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": ""
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 0|Output 1|Output 2|Output 3|Output 4|Output 5|Output 6|Output 7|Output 8|Output 9|Output 10|Output 11|Output 12|Output 13|Output 14",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "ef38f15f-a6df-40fe-b164-08d0b71974f5",
+          "Active": false,
+          "Name": "ALL_LEDs",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/heading",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:0"
+          },
+          "GUID": "44d32677-d26b-4d23-a1c0-d800c1068369",
+          "Active": true,
+          "Name": "btnHDG",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/approach",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:1"
+          },
+          "GUID": "02265e53-806e-4a8b-811c-ba0188b83329",
+          "Active": true,
+          "Name": "btnAPR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/NAV",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:2"
+          },
+          "GUID": "08447468-b441-481d-8850-8531f1762a7b",
+          "Active": true,
+          "Name": "btnNAV",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/back_course",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:3"
+          },
+          "GUID": "01d0b1de-3c7c-4e0f-b38c-f25207707d3d",
+          "Active": true,
+          "Name": "btnBC",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/fdir_toggle",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:6"
+          },
+          "GUID": "3de38b04-ca73-42ce-8d92-46f105dade18",
+          "Active": true,
+          "Name": "btnFD",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/bank_limit_toggle",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:7"
+          },
+          "GUID": "c20572f8-67e1-487f-96e4-2adb6cc16dc4",
+          "Active": true,
+          "Name": "btnBANK",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/servos_toggle",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:8"
+          },
+          "GUID": "db8b3efc-8264-4d8a-ab27-35fac9fe7b7b",
+          "Active": true,
+          "Name": "btnAP",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/systems/yaw_damper_toggle",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:9"
+          },
+          "GUID": "aa45bbd8-3d76-4334-a884-d299324fa9b6",
+          "Active": true,
+          "Name": "btnYD",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/autothrottle_toggle",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:10"
+          },
+          "GUID": "807c9aca-3f83-4aae-8d96-ea1e454c142c",
+          "Active": true,
+          "Name": "btnAT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:11"
+          },
+          "GUID": "8166783b-6d09-4802-992d-245628838f29",
+          "Active": false,
+          "Name": "btnXFR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/altitude_hold",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:0"
+          },
+          "GUID": "44df4270-1036-4903-bd61-256129c22d19",
+          "Active": true,
+          "Name": "btnALT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/vertical_speed",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:1"
+          },
+          "GUID": "773b1327-4f3e-4cdf-8847-fae5a3038ffb",
+          "Active": true,
+          "Name": "btnVS",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/vnav",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:2"
+          },
+          "GUID": "60b82c49-ddbe-4c61-b356-2fe5aa9c922d",
+          "Active": true,
+          "Name": "btnVNV",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/level_change",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:4"
+          },
+          "GUID": "d5a5dc9e-0597-43c8-aee4-a2564919ce50",
+          "Active": true,
+          "Name": "btnFLC",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/heading_sync",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:4"
+          },
+          "GUID": "dc8b6624-6c91-445c-b79c-c5df87d9a123",
+          "Active": true,
+          "Name": "pushHDG",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/GPS/g1000n1_crs_sync",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:5"
+          },
+          "GUID": "9109e8da-26b8-4a73-9ed3-54fc1dcc2cf2",
+          "Active": true,
+          "Name": "pushCRS1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/altitude_sync",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:3"
+          },
+          "GUID": "1b4e8873-9071-4d73-b421-ccb5211d45ae",
+          "Active": true,
+          "Name": "pushALT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/knots_mach_toggle",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:5"
+          },
+          "GUID": "af9aedaf-4aa2-43d3-bf6a-0ad6d9232cfb",
+          "Active": true,
+          "Name": "pushSPD",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "InputType": "Command",
+              "Path": "sim/GPS/g1000n2_crs_sync",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:6"
+          },
+          "GUID": "1939bfc0-949a-4dc1-9fc0-8926fbf002fb",
+          "Active": true,
+          "Name": "pushCRS2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/heading_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 0",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "475620dc-6869-4414-86e9-884c165a7d1c",
+          "Active": true,
+          "Name": "ledHDG",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/approach_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 1",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "75023fd3-fa4d-43c5-9df5-dd9981b06cee",
+          "Active": true,
+          "Name": "ledAPR",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "1",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/nav_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 2",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "f5f7fe74-88bf-49c2-921d-2798f83f1d5d",
+          "Active": true,
+          "Name": "ledNAV",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "1",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/backcourse_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 3",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "1c5478c0-10b8-4501-ba81-af12f6cc4e17",
+          "Active": true,
+          "Name": "ledBC",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "1",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/flight_director_mode"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 4",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "dfa7a149-82a2-4806-a846-1294c9b8af2d",
+          "Active": true,
+          "Name": "ledFD",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "1",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/annunciators/autopilot_bank_limit"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 5",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "f9b15f81-a9c8-407c-8689-c91b7b97ff0b",
+          "Active": true,
+          "Name": "ledBANK",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit/autopilot/autopilot_mode"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 6",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "b73f25a4-5dfa-4ccf-b209-e36cdf57bb6c",
+          "Active": true,
+          "Name": "ledAP",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit/switches/yaw_damper_on"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 7",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "16507b36-4fa7-4845-8ee6-7667c773fe86",
+          "Active": true,
+          "Name": "ledYD",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/autothrottle_on"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 8",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "08a9fe82-cc9b-4dfd-af26-47c5f7d316e2",
+          "Active": true,
+          "Name": "ledAT",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": ""
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 9",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "a3677a27-0cea-4461-99a1-b761f1ac8b75",
+          "Active": false,
+          "Name": "ledXFR-Left",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": ""
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 10",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "4fe66c0a-0cff-4cc7-b194-d943d0972cab",
+          "Active": false,
+          "Name": "ledXFR-Right",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/altitude_hold_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 11",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "99b5e9a2-2634-4f36-97a5-c0754a164fdb",
+          "Active": true,
+          "Name": "ledALT",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/vvi_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 12",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "87392389-23a4-4ce1-802e-0e5675653420",
+          "Active": true,
+          "Name": "ledVS",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/vnav_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 13",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "8419404d-7c4e-4977-b440-71a1f4977022",
+          "Active": true,
+          "Name": "ledVNV",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": ">=",
+                "Value": "1",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "XplaneDataRef": {
+              "Path": "sim/cockpit2/autopilot/speed_status"
+            },
+            "Type": "XplaneSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 14",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "08b3a0b2-189a-4908-892d-e53371e5b7d9",
+          "Active": true,
+          "Name": "ledFLC",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Comparison",
+                "Operand": "=",
+                "Value": "2",
+                "IfValue": "1",
+                "ElseValue": "0",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/heading_down",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "onRight": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/heading_up",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encHDG"
+          },
+          "GUID": "16ed9f0e-4694-4cd5-8a94-a31f128a3309",
+          "Active": true,
+          "Name": "encHDG",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "InputType": "Command",
+              "Path": "sim/radios/obs_HSI_down",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "onRight": {
+              "InputType": "Command",
+              "Path": "sim/radios/obs_HSI_up",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encCRS1"
+          },
+          "GUID": "9cfa9410-2314-4361-8744-4fbdbff786ae",
+          "Active": true,
+          "Name": "encCRS1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/altitude_down",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "onRight": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/altitude_up",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encALT"
+          },
+          "GUID": "fb2a8f45-9b78-47aa-8404-6a5497192940",
+          "Active": true,
+          "Name": "encALT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encSPDOuter"
+          },
+          "GUID": "ca6dc757-f31a-4381-a670-51a3522faa04",
+          "Active": false,
+          "Name": "encSPD-Outer",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/airspeed_down",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "onRight": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/airspeed_up",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encSPDInner"
+          },
+          "GUID": "a955624d-9be6-4a31-8e4f-cb9d523ec078",
+          "Active": true,
+          "Name": "encSPD-Inner",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "InputType": "Command",
+              "Path": "sim/radios/obs2_down",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "onRight": {
+              "InputType": "Command",
+              "Path": "sim/radios/obs2_up",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encCRS2"
+          },
+          "GUID": "e0dc9d2d-8313-45a9-8408-d9d1c9cb4a07",
+          "Active": true,
+          "Name": "encCRS2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/vertical_speed_down",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "onRight": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/vertical_speed_up",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encWHEEL"
+          },
+          "GUID": "3c55ce9e-d7ac-49b1-9fdc-18a626ac4122",
+          "Active": true,
+          "Name": "encWHEEL-VS",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "87392389-23a4-4ce1-802e-0e5675653420",
+              "Operand": ">=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/airspeed_up",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "onRight": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/airspeed_down",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encWHEEL"
+          },
+          "GUID": "06433d2e-aa74-4684-a147-7170220e9c4e",
+          "Active": true,
+          "Name": "encWHEEL-FLC",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "08b3a0b2-189a-4908-892d-e53371e5b7d9",
+              "Operand": ">=",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/nose_down",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            },
+            "onRight": {
+              "InputType": "Command",
+              "Path": "sim/autopilot/nose_up",
+              "Expression": "",
+              "Type": "XplaneInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encWHEEL"
+          },
+          "GUID": "cade8f20-7338-4b55-b1dc-760dd04b1401",
+          "Active": true,
+          "Name": "encWHEEL-PIT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284738A76D9C"
+          },
+          "Preconditions": [
+            {
+              "Type": "config",
+              "Ref": "87392389-23a4-4ce1-802e-0e5675653420",
+              "Operand": "<",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            },
+            {
+              "Type": "config",
+              "Ref": "08b3a0b2-189a-4908-892d-e53371e5b7d9",
+              "Operand": "<",
+              "Value": "1",
+              "Logic": "and",
+              "Active": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Sim": "xplane",
+  "Aircraft": [],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.10"
+}

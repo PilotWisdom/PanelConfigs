@@ -1,0 +1,1254 @@
+{
+  "Name": "G711-MSFS-Generic",
+  "ConfigFiles": [
+    {
+      "Label": "PW-G711",
+      "ReferenceOnly": false,
+      "EmbedContent": true,
+      "ConfigItems": [
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 128.0
+          },
+          "Device": {
+            "Name": "LEDPWM",
+            "Pin": "LEDPWM",
+            "Brightness": 255,
+            "PwmMode": true,
+            "Type": "Output"
+          },
+          "DeviceType": "Output",
+          "DeviceName": "LEDPWM",
+          "GUID": "950ff7f2-c7db-4061-a1b0-28bafb38f79c",
+          "Active": true,
+          "Name": "LEDs_brightness",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          },
+          "Modifiers": {
+            "Items": [
+              {
+                "Type": "Transformation",
+                "Expression": "192",
+                "Active": true
+              }
+            ]
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 0|Output 1|Output 2|Output 3|Output 4|Output 5|Output 6|Output 7|Output 8|Output 9|Output 10|Output 11|Output 12|Output 13|Output 14",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "bdc11b65-f20c-4880-970a-7e8668dfccbf",
+          "Active": false,
+          "Name": "ALL_LEDs",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:AP_PANEL_HEADING_HOLD)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:0"
+          },
+          "GUID": "c3cb8191-9734-484b-ab31-db820fc71690",
+          "Active": true,
+          "Name": "btnHDG",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:AP_APR_HOLD)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:1"
+          },
+          "GUID": "a9e5e7d1-8374-41e1-9bbf-81b7329b4130",
+          "Active": true,
+          "Name": "btnAPR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:AP_NAV1_HOLD)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:2"
+          },
+          "GUID": "08b4dbc8-dafe-4865-aef6-d221c7b34b12",
+          "Active": true,
+          "Name": "btnNAV",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:AP_BC_HOLD)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:3"
+          },
+          "GUID": "6ab48ad7-1e64-4f97-925c-24e9344db5bf",
+          "Active": true,
+          "Name": "btnBC",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:TOGGLE_FLIGHT_DIRECTOR)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:6"
+          },
+          "GUID": "bfab903c-b0b0-4d59-9875-bb25095c6c2c",
+          "Active": true,
+          "Name": "btnFD",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(A:AUTOPILOT MAX BANK ID, Number) 1 == if{ 0 (>K:AP_MAX_BANK_SET) } els{ 1 (>K:AP_MAX_BANK_SET) }",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:7"
+          },
+          "GUID": "4e1fe9cf-1896-4d86-b92a-c0d1aa1c7b58",
+          "Active": true,
+          "Name": "btnBANK",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:AP_MASTER)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:8"
+          },
+          "GUID": "343a61ec-d3a1-4b71-90b2-58158c76d33a",
+          "Active": true,
+          "Name": "btnAP",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:YAW_DAMPER_TOGGLE)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:9"
+          },
+          "GUID": "2d6cf1f3-0d17-407c-9feb-90f69e7b1cd7",
+          "Active": true,
+          "Name": "btnYD",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:AUTO_THROTTLE_ARM)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:10"
+          },
+          "GUID": "9b751a37-5498-4cf0-8aa5-a06315a99a20",
+          "Active": true,
+          "Name": "btnAT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:11"
+          },
+          "GUID": "10769175-6ab9-46db-b574-5c6afcae40a0",
+          "Active": true,
+          "Name": "btnXFR",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:AP_ALT_HOLD)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:0"
+          },
+          "GUID": "aee2023c-1095-46d0-acc8-9d0201e77fb3",
+          "Active": true,
+          "Name": "btnALT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:AP_PANEL_VS_HOLD)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:1"
+          },
+          "GUID": "fa40c644-1243-4b7b-9fc7-bb816f6822ef",
+          "Active": true,
+          "Name": "btnVS",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>H:AS1000_VNAV_TOGGLE)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:2"
+          },
+          "GUID": "6eeac0be-1257-4361-9d8a-1958b4c0d6af",
+          "Active": true,
+          "Name": "btnVNV",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:FLIGHT_LEVEL_CHANGE)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:4"
+          },
+          "GUID": "8143ea49-24a8-4c2d-82d1-c15233cc0216",
+          "Active": true,
+          "Name": "btnFLC",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>H:Garmin_AP_HDG_Sync)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:4"
+          },
+          "GUID": "e389773a-60da-446f-9423-b77715b9f3fc",
+          "Active": true,
+          "Name": "pushHDG",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>H:AS3000_PFD_1_CRS_PUSH)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX1:5"
+          },
+          "GUID": "8d20992b-2eb8-4c09-aa84-7289d93e1a41",
+          "Active": true,
+          "Name": "pushCRS1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(A:INDICATED ALTITUDE, feet) 100 / near 100 * (>K:AP_ALT_VAR_SET_ENGLISH)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:3"
+          },
+          "GUID": "e68876c3-9cc3-4234-b06c-d9e3ae434b48",
+          "Active": true,
+          "Name": "pushALT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>K:AP_MANAGED_SPEED_IN_MACH_TOGGLE)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:5"
+          },
+          "GUID": "ec6d523c-5633-41d0-937f-8bb2d9bb4789",
+          "Active": true,
+          "Name": "pushSPD",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "button": {
+            "onPress": {
+              "Command": "(>H:AS3000_PFD_2_CRS_PUSH)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
+          "Device": {
+            "Type": "Button",
+            "Name": "MUX2:6"
+          },
+          "GUID": "883667fa-c894-48c4-b44f-e5c346021915",
+          "Active": true,
+          "Name": "pushCRS2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Command": "(>K:HEADING_BUG_DEC)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onLeftFast": {
+              "Command": "(A:AUTOPILOT HEADING LOCK DIR, degrees) 10 - dnor (>K:HEADING_BUG_SET)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "(>K:HEADING_BUG_INC)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRightFast": {
+              "Command": "(A:AUTOPILOT HEADING LOCK DIR, degrees) 10 + dnor (>K:HEADING_BUG_SET)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encHDG"
+          },
+          "GUID": "bb36c057-b719-4c7a-8722-c42ef09ad463",
+          "Active": true,
+          "Name": "encHDG",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Command": "(>K:VOR1_OBI_DEC)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onLeftFast": {
+              "Command": "(A:NAV OBS:1, degrees) 10 - dnor (>K:VOR1_SET)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "(>K:VOR1_OBI_INC)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRightFast": {
+              "Command": "(A:NAV OBS:1, degrees) 10 + dnor (>K:VOR1_SET)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encCRS1"
+          },
+          "GUID": "524e0e03-ef13-4b12-ba22-55227ec66d4a",
+          "Active": true,
+          "Name": "encCRS1",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Command": "(>K:AP_ALT_VAR_DEC)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onLeftFast": {
+              "Command": "1000 (>K:AP_ALT_VAR_DEC)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "(>K:AP_ALT_VAR_INC)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRightFast": {
+              "Command": "1000 (>K:AP_ALT_VAR_INC)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encALT"
+          },
+          "GUID": "9edc9278-96c4-4fba-8bfa-be9b229fc0c9",
+          "Active": true,
+          "Name": "encALT",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Command": "0 (>L:XMLVAR_SpeedIsManuallySet)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "1 (>L:XMLVAR_SpeedIsManuallySet)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encSPDOuter"
+          },
+          "GUID": "7a65dfb3-368e-413c-91da-10042b47b585",
+          "Active": true,
+          "Name": "encSPD-Outer",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Command": "(A:AUTOPILOT MANAGED SPEED IN MACH, Bool) if{ (>K:AP_MACH_VAR_DEC) } els{ (>K:AP_SPD_VAR_DEC) }",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onLeftFast": {
+              "Command": "(A:AUTOPILOT MANAGED SPEED IN MACH, Bool) if{ (A:AUTOPILOT MACH HOLD VAR, number) 0.05 - 0 max 100 * near (>K:AP_MACH_VAR_SET) } els{ (A:AUTOPILOT AIRSPEED HOLD VAR, knots) 10 - 0 max (>K:AP_SPD_VAR_SET) }",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "(A:AUTOPILOT MANAGED SPEED IN MACH, Bool) if{ (>K:AP_MACH_VAR_INC) } els{ (>K:AP_SPD_VAR_INC) }",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRightFast": {
+              "Command": "(A:AUTOPILOT MANAGED SPEED IN MACH, Bool) if{ (A:AUTOPILOT MACH HOLD VAR, number) 0.05 + 0 max 100 * near (>K:AP_MACH_VAR_SET) } els{ (A:AUTOPILOT AIRSPEED HOLD VAR, knots) 10 + 0 max (>K:AP_SPD_VAR_SET) }",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encSPDInner"
+          },
+          "GUID": "f706c35e-d3b0-4c48-b266-69e0d7ed1c90",
+          "Active": true,
+          "Name": "encSPD-Inner",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Command": "(>K:VOR2_OBI_DEC)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onLeftFast": {
+              "Command": "(A:NAV OBS:2, degrees) 10 - dnor (>K:VOR2_SET)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "(>K:VOR2_OBI_INC)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRightFast": {
+              "Command": "(A:NAV OBS:2, degrees) 10 + dnor (>K:VOR2_SET)",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encCRS2"
+          },
+          "GUID": "8d900eb2-d75b-433c-a81a-04351e588166",
+          "Active": true,
+          "Name": "encCRS2",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Command": "(A:AUTOPILOT VERTICAL HOLD, Bool) if{ (>K:AP_VS_VAR_DEC) } els{ (A:AUTOPILOT FLIGHT LEVEL CHANGE, Bool) if{ (A:AUTOPILOT MANAGED SPEED IN MACH, Bool) if{ (>K:AP_MACH_VAR_INC) } els{ (>K:AP_SPD_VAR_INC) } } els{ (>K:AP_PITCH_REF_INC_DN) } }",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "(A:AUTOPILOT VERTICAL HOLD, Bool) if{ (>K:AP_VS_VAR_INC) } els{ (A:AUTOPILOT FLIGHT LEVEL CHANGE, Bool) if{ (A:AUTOPILOT MANAGED SPEED IN MACH, Bool) if{ (>K:AP_MACH_VAR_DEC) } els{ (>K:AP_SPD_VAR_DEC) } } els{ (>K:AP_PITCH_REF_INC_UP) } }",
+              "PresetId": "0",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encWHEEL"
+          },
+          "GUID": "6e9598b3-8a6a-49ac-8685-30c18e74727e",
+          "Active": true,
+          "Name": "encWHEEL",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:AUTOPILOT HEADING LOCK,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 0",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "6a7d5f84-198a-4c25-acdd-d84578f7b758",
+          "Active": true,
+          "Name": "ledHDG",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:AUTOPILOT APPROACH HOLD,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 1",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "a5a0f5ab-d94b-4133-bf84-04919b7e5fd4",
+          "Active": true,
+          "Name": "ledAPR",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:AUTOPILOT NAV1 LOCK,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 2",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "ec178237-7874-46f7-bc47-de41b3f3f538",
+          "Active": true,
+          "Name": "ledNAV",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:AUTOPILOT BACKCOURSE HOLD,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 3",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "d1660691-141f-444e-895d-cf78bd6750cf",
+          "Active": true,
+          "Name": "ledBC",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:AUTOPILOT FLIGHT DIRECTOR ACTIVE,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 4",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "550c7eca-291f-47de-a00d-f0a0b5ab45eb",
+          "Active": true,
+          "Name": "ledFD",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:AUTOPILOT MAX BANK ID, Number) 1 ==",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 5",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "6830fb4d-36c7-4b5d-803c-de25e39d1869",
+          "Active": true,
+          "Name": "ledBANK",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:AUTOPILOT MASTER,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 6",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "204ea399-a34d-40ba-bbd6-04bd7af6764d",
+          "Active": true,
+          "Name": "ledAP",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:AUTOPILOT YAW DAMPER,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 7",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "42e154e6-00f7-44a7-952c-5ab215f6e1bb",
+          "Active": true,
+          "Name": "ledYD",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:AUTOPILOT THROTTLE ARM,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 8",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "39399337-a704-49e4-84fe-176c02789e69",
+          "Active": true,
+          "Name": "ledAT",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 9",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "769d6b02-befc-4b47-9575-17ca4b421846",
+          "Active": false,
+          "Name": "ledXFR-Left",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 10",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "0ce60bd9-2244-4fd7-86e9-96dab543a255",
+          "Active": false,
+          "Name": "ledXFR-Right",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:AUTOPILOT ALTITUDE LOCK,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 11",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "f07109d4-ef8d-4592-b54f-3137ca79622e",
+          "Active": true,
+          "Name": "ledALT",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:AUTOPILOT VERTICAL HOLD,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 12",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "da4727c1-24fc-483d-9b82-237b9d729954",
+          "Active": true,
+          "Name": "ledVS",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(L:XMLVAR_VNAVButtonValue)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 13",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "fdefd0c2-91dd-4067-bb96-5dc0ceb98db5",
+          "Active": true,
+          "Name": "ledVNV",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "Source": {
+            "SimConnectValue": {
+              "UUID": "-",
+              "Value": "(A:AUTOPILOT FLIGHT LEVEL CHANGE,Bool)",
+              "VarType": 2
+            },
+            "Type": "SimConnectSource"
+          },
+          "TestValue": {
+            "type": 1,
+            "Float64": 1.0
+          },
+          "Device": {
+            "Name": "SR-LEDs",
+            "Pin": "Output 14",
+            "Address": "SR-LEDs",
+            "Brightness": 255,
+            "PWM": false,
+            "Type": "ShiftRegister"
+          },
+          "DeviceType": "ShiftRegister",
+          "DeviceName": "SR-LEDs",
+          "GUID": "48b443ab-9992-4b0c-afd1-c6f54c81dc1e",
+          "Active": true,
+          "Name": "ledFLC",
+          "Type": "OutputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        }
+      ]
+    }
+  ],
+  "Sim": "msfs",
+  "Aircraft": [
+    {
+      "Name": "Generic",
+      "Vendor": "Microsoft"
+    }
+  ],
+  "Features": {
+    "FSUIPC": false,
+    "ProSim": false
+  },
+  "_version": "0.10"
+}

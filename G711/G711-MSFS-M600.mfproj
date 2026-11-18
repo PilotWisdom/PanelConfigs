@@ -1,5 +1,5 @@
 {
-  "Name": "G711-MSFS",
+  "Name": "G711-MSFS-M600",
   "ConfigFiles": [
     {
       "Label": "PW-G711",
@@ -34,7 +34,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
@@ -52,7 +52,7 @@
           },
           "Device": {
             "Name": "SR-LEDs",
-            "Pin": "Output 0|Output 1|Output 2|Output 3|Output 4|Output 6|Output 7|Output 8|Output 9|Output 10|Output 11|Output 12|Output 13|Output 14|Output 15",
+            "Pin": "Output 0|Output 1|Output 2|Output 3|Output 4|Output 5|Output 6|Output 7|Output 8|Output 9|Output 10|Output 11|Output 12|Output 13|Output 14",
             "Address": "SR-LEDs",
             "Brightness": 255,
             "PWM": false,
@@ -66,10 +66,20 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_Heading_Mode_Set)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX1:0"
@@ -80,10 +90,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_Approach_Mode_Set)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX1:1"
@@ -94,10 +114,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_Nav_Mode_Set) ",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX1:2"
@@ -108,10 +138,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_BackCourse_Mode_Set) ",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX1:3"
@@ -122,10 +162,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_Flight_Director_Set) ",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX1:6"
@@ -136,13 +186,23 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_Low_Bank_Mode_Toggle)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
-            "Name": "MUX1:15"
+            "Name": "MUX1:7"
           },
           "GUID": "5042453d-8544-4ad2-bbbd-e65fdb5eed2a",
           "Active": true,
@@ -150,10 +210,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_Autopilot_Set)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX1:8"
@@ -164,10 +234,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_YawDamper_Toggle)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX1:9"
@@ -178,10 +258,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_Autothrottle_Toggle)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX1:10"
@@ -192,10 +282,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:AUTOPILOT_Transfer_Mode_Toggle)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX1:11"
@@ -206,10 +306,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_Altitude_Mode_Set)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX2:0"
@@ -220,10 +330,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_VS_Mode_Set)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX2:1"
@@ -234,10 +354,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_VNAV_Mode_Toggle)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX2:2"
@@ -248,10 +378,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_FLC_Mode_Set)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX2:4"
@@ -262,10 +402,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_Heading_Sync_Push)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX1:4"
@@ -276,10 +426,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:AUTOPILOT_Course_1_Sync_Push)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX1:5"
@@ -290,13 +450,23 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(A:INDICATED ALTITUDE, feet) 100 / near 100 * (>K:AP_ALT_VAR_SET_ENGLISH)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
-            "Name": "MUX2:1"
+            "Name": "MUX2:3"
           },
           "GUID": "4616de90-09f8-45a5-9f53-aa13a7f6987a",
           "Active": true,
@@ -304,10 +474,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:M600_AUTOPILOT_Speed_Units_Push)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX2:5"
@@ -318,10 +498,20 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "button": {
+            "onPress": {
+              "Command": "(>B:AUTOPILOT_Course_2_Sync_Push)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "LongReleaseDelay": 350,
+            "HoldDelay": 350,
+            "RepeatDelay": 0
+          },
           "Device": {
             "Type": "Button",
             "Name": "MUX2:6"
@@ -332,10 +522,32 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "encoder": {
+            "onLeft": {
+              "Command": "1 (>B:M600_AUTOPILOT_Heading_Dec)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onLeftFast": {
+              "Command": "1 (>B:M600_AUTOPILOT_Heading_Dec) 1 (>B:M600_AUTOPILOT_Heading_Dec) 1 (>B:M600_AUTOPILOT_Heading_Dec) 1 (>B:M600_AUTOPILOT_Heading_Dec) 1 (>B:M600_AUTOPILOT_Heading_Dec) 1 (>B:M600_AUTOPILOT_Heading_Dec) 1 (>B:M600_AUTOPILOT_Heading_Dec) 1 (>B:M600_AUTOPILOT_Heading_Dec) 1 (>B:M600_AUTOPILOT_Heading_Dec) 1 (>B:M600_AUTOPILOT_Heading_Dec)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "1 (>B:M600_AUTOPILOT_Heading_Inc)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRightFast": {
+              "Command": "1 (>B:M600_AUTOPILOT_Heading_Inc) 1 (>B:M600_AUTOPILOT_Heading_Inc) 1 (>B:M600_AUTOPILOT_Heading_Inc) 1 (>B:M600_AUTOPILOT_Heading_Inc) 1 (>B:M600_AUTOPILOT_Heading_Inc) 1 (>B:M600_AUTOPILOT_Heading_Inc) 1 (>B:M600_AUTOPILOT_Heading_Inc) 1 (>B:M600_AUTOPILOT_Heading_Inc) 1 (>B:M600_AUTOPILOT_Heading_Inc) 1 (>B:M600_AUTOPILOT_Heading_Inc)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
           "Device": {
             "Type": "Encoder",
             "Name": "encHDG"
@@ -346,10 +558,32 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "encoder": {
+            "onLeft": {
+              "Command": "1 (>B:AUTOPILOT_Course_1_Dec)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onLeftFast": {
+              "Command": "1 (>B:AUTOPILOT_Course_1_Dec) 1 (>B:AUTOPILOT_Course_1_Dec) 1 (>B:AUTOPILOT_Course_1_Dec) 1 (>B:AUTOPILOT_Course_1_Dec) 1 (>B:AUTOPILOT_Course_1_Dec) 1 (>B:AUTOPILOT_Course_1_Dec) 1 (>B:AUTOPILOT_Course_1_Dec) 1 (>B:AUTOPILOT_Course_1_Dec) 1 (>B:AUTOPILOT_Course_1_Dec) 1 (>B:AUTOPILOT_Course_1_Dec)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "1 (>B:AUTOPILOT_Course_1_Inc)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRightFast": {
+              "Command": "1 (>B:AUTOPILOT_Course_1_Inc) 1 (>B:AUTOPILOT_Course_1_Inc) 1 (>B:AUTOPILOT_Course_1_Inc) 1 (>B:AUTOPILOT_Course_1_Inc) 1 (>B:AUTOPILOT_Course_1_Inc) 1 (>B:AUTOPILOT_Course_1_Inc) 1 (>B:AUTOPILOT_Course_1_Inc) 1 (>B:AUTOPILOT_Course_1_Inc) 1 (>B:AUTOPILOT_Course_1_Inc) 1 (>B:AUTOPILOT_Course_1_Inc)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
           "Device": {
             "Type": "Encoder",
             "Name": "encCRS1"
@@ -360,10 +594,22 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "encoder": {
+            "onLeft": {
+              "Command": "1 (>B:M600_AUTOPILOT_Altitude_Dec)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "1 (>B:M600_AUTOPILOT_Altitude_Inc)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
           "Device": {
             "Type": "Encoder",
             "Name": "encALT"
@@ -374,10 +620,22 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "encoder": {
+            "onLeft": {
+              "Command": "0 (>B:M600_AUTOPILOT_Speed_Mode_Set)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "1 (>B:M600_AUTOPILOT_Speed_Mode_Set)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
           "Device": {
             "Type": "Encoder",
             "Name": "encSPDOuter"
@@ -388,10 +646,32 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "encoder": {
+            "onLeft": {
+              "Command": "1 (>B:M600_AUTOPILOT_Speed_Dec)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onLeftFast": {
+              "Command": "1 (>B:M600_AUTOPILOT_Speed_Dec) 1 (>B:M600_AUTOPILOT_Speed_Dec) 1 (>B:M600_AUTOPILOT_Speed_Dec) 1 (>B:M600_AUTOPILOT_Speed_Dec) 1 (>B:M600_AUTOPILOT_Speed_Dec) 1 (>B:M600_AUTOPILOT_Speed_Dec) 1 (>B:M600_AUTOPILOT_Speed_Dec) 1 (>B:M600_AUTOPILOT_Speed_Dec) 1 (>B:M600_AUTOPILOT_Speed_Dec) 1 (>B:M600_AUTOPILOT_Speed_Dec)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "1 (>B:M600_AUTOPILOT_Speed_Inc)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRightFast": {
+              "Command": "1 (>B:M600_AUTOPILOT_Speed_Inc) 1 (>B:M600_AUTOPILOT_Speed_Inc) 1 (>B:M600_AUTOPILOT_Speed_Inc) 1 (>B:M600_AUTOPILOT_Speed_Inc) 1 (>B:M600_AUTOPILOT_Speed_Inc) 1 (>B:M600_AUTOPILOT_Speed_Inc) 1 (>B:M600_AUTOPILOT_Speed_Inc) 1 (>B:M600_AUTOPILOT_Speed_Inc) 1 (>B:M600_AUTOPILOT_Speed_Inc) 1 (>B:M600_AUTOPILOT_Speed_Inc)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
           "Device": {
             "Type": "Encoder",
             "Name": "encSPDInner"
@@ -402,10 +682,32 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
+          "encoder": {
+            "onLeft": {
+              "Command": "1 (>B:AUTOPILOT_Course_2_Dec)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onLeftFast": {
+              "Command": "1 (>B:AUTOPILOT_Course_2_Dec) 1 (>B:AUTOPILOT_Course_2_Dec) 1 (>B:AUTOPILOT_Course_2_Dec) 1 (>B:AUTOPILOT_Course_2_Dec) 1 (>B:AUTOPILOT_Course_2_Dec) 1 (>B:AUTOPILOT_Course_2_Dec) 1 (>B:AUTOPILOT_Course_2_Dec) 1 (>B:AUTOPILOT_Course_2_Dec) 1 (>B:AUTOPILOT_Course_2_Dec) 1 (>B:AUTOPILOT_Course_2_Dec)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "1 (>B:AUTOPILOT_Course_2_Inc)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRightFast": {
+              "Command": "1 (>B:AUTOPILOT_Course_2_Inc) 1 (>B:AUTOPILOT_Course_2_Inc) 1 (>B:AUTOPILOT_Course_2_Inc) 1 (>B:AUTOPILOT_Course_2_Inc) 1 (>B:AUTOPILOT_Course_2_Inc) 1 (>B:AUTOPILOT_Course_2_Inc) 1 (>B:AUTOPILOT_Course_2_Inc) 1 (>B:AUTOPILOT_Course_2_Inc) 1 (>B:AUTOPILOT_Course_2_Inc) 1 (>B:AUTOPILOT_Course_2_Inc)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
           "Device": {
             "Type": "Encoder",
             "Name": "encCRS2"
@@ -416,14 +718,40 @@
           "Type": "InputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
+          }
+        },
+        {
+          "encoder": {
+            "onLeft": {
+              "Command": "1 (>B:M600_AUTOPILOT_VerticalSpeed_Dec)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            },
+            "onRight": {
+              "Command": "1 (>B:M600_AUTOPILOT_VerticalSpeed_Inc)",
+              "PresetId": "",
+              "Type": "MSFS2020CustomInputAction"
+            }
+          },
+          "Device": {
+            "Type": "Encoder",
+            "Name": "encWHEEL"
+          },
+          "GUID": "444dd761-2e67-4013-91a1-08a41de6c1f9",
+          "Active": true,
+          "Name": "encWHEEL",
+          "Type": "InputConfigItem",
+          "Controller": {
+            "Name": "PW-G711",
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
               "UUID": "-",
-              "Value": "",
+              "Value": "(B:M600_AUTOPILOT_Heading_Mode, Bool) (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -448,14 +776,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
               "UUID": "-",
-              "Value": "",
+              "Value": "(B:M600_AUTOPILOT_Approach_Mode, Bool) (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -480,14 +808,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
               "UUID": "-",
-              "Value": "",
+              "Value": "(B:M600_AUTOPILOT_Nav_Mode, Bool) (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -512,14 +840,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
               "UUID": "-",
-              "Value": "",
+              "Value": "(B:M600_AUTOPILOT_BackCourse_Mode, Bool) (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -544,14 +872,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
               "UUID": "-",
-              "Value": "",
+              "Value": "(B:M600_AUTOPILOT_Flight_Director, Bool) (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -576,14 +904,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
+              "UUID": "0",
+              "Value": "(A:AUTOPILOT MAX BANK ID, number) 1 == (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -608,14 +936,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
+              "UUID": "0",
+              "Value": "(B:M600_AUTOPILOT_Autopilot, Bool) (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -640,14 +968,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
               "UUID": "-",
-              "Value": "",
+              "Value": "(A:AUTOPILOT YAW DAMPER, Bool) (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -672,14 +1000,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
               "UUID": "-",
-              "Value": "",
+              "Value": "(B:M600_AUTOPILOT_Autothrottle, Bool) (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -704,14 +1032,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
+              "UUID": "0",
+              "Value": "(A:AUTOPILOT MASTER, Bool) (B:AUTOPILOT_Transfer_Mode, Number) 0 == and (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -736,14 +1064,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
+              "UUID": "0",
+              "Value": "(A:AUTOPILOT MASTER, Bool) (B:AUTOPILOT_Transfer_Mode, Number) 1 == and (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -768,14 +1096,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
               "UUID": "-",
-              "Value": "",
+              "Value": "(B:M600_AUTOPILOT_Altitude_Mode, Bool) (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -800,14 +1128,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
               "UUID": "-",
-              "Value": "",
+              "Value": "(B:M600_AUTOPILOT_VS_Mode, Bool) (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -832,14 +1160,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
-              "UUID": "-",
-              "Value": "",
+              "UUID": "0",
+              "Value": "(B:M600_AUTOPILOT_VNAV_Mode, Bool) (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -864,14 +1192,14 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         },
         {
           "Source": {
             "SimConnectValue": {
               "UUID": "-",
-              "Value": "",
+              "Value": "(B:M600_AUTOPILOT_FLC_Mode, Bool) (L:FSR_M600_ANNUNCIATOR_TEST) or (A:CIRCUIT GENERAL PANEL ON, Bool) and",
               "VarType": 2
             },
             "Type": "SimConnectSource"
@@ -896,7 +1224,7 @@
           "Type": "OutputConfigItem",
           "Controller": {
             "Name": "PW-G711",
-            "Serial": "SN-5303284738A76D9C"
+            "Serial": "SN-5303284748EC7E1C"
           }
         }
       ]
